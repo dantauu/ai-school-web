@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-main-back: #031C52;
+  --color-main-back: #031c52;
+  --color-gradient-blue: linear-gradient(
+    to right,
+    #fd08b0cc -18%,
+    #0062ff 100%
+  );
 }
 
 @layer utilities {

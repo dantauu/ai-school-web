@@ -1,5 +1,9 @@
+import {MainSection} from "@/ui/home/main-section";
+
 export default function Home() {
   return (
-    <div></div>
-  );
+    <div>
+      <MainSection />
+    </div>
+  )
 }
