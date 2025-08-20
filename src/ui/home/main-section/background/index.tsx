@@ -2,7 +2,7 @@ export const Background = () => {
   return (
     <>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-fill"
         autoPlay={true}
         playsInline={true}
         loop={true}
