@@ -3,15 +3,21 @@
 @theme {
   --color-main-back: #031c52;
   --color-gradient-blue: linear-gradient(
-    to right,
-    #fd08b0cc -18%,
-    #0062ff 100%
+    -40deg,
+    rgb(14, 79, 255) 30%,
+    rgb(44, 13, 136) 60%,
+    rgb(253, 7, 191) 100%
   );
+  --color-blur-bg: rgba(245, 245, 245, 0.15);
+  --shadow-white-shadow: 4px 5px 20px #38FCFE66, -2px 1px 7px #38FCFE66, inset 0 -2px 4px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.4)
 }
 
 @layer utilities {
   .container {
     max-width: 1920px;
+  }
+  .gradient-blue {
+    background: var(--color-gradient-blue);
   }
 }
 
