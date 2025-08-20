@@ -27,7 +27,7 @@ export const Background = () => {
         style={{
           backgroundImage: 'url("/static/women-robot.svg")',
           position: "absolute",
-          right: 10,
+          right: 300,
           bottom: 0,
           width: "750px",
           height: "880px",

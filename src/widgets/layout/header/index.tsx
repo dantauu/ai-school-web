@@ -1,6 +1,6 @@
-import LangToggle from "@/shared/ui/toggle-switch"
+import LangToggle from "@/features/home/ui/toggle-switch"
 import Button from "@/shared/ui/buttons/button"
-import SvgCourse from "@/assets/icons/Course";
+import SvgCourse from "@/assets/icons/Course"
 
 const items = [
   { id: 1, text: "Курсы", icon: <SvgCourse /> },
@@ -15,7 +15,10 @@ const Header = () => {
       <div className="flex gap-8">
         {items.map((item) => (
           <div key={item.id}>
-            <Button variant="default">{item.icon}{item.text}</Button>
+            <Button variant="default">
+              {item.icon}
+              {item.text}
+            </Button>
           </div>
         ))}
       </div>

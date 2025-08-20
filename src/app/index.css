@@ -9,7 +9,11 @@
     rgb(253, 7, 191) 100%
   );
   --color-blur-bg: rgba(245, 245, 245, 0.15);
-  --shadow-white-shadow: 4px 5px 20px #38FCFE66, -2px 1px 7px #38FCFE66, inset 0 -2px 4px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.4)
+  --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
+  --shadow-white-shadow:
+    4px 5px 20px #38fcfe66, -2px 1px 7px #38fcfe66,
+    inset 0 -2px 4px rgba(0, 0, 0, 0.6),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 @layer utilities {
@@ -18,6 +22,9 @@
   }
   .gradient-blue {
     background: var(--color-gradient-blue);
+  }
+  .gradient-white {
+    background: var(--color-gradient-white);
   }
 }
 
