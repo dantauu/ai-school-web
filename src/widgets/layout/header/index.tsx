@@ -1,4 +1,4 @@
-import LangToggle from "@/features/home/ui/toggle-switch"
+import LangToggle from "@/features/home/ui/language-switch"
 import Button from "@/shared/ui/buttons/button"
 import SvgCourse from "@/assets/icons/Course"
 
