@@ -1,3 +1,5 @@
+export { default as BrainIcon } from "./Brain"
+export { default as ChatIcon } from "./Chat"
 export { default as CourseIcon } from "./Course"
 export { default as StudyIcon } from "./Study"
 export { default as TicketIcon } from "./Ticket"
