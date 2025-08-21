@@ -2,6 +2,7 @@ import SvgBrain from "@/assets/icons/Brain"
 import SvgChat from "@/assets/icons/Chat"
 import Button from "@/shared/ui/buttons"
 import aboutImage from "@/assets/images/about-school.png"
+import { CardBlur } from "@/shared/ui/cards/card-blur"
 
 const items = [
   { id: 1, icon: <SvgBrain />, text: "Курсы направленные на практику" },
@@ -17,17 +18,7 @@ export const StudyMain = () => {
           <h3 className="w-[570px] pb-8 text-[45px] leading-12">
             Практичное обучение по AI направлениям
           </h3>
-          <div className="flex gap-5">
-            {items.map((item) => (
-              <div
-                key={item.id}
-                className="w-[410px] h-[220px] flex flex-col justify-center gap-3 border bg-blur-bg border-white rounded-[15px] p-5"
-              >
-                {item.icon}
-                <p className="text-[28px]">{item.text}</p>
-              </div>
-            ))}
-          </div>
+          <CardBlur items={items} className="flex gap-5" />
         </div>
         <Button
           className="gradient-white w-full h-[50px] text-black"

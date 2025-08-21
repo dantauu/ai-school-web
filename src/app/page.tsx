@@ -3,6 +3,8 @@ import { OurCourseSection } from "@/entities/home/our-course/ui"
 import { AboutSection } from "@/ui/home/about-school"
 import { ReviewsSection } from "@/ui/home/reviews"
 import { WillFitSection } from "@/ui/home/will-fit"
+import { ResultSection } from "@/ui/home/result"
+import { PracticeToolsSection } from "@/ui/home/tools"
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <AboutSection />
         <ReviewsSection className="pt-[100px]" />
         <WillFitSection className="pt-[100px]" />
+        <ResultSection className="pt-[110px]" />
+        <PracticeToolsSection className="pt-[112px]" />
       </div>
     </div>
   )

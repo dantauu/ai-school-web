@@ -8,8 +8,14 @@
     rgb(44, 13, 136) 60%,
     rgb(253, 7, 191) 100%
   );
-  --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
   --color-gradient-dark-blue: linear-gradient(90deg, #070067 0%, #0062ff 100%);
+  --color-gradient-light-blue: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
+  --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
+  --color-gradient-purple: linear-gradient(
+    90deg,
+    #0062ff 0%,
+    rgba(253, 8, 176, 0.8) 100%
+  );
   --color-blur-bg: rgba(245, 245, 245, 0.15);
   --shadow-white-shadow:
     4px 5px 20px #38fcfe66, -2px 1px 7px #38fcfe66,
@@ -29,6 +35,9 @@
   }
   .gradient-white {
     background: var(--color-gradient-white);
+  }
+  .gradient-purple {
+    background: var(--color-gradient-purple);
   }
 }
 
