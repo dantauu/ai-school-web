@@ -1,7 +1,7 @@
 import { courses } from "@/lib/data/course"
 import { OurCourseLayout } from "@/shared/ui/cards/our-course"
 import { cn } from "@/lib/utils/cn"
-import Button from "@/shared/ui/buttons/button"
+import Button from "@/shared/ui/buttons"
 
 export type ListItem = {
   id: number

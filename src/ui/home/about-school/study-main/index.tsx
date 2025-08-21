@@ -1,6 +1,6 @@
 import SvgBrain from "@/assets/icons/Brain"
 import SvgChat from "@/assets/icons/Chat"
-import Button from "@/shared/ui/buttons/button"
+import Button from "@/shared/ui/buttons"
 import aboutImage from "@/assets/images/about-school.png"
 
 const items = [

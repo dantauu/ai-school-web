@@ -6,7 +6,7 @@ import avatar3 from "@/assets/images/avatar-3.png"
 import avatar4 from "@/assets/images/avatar-4.png"
 import avatar5 from "@/assets/images/avatar-5.png"
 import videoFrame from "@/assets/images/frame-video.png"
-import Button from "@/shared/ui/buttons/button"
+import Button from "@/shared/ui/buttons"
 
 const data = [
   {

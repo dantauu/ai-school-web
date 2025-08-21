@@ -1,4 +1,4 @@
-import Button from "@/shared/ui/buttons/button"
+import Button from "@/shared/ui/buttons"
 
 export const skills = [
   { id: 1, text: "Создание чат-ботов и AI-ассистентов" },

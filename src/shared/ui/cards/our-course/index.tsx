@@ -1,4 +1,4 @@
-import Button from "@/shared/ui/buttons/button"
+import Button from "@/shared/ui/buttons"
 
 export type ListItem = {
   id: number
