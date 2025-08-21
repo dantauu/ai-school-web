@@ -13,7 +13,7 @@ const video = [
   { id: 6, video: reviewTwo.src },
 ]
 
-export const Reviews = ({ className }: { className: string }) => {
+export const ReviewsSection = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex flex-col gap-5", className)}>
       <div className="flex items-center justify-between">

@@ -2,7 +2,7 @@ import { WillFitCard } from "@/shared/ui/cards/will-fit"
 import Button from "@/shared/ui/buttons"
 import { cn } from "@/lib/utils/cn"
 
-export const WillFit = ({ className }: { className: string }) => {
+export const WillFitSection = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex flex-col gap-9", className)}>
       <div className="flex justify-between items-center">

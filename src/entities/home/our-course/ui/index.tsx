@@ -20,7 +20,7 @@ export type OurCourseProps = {
   description: string
 }
 
-export const OurCourse = ({ className }: { className: string }) => {
+export const OurCourseSection = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex flex-col gap-7", className)}>
       <h3 className="text-[40px]">Наши курсы</h3>
