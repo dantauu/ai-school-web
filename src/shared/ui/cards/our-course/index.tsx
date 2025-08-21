@@ -65,7 +65,7 @@ export const OurCourseLayout = ({
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="flex w-full">
         <img className="w-[490px] h-full object-cover -ml-[13.8px]" src={img} />
       </div>
     </div>
