@@ -1,4 +1,3 @@
-import LangToggle from "@/features/home/ui/language-switch"
 import Button from "@/shared/ui/buttons/button"
 import SvgCourse from "@/assets/icons/Course"
 
@@ -23,7 +22,7 @@ const Header = () => {
         ))}
       </div>
       <div className="flex gap-3">
-        <LangToggle />
+        {/*<LangToggle />*/}
         <Button className="w-[170px] h-[56px] gradient-blue" variant="gradient">
           Записаться
         </Button>
