@@ -7,7 +7,7 @@ export const TheyChooseLeft = () => {
       <div className="flex flex-col gap-5">
         <div className="flex justify-between gap-5">
           <div className="flex flex-col gap-5">
-            <div className="w-full h-[300px] flex flex-col gap-4 text-black p-10 gradient-white rounded-[15px]">
+            <div className="w-full h-fit flex flex-col gap-4 text-black p-10 gradient-white rounded-[15px]">
               <p className="text-[19px]">Современный онлайн-формат</p>
               <h3 className="leading-8 text-[27px]">
                 Учёба без привязки. Только ты, AI и результат
@@ -23,7 +23,7 @@ export const TheyChooseLeft = () => {
               </ul>
             </div>
 
-            <div className="w-full h-[300px] flex flex-col gap-3 text-white p-10 gradient-light-blue rounded-[15px]">
+            <div className="w-full h-fit flex flex-col gap-3 text-white p-10 gradient-light-blue rounded-[15px]">
               <p className="text-[19px]">Персонализация обучения</p>
               <h3 className="pb-2 leading-8 text-[30px]">
                 Платформа адаптируется под тебя

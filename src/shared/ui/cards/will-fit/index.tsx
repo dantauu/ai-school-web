@@ -28,7 +28,7 @@ const data = [
 
 export const WillFitCard = () => {
   return (
-    <div className="flex justify-center gap-7">
+    <div className="flex justify-between gap-7">
       {data.map((item) => (
         <div
           key={item.id}
