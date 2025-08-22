@@ -1,14 +1,11 @@
-import {FormRequest} from "@/shared/ui/form";
+import { FormRequest } from "@/shared/ui/form"
 
 type FormRequestWidgetProps = {
   text: string
   description: string
 }
 
-const FormRequestWidget = ({
-  text,
-  description,
-}: FormRequestWidgetProps) => {
+const FormRequestWidget = ({ text, description }: FormRequestWidgetProps) => {
   return (
     <div className="relative left-0 -mx-[50px] w-screen h-[450px] flex items-center justify-center gap-30 bg-blur-bg">
       <div>

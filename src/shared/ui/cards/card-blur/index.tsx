@@ -15,7 +15,12 @@ type CardBlurProps = {
   classText?: string
 }
 
-export const CardBlur = ({ items, className, classItem, classText }: CardBlurProps) => {
+export const CardBlur = ({
+  items,
+  className,
+  classItem,
+  classText,
+}: CardBlurProps) => {
   return (
     <div className={className}>
       {items.map((item) => (

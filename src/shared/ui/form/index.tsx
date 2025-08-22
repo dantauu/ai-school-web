@@ -28,8 +28,10 @@ export const FormRequest = () => {
           Отправить
         </Button>
         <p className="text-[14px]">
-          Нажимая на кнопку «Отправить», вы даёте согласие на <span className="cursor-pointer underline">обработку своих
-            персональных данных</span>
+          Нажимая на кнопку «Отправить», вы даёте согласие на{" "}
+          <span className="cursor-pointer underline">
+            обработку своих персональных данных
+          </span>
         </p>
       </div>
     </div>
