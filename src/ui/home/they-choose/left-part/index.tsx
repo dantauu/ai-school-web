@@ -6,7 +6,7 @@ export const TheyChooseLeft = () => {
     <div>
       <div className="flex flex-col gap-5">
         <div className="flex justify-between gap-5">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col justify-between gap-5">
             <div className="w-full h-fit flex flex-col gap-4 text-black p-10 gradient-white rounded-[15px]">
               <p className="text-[19px]">Современный онлайн-формат</p>
               <h3 className="leading-8 text-[27px]">
@@ -68,7 +68,6 @@ export const TheyChooseLeft = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )

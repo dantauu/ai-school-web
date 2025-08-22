@@ -12,9 +12,10 @@ type CardBlurProps = {
   items: CardItem[]
   className?: string
   classItem?: string
+  classText?: string
 }
 
-export const CardBlur = ({ items, className, classItem }: CardBlurProps) => {
+export const CardBlur = ({ items, className, classItem, classText }: CardBlurProps) => {
   return (
     <div className={className}>
       {items.map((item) => (
@@ -26,7 +27,7 @@ export const CardBlur = ({ items, className, classItem }: CardBlurProps) => {
           )}
         >
           {item.icon}
-          <p className="text-[28px]">{item.text}</p>
+          <p className={cn("text-[28px]", classText)}>{item.text}</p>
           <p className="text-[18px]">{item.description}</p>
         </div>
       ))}
