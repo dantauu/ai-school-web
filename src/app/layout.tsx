@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Header from "@/widgets/layout/header"
 import "./index.css"
+import { Footer } from "@/widgets/layout/footer"
 
 export const metadata: Metadata = {
   title: "AI-School by Grafov",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="px-[40px] pt-[20px]">
         <Header />
         {children}
+        <Footer className="mt-[110px]" />
       </body>
     </html>
   )
