@@ -1,7 +1,7 @@
-import { OurCourseProps } from "@/entities/our-course/ui"
 import courseAvatarOne from "@/assets/images/course-1.png"
 import courseAvatarTwo from "@/assets/images/course-2.png"
 import courseAvatarThree from "@/assets/images/course-3.png"
+import { OurCourseProps } from "@/shared/ui/cards/our-course"
 
 export const courses: OurCourseProps[] = [
   {
@@ -46,7 +46,7 @@ export const courses: OurCourseProps[] = [
     titleAbout: "*Формат обучения на выбор",
     descriptionAbout:
       "Мы предлагаем несколько различных форматов обучения, чтобы вы могли подобрать оптимальный вариант именно для себя. Свяжитесь с вашим менеджером, и мы поможем выбрать программу, которая идеально подойдет под ваш график и уровень подготовки.",
-    img: courseAvatarTwo.src, // замените на актуальный путь
+    img: courseAvatarTwo.src,
   },
   {
     id: 3,
@@ -63,6 +63,6 @@ export const courses: OurCourseProps[] = [
     titleAbout: "*Формат обучения на выбор",
     descriptionAbout:
       "Мы предлагаем несколько различных форматов обучения, чтобы вы могли подобрать оптимальный вариант именно для себя. Свяжитесь с вашим менеджером, и мы поможем выбрать программу, которая идеально подойдет под ваш график и уровень подготовки.",
-    img: courseAvatarThree.src, // замените на актуальный путь
+    img: courseAvatarThree.src,
   },
 ]

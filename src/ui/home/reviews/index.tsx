@@ -13,9 +13,9 @@ const video = [
   { id: 6, video: reviewTwo.src },
 ]
 
-export const ReviewsSection = ({ className }: { className: string }) => {
+export const ReviewsSection = () => {
   return (
-    <div className={cn("flex flex-col gap-5", className)}>
+    <div className="flex flex-col gap-5">
       <div className="flex items-center justify-between">
         <h3 className="text-[45px]">Отзывы</h3>
         <p>*Все отзывы размещены с согласия учеников</p>
