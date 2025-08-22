@@ -34,8 +34,12 @@ const dataTools = [
 export const PracticeToolsSection = ({ className }: { className: string }) => {
   return (
     <div className={cn("flex flex-col gap-1", className)}>
-      <p className="text-[21px] text-[#fff6]">Практика на топовых инструментах</p>
-      <h3 className="text-[45px]">AI-инструменты не в теории, а в твоих руках</h3>
+      <p className="text-[21px] text-[#fff6]">
+        Практика на топовых инструментах
+      </p>
+      <h3 className="text-[45px]">
+        AI-инструменты не в теории, а в твоих руках
+      </h3>
       <p className="text-[19px]">
         Ты не просто смотришь — ты создаёшь: ботов, тексты, визуалы, модели.
       </p>

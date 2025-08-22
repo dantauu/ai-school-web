@@ -9,7 +9,8 @@
     rgb(253, 7, 191) 100%
   );
   --color-gradient-dark-blue: linear-gradient(90deg, #070067 0%, #0062ff 100%);
-  --color-gradient-light-blue: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
+  --color-gradient-dark-blue-vertical: linear-gradient(180deg, #070067 0%, #0062ff 100%);
+  --color-gradient-light-blue: linear-gradient(90deg, #0de4fd 0%, #1649f7 100%);
   --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
   --color-gradient-purple: linear-gradient(
     90deg,
@@ -38,6 +39,12 @@
   }
   .gradient-purple {
     background: var(--color-gradient-purple);
+  }
+  .gradient-light-blue {
+    background: var(--color-gradient-light-blue);
+  }
+  .gradient-dark-blue-vertical {
+    background: var(--color-gradient-dark-blue-vertical);
   }
 }
 

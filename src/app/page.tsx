@@ -5,6 +5,7 @@ import { ReviewsSection } from "@/ui/home/reviews"
 import { WillFitSection } from "@/ui/home/will-fit"
 import { ResultSection } from "@/ui/home/result"
 import { PracticeToolsSection } from "@/ui/home/tools"
+import { TheyChooseSection } from "@/ui/home/they-choose"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <WillFitSection className="pt-[100px]" />
         <ResultSection className="pt-[110px]" />
         <PracticeToolsSection className="pt-[112px]" />
+        <TheyChooseSection className="pt-[100px]" />
       </div>
     </div>
   )
