@@ -31,7 +31,7 @@ const avatars = [
   { id: 5, image: avatar5 },
 ]
 
-export const RightPart = () => {
+export const RightPartMain = () => {
   return (
     <div className="flex flex-col gap-15">
       <div className="flex flex-col gap-5">

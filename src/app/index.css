@@ -9,13 +9,22 @@
     rgb(253, 7, 191) 100%
   );
   --color-gradient-dark-blue: linear-gradient(90deg, #070067 0%, #0062ff 100%);
-  --color-gradient-dark-blue-vertical: linear-gradient(180deg, #070067 0%, #0062ff 100%);
+  --color-gradient-dark-blue-vertical: linear-gradient(
+    180deg,
+    #070067 0%,
+    #0062ff 100%
+  );
   --color-gradient-light-blue: linear-gradient(90deg, #0de4fd 0%, #1649f7 100%);
   --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
   --color-gradient-purple: linear-gradient(
     90deg,
     #0062ff 0%,
     rgba(253, 8, 176, 0.8) 100%
+  );
+  --color-gradient-purple-reverse: linear-gradient(
+    90deg,
+    rgba(253, 8, 176, 0.8) 0%,
+    #0062ff 100%
   );
   --color-blur-bg: rgba(245, 245, 245, 0.15);
   --shadow-white-shadow:
@@ -39,6 +48,9 @@
   }
   .gradient-purple {
     background: var(--color-gradient-purple);
+  }
+  .gradient-purple-reverse {
+    background: var(--color-gradient-purple-reverse);
   }
   .gradient-light-blue {
     background: var(--color-gradient-light-blue);

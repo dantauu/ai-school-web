@@ -1,7 +1,7 @@
 import Button from "@/shared/ui/buttons"
 import SvgTicket from "@/assets/icons/Ticket"
 
-export const LeftPart = () => {
+export const LeftPartMain = () => {
   return (
     <div className="flex flex-col h-full justify-between">
       <h3 className="w-[330px] leading-12 text-[45px]">
