@@ -11,9 +11,9 @@ const itemLeftPart = [
 export const LeftPartFooter = () => {
   return (
     <div>
-      <div className="flex items-center gap-9">
+      <div className="1510:flex-row flex flex-col items-center 1510:gap-9 gap-4">
         <h1 className="text-[32px]">AI-school by Grafov</h1>
-        <div className="flex gap-5">
+        <div className="1510:flex-row flex flex-col gap-5">
           {itemLeftPart.map((item) => (
             <Button key={item.id} variant="default">
               {item.icon}

@@ -11,7 +11,7 @@ export const QuestionsSection = () => {
   }
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="1295:flex-row 1295:items-stretch items-center flex flex-col gap-10 justify-between">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             <h3 className="text-[47px] leading-11"><span className="text-gradient-white">Давайте честно</span>,</h3>

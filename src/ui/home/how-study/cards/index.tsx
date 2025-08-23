@@ -31,8 +31,8 @@ export const CardsHowStudy = () => {
   return (
     <div>
       <CardBlur
-        className="flex flex-wrap gap-3"
-        classItem="w-fit h-[180px] pr-9"
+        className="flex 1510:flex-wrap gap-3 overflow-x-auto"
+        classItem="w-fit h-[180px] pr-9 shrink-0"
         classText="max-w-[453px] text-[25px]"
         items={dataCards}
       />

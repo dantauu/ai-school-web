@@ -57,13 +57,13 @@ export const ResultSection = () => {
       <div className="flex flex-col gap-5">
         <CardBlur
           items={topResultData}
-          classItem="w-full"
-          className="flex gap-5 justify-between"
+          classItem="w-full shrink-0"
+          className="flex gap-5 justify-between overflow-x-auto"
         />
         <CardBlur
           items={bottomResultData}
-          classItem="w-full"
-          className="flex gap-5 justify-between"
+          classItem="w-full shrink-0"
+          className="flex gap-5 justify-between overflow-x-auto"
         />
       </div>
       <div className="mt-[112px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">

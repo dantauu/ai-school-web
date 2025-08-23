@@ -9,7 +9,7 @@ const items = [
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <h1 className="text-[30px]">AI-School by Grafov</h1>
       <div className="flex gap-8">
         {items.map((item) => (
@@ -30,7 +30,7 @@ const Header = () => {
           Войти
         </Button>
       </div>
-    </div>
+    </header>
   )
 }
 

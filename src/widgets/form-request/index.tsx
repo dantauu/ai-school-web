@@ -14,7 +14,7 @@ const FormRequestWidget = ({
   classText,
 }: FormRequestWidgetProps) => {
   return (
-    <div className="relative left-0 -mx-[50px] w-screen h-[450px] flex items-center justify-center gap-30 bg-blur-bg">
+    <div className="relative form:flex-row flex flex-col items-center justify-center left-0 -mx-[40px] w-screen py-10 form:gap-30 gap-5 bg-blur-bg">
       <div>
         <h3 className={cn("text-[39px]", classText)}>{text}</h3>
         <p className="w-[535px] text-[17px]">{description}</p>

@@ -24,15 +24,14 @@ export const Background = () => {
         }}
       ></div>
       <div
+        className="
+    absolute bottom-0 right-0
+    w-[400px] h-[300px]
+    less-desctop:w-[1400px] less-desctop:h-[990px]
+    bg-cover bg-center
+  "
         style={{
           backgroundImage: 'url("/static/women-robot.svg")',
-          position: "absolute",
-          right: 200,
-          bottom: 0,
-          width: "1400px",
-          height: "990px",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           zIndex: -1,
         }}
       ></div>

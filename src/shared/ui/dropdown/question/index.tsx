@@ -18,9 +18,9 @@ export const DropdownQuestion = ({
   return (
     <div
       onClick={() => onToggle(id)}
-      className="w-[590px] cursor-pointer select-none p-5 rounded-2xl mb-3 transition-all border border-white bg-blur-bg duration-300"
+      className="w-full cursor-pointer select-none p-5 rounded-2xl mb-3 transition-all border border-white bg-blur-bg duration-300"
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-4">
         <h3 className="text-lg font-medium">{title}</h3>
         <SvgPlus className={`w-5 h-5 duration-200 ${isOpen && "rotate-45"}`} />
       </div>

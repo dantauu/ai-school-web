@@ -5,7 +5,7 @@ export const TheyChooseSection = () => {
   return (
     <div>
       <h3 className="pb-5 text-[45px]">Нас выбирают</h3>
-      <div className="flex gap-4 justify-between items-center">
+      <div className="flex flex-col choose:flex-row gap-4 justify-between chooseitems-center">
         <TheyChooseLeft />
         <TheyChooseRight />
       </div>

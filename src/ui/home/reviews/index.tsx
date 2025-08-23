@@ -20,12 +20,12 @@ export const ReviewsSection = () => {
         <h3 className="text-[45px]">Отзывы</h3>
         <p>*Все отзывы размещены с согласия учеников</p>
       </div>
-      <div className="flex justify-center gap-7">
+      <div className="flex 1070:overscroll-x-none overflow-x-auto 1070:justify-center  gap-7">
         {video.map((item, i) => (
           <div
             key={item.id}
-            className={`relative rounded-xl overflow-hidden shadow-lg ${
-              (i + 1) % 2 === 0 ? "mt-8" : ""
+            className={`relative 1070:w-auto 1070:h-auto w-[160px] h-[335px] 1070:shrink shrink-0 rounded-xl overflow-hidden ${
+              (i + 1) % 2 === 0 ? "1070:mt-8 mt-0" : ""
             }`}
           >
             <Play className="absolute inset-0 flex items-center justify-center" />

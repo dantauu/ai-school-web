@@ -43,7 +43,7 @@ export const PracticeToolsSection = () => {
         Ты не просто смотришь — ты создаёшь: ботов, тексты, визуалы, модели.
       </p>
 
-      <div className="flex gap-5 pt-4">
+      <div className="form:flex-row flex flex-col gap-5 pt-4">
         {dataTools.map((card) => (
           <div
             key={card.id}

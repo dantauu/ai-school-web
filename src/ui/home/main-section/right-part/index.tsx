@@ -33,8 +33,8 @@ const avatars = [
 
 export const RightPartMain = () => {
   return (
-    <div className="flex flex-col gap-15">
-      <div className="flex flex-col gap-5">
+    <div className="flex flex-col less-desctop:gap-15">
+      <div className="flex flex-row less-desctop:flex-col gap-5">
         {data.map((item) => (
           <div className="flex gap-3" key={item.id}>
             <div className="flex items-center justify-center w-[48px] h-[48px] bg-[#145A96] rounded-full mt-2">
@@ -47,7 +47,7 @@ export const RightPartMain = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col items-center justify-between h-full less-desctop:items-stretch">
         <div className="flex items-center gap-3">
           <div className="flex -space-x-5">
             {avatars.map((item) => (

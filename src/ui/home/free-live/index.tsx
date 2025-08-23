@@ -12,8 +12,8 @@ const liveListData = [
 export const FreeLiveSection = () => {
   return (
     <>
-      <div className="flex w-full justify-between items-stretch p-7 rounded-[15px] gradient-dark-blue-vertical">
-        <div className="flex flex-1 flex-col justify-between">
+      <div className="less-desctop:flex-row flex flex-col w-full justify-between items-stretch gap-4 p-7 rounded-[15px] gradient-dark-blue-vertical">
+        <div className="flex flex-1 gap-3 flex-col justify-between">
           <div className="flex flex-col gap-2">
             <h3 className="max-w-[640px] leading-11 text-[47px]">
               Присоединяйся к <span className="text-gradient-white">беслатному</span> вводному эфиру

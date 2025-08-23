@@ -4,7 +4,7 @@ import SvgTicket from "@/assets/icons/Ticket"
 export const LeftPartMain = () => {
   return (
     <div className="flex flex-col h-full justify-between">
-      <h3 className="w-[330px] leading-12 text-[45px]">
+      <h3 className="w-[330px] leading-12 text-[45px] pb-30 less-desctop:pb-0">
         Стань тем, кого ищут на рынке
       </h3>
       <div className="flex flex-col gap-5">
