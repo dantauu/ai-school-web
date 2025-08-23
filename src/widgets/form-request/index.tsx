@@ -1,8 +1,9 @@
 import { FormRequest } from "@/shared/ui/form"
 import { cn } from "@/lib/utils/cn"
+import { ReactNode } from "react"
 
 type FormRequestWidgetProps = {
-  text: string
+  text: string | ReactNode
   description: string
   classText?: string
 }

@@ -16,7 +16,7 @@ export const FreeLiveSection = () => {
         <div className="flex flex-1 flex-col justify-between">
           <div className="flex flex-col gap-2">
             <h3 className="max-w-[640px] leading-11 text-[47px]">
-              Присоединяйся к беслатному вводному эфиру
+              Присоединяйся к <span className="text-gradient-white">беслатному</span> вводному эфиру
             </h3>
             <div>
               <p className="text-[21px]">

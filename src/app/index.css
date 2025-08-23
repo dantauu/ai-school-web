@@ -62,6 +62,10 @@
   .gradient-grey {
     background: var(--color-gradient-grey);
   }
+  .text-gradient-white {
+    background: var(--color-gradient-white);
+    @apply bg-clip-text text-transparent
+  }
 }
 
 @layer base {

@@ -14,7 +14,7 @@ export const QuestionsSection = () => {
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
-            <h3 className="text-[47px] leading-11">Давайте честно,</h3>
+            <h3 className="text-[47px] leading-11"><span className="text-gradient-white">Давайте честно</span>,</h3>
             <h3 className="w-[620px] text-[47px] leading-11">
               мы понимаем что курсов много и довериться сложно
             </h3>

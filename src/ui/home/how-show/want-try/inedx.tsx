@@ -4,7 +4,7 @@ import Button from "@/shared/ui/buttons"
 export const WantTry = () => {
   return (
     <div className="w-full h-[160px] flex items-center justify-center gap-10 border border-white rounded-[15px] gradient-dark-blue">
-      <p className="text-[48px]">Хочешь попробовать ?</p>
+      <p className="text-[48px]">Хочешь <span className="text-gradient-white">попробовать</span> ?</p>
       <img src={arrow.src} />
       <div className="flex gap-3">
         <Button

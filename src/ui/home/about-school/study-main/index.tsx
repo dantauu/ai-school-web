@@ -16,7 +16,7 @@ export const StudyMain = () => {
         <div>
           <h3 className="pb-3 text-[27px]">О школе</h3>
           <h3 className="w-[570px] pb-8 text-[45px] leading-12">
-            Практичное обучение по AI направлениям
+            <span className="text-gradient-white">Практичное обучение</span> по AI направлениям
           </h3>
           <CardBlur items={items} className="flex gap-5" />
         </div>
