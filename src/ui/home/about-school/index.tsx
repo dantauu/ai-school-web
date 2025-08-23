@@ -3,7 +3,7 @@ import { PracticeStudy } from "@/ui/home/about-school/practice study"
 
 export const AboutSection = () => {
   return (
-    <div className="flex flex-col gap-10 pt-[112px]">
+    <div className="flex flex-col gap-10">
       <StudyMain />
       <PracticeStudy />
     </div>
