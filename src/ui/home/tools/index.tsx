@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils/cn"
 import Button from "@/shared/ui/buttons"
 
 const dataTools = [
@@ -31,9 +30,9 @@ const dataTools = [
   },
 ]
 
-export const PracticeToolsSection = ({ className }: { className: string }) => {
+export const PracticeToolsSection = () => {
   return (
-    <div className={cn("flex flex-col gap-1", className)}>
+    <div className="flex flex-col gap-1">
       <p className="text-[21px] text-[#fff6]">
         Практика на топовых инструментах
       </p>
