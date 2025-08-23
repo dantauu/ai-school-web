@@ -16,27 +16,29 @@ const itemRightPart = [
 
 export const RightPartFooter = () => {
   return (
-    <div className="flex gap-5">
-      <div className="flex gap-8">
+    <div className="1510:flex-row flex flex-col gap-5">
+      <div className="1510:flex-row flex flex-col gap-8">
         {itemRightPart.map((item) => (
           <div key={item.id}>
-            <p className="text-[25px]">{item.title}</p>
+            <p className="text-[25px] text-gradient-white">{item.title}</p>
             <p className="max-w-[168px]">{item.description}</p>
           </div>
         ))}
       </div>
-      <Button
-        className="w-[50px] h-[50px] rounded-full gradient-white"
-        variant="default"
-      >
-        <SvgTelegram />
-      </Button>
-      <Button
-        className="w-[191px] h-[50px] gradient-white text-black"
-        variant="gradient"
-      >
-        Выбрать курс
-      </Button>
+      <div className="flex gap-4">
+        <Button
+          className="w-[50px] h-[50px] rounded-full gradient-white"
+          variant="default"
+        >
+          <SvgTelegram />
+        </Button>
+        <Button
+          className="w-[191px] h-[50px] gradient-white text-black"
+          variant="gradient"
+        >
+          Выбрать курс
+        </Button>
+      </div>
     </div>
   )
 }

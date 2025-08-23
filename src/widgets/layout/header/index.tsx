@@ -1,5 +1,8 @@
+"use client"
 import Button from "@/shared/ui/buttons"
 import SvgCourse from "@/assets/icons/Course"
+import { useMediaQuery } from "@/lib/hooks/use-media-query"
+import SvgMenu from "@/assets/icons/Menu"
 
 const items = [
   { id: 1, text: "Курсы", icon: <SvgCourse /> },
@@ -8,29 +11,41 @@ const items = [
 ]
 
 const Header = () => {
+  const isMedia = useMediaQuery("(max-width: 940px")
   return (
-    <div className="flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <h1 className="text-[30px]">AI-School by Grafov</h1>
-      <div className="flex gap-8">
-        {items.map((item) => (
-          <div key={item.id}>
-            <Button variant="default">
-              {item.icon}
-              {item.text}
-            </Button>
-          </div>
-        ))}
-      </div>
-      <div className="flex gap-3">
+      {!isMedia && (
+        <div className="flex gap-8">
+          {items.map((item) => (
+            <div key={item.id}>
+              <Button variant="default">
+                {item.icon}
+                {item.text}
+              </Button>
+            </div>
+          ))}
+        </div>
+      )}
+      <div className="flex items-center gap-3">
         {/*<LangToggle />*/}
-        <Button className="w-[170px] h-[56px] gradient-blue" variant="gradient">
-          Записаться
-        </Button>
+        {isMedia ? (
+          <Button variant="default">
+            <SvgMenu />
+          </Button>
+        ) : (
+          <Button
+            className="w-[170px] h-[56px] gradient-blue"
+            variant="gradient"
+          >
+            Записаться
+          </Button>
+        )}
         <Button variant="blur" className="w-[130px] h-[56px] rounded-[27px]">
           Войти
         </Button>
       </div>
-    </div>
+    </header>
   )
 }
 

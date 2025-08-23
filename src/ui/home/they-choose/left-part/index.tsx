@@ -5,7 +5,7 @@ export const TheyChooseLeft = () => {
   return (
     <div>
       <div className="flex flex-col gap-5">
-        <div className="flex justify-between gap-5">
+        <div className="choose:justify-between choose:flex-row flex flex-col justify-between gap-5">
           <div className="flex flex-col justify-between gap-5">
             <div className="w-full h-fit flex flex-col gap-4 text-black p-10 gradient-white rounded-[15px]">
               <p className="text-[19px]">Современный онлайн-формат</p>
@@ -35,7 +35,7 @@ export const TheyChooseLeft = () => {
               </p>
             </div>
           </div>
-          <div className="min-w-[500px] h-[620px] p-8 rounded-[15px] gradient-dark-blue-vertical">
+          <div className="w-full h-auto p-8 rounded-[15px] gradient-dark-blue-vertical">
             <img src={lvlChoose.src} />
             <p className="pt-4 text-[18px]">Поддержка на каждом уровне</p>
             <h4 className="pb-2 text-[30px]">Любой уровень. Полная опора</h4>
@@ -48,8 +48,11 @@ export const TheyChooseLeft = () => {
           </div>
         </div>
 
-        <div className="w-full flex gap-8 p-8 rounded-[15px] gradient-purple-reverse">
-          <img className="object-cover" src={photoChoose.src} />
+        <div className="choose:flex-row w-full flex flex-col gap-8 p-8 rounded-[15px] gradient-purple-reverse">
+          <img
+            className="max-w-[400px] max-h-[288px] object-cover"
+            src={photoChoose.src}
+          />
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-2">
               <p className="text-[18px]">Сообщество и эксперты</p>

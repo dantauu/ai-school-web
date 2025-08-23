@@ -6,15 +6,15 @@ import { WantTry } from "@/ui/home/how-show/want-try/inedx"
 export const HowShowSection = () => {
   return (
     <div>
-      <div className="flex flex-col gap-30">
-        <div className="w-full h-[480px] flex justify-between p-7 border rounded-[15px] border-white gradient-grey">
+      <div className="flex flex-col 1510:gap-30 gap-15">
+        <div className="w-full h-auto 1510:gap-0 gap-10 1510:flex-row flex flex-col justify-between p-7 border rounded-[15px] border-white gradient-grey">
           <div className="flex flex-col gap-3 justify-center">
-            <h3 className="max-w-[600px] text-[48px]">
+            <h3 className="max-w-[600px] 1510:text-[48px] text-[32px]">
               Как выглядит обучение внутри ?
             </h3>
             <p className="text-[20px]">1 минута - и ты всё поймёшь</p>
             <Button
-              className="w-[240px] h-[50px] gradient-blue"
+              className="1510:w-[240px] w-full h-[50px] gradient-blue"
               variant="gradient"
             >
               Смотреть

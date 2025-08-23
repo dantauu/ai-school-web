@@ -48,28 +48,33 @@ const bottomResultData = [
 export const ResultSection = () => {
   return (
     <div>
-      <h3 className="w-[605px] leading-12 text-[45px]">
-        Не просто знания. Результат, который можно показывать
+      <h3 className="max-w-[605px] leading-12 text-[45px]">
+        Не просто знания.{" "}
+        <span className="text-gradient-white">
+          Результат, который можно показывать
+        </span>
       </h3>
       <p className="py-4 text-[20px]">
         Вот что ты получишь после прохождения курса
       </p>
-      <div className="flex flex-col gap-5">
+      <div className="1070:flex-col flex flex-row gap-5 overflow-x-auto">
         <CardBlur
           items={topResultData}
-          classItem="w-full"
-          className="flex gap-5 justify-between"
+          classItem="w-fit"
+          className="flex shrink-0 gap-5 justify-between"
         />
         <CardBlur
           items={bottomResultData}
-          classItem="w-full"
-          className="flex gap-5 justify-between"
+          classItem="w-full "
+          className="flex gap-5 shrink-0 justify-between"
         />
       </div>
-      <div className="mt-[112px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">
+      <div className="1070:mt-[112px] mt-[60px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">
         <p className="text-[25px] text-center">главное:</p>
-        <h3 className="text-[32px] text-center">
-          Ты выйдешь с готовым результатом, а не с голой теорией
+        <h3 className="530:text-[32px] text-[23px] text-center">
+          Ты выйдешь{" "}
+          <span className="text-gradient-white">с готовым результатом</span>, а
+          не с голой теорией
         </h3>
         <Button
           className="w-full h-[50px] mt-4 gradient-blue"

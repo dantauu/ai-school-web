@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-mobile: 360px;
+  --breakpoint-530: 530px;
+  --breakpoint-520: 520px;
+  --breakpoint-less-desctop: 1400px;
+  --breakpoint-choose: 1675px;
+  --breakpoint-form: 1250px;
+  --breakpoint-1295: 1295px;
+  --breakpoint-1510: 1510px;
+  --breakpoint-1070: 1070px;
   --color-main-back: #031c52;
   --color-gradient-blue: linear-gradient(
     -40deg,
@@ -61,6 +70,10 @@
   }
   .gradient-grey {
     background: var(--color-gradient-grey);
+  }
+  .text-gradient-white {
+    background: var(--color-gradient-white);
+    @apply bg-clip-text text-transparent;
   }
 }
 

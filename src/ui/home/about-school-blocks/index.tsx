@@ -3,10 +3,10 @@ import Button from "@/shared/ui/buttons"
 export const SchoolBlocksSection = () => {
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="text-[45px]">О школе</h3>
-      <div className="flex justify-between">
+      <h3 className="530:text-[45px] text-[32px]">О школе</h3>
+      <div className="1510:flex-row flex flex-col justify-between gap-5">
         <div className="flex flex-col justify-center gap-4 p-8 gradient-dark-blue rounded-[15px]">
-          <p className="max-w-[500px] text-[34px]">
+          <p className="max-w-[500px] 530:leading-normal leading-8 text-[34px]">
             Забудь «как раньше» — учись по‑новому
           </p>
           <p className="max-w-[637px] text-[18px]">
@@ -21,7 +21,9 @@ export const SchoolBlocksSection = () => {
           </Button>
         </div>
         <div className="flex flex-col justify-center gap-4 p-8 gradient-purple-reverse rounded-[15px]">
-          <p className="text-[34px]">Быстрый апгрейд твоих скиллов</p>
+          <p className="530:leading-normal leading-8 text-[34px]">
+            Быстрый апгрейд твоих скиллов
+          </p>
           <p className="max-w-[637px] text-[18px]">
             Нейросети, no-code, AI-ассистенты — максимум пользы за минимум
             времени

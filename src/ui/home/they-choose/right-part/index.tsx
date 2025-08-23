@@ -4,11 +4,17 @@ import avatarTwo from "@/assets/images/women-choose.svg"
 export const TheyChooseRight = () => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="w-[580px] h-[340px] flex flex-col gap-3 text-white p-7 gradient-purple rounded-[15px]">
-        <div className="flex items-center gap-5">
+      <div className="choose:w-[580px] w-full h-[300px] flex flex-col items-stretch gap-3 text-white choose:p-7 p-5 gradient-purple rounded-[15px]">
+        <div className="flex items-center choose:gap-9 gap-15">
           <div className="flex -space-x-5">
-            <img src={avatarOne.src} />
-            <img src={avatarTwo.src} />
+            <img
+              className="choose:w-[56px] w-auto choose:h-[56px] h-auto"
+              src={avatarOne.src}
+            />
+            <img
+              className="choose:w-[56px] w-auto choose:h-[56px] h-auto"
+              src={avatarTwo.src}
+            />
           </div>
           <p className="text-[19px]">
             AI ассистенты + поддержка в реальном времени
@@ -25,7 +31,7 @@ export const TheyChooseRight = () => {
         </p>
       </div>
 
-      <div className="w-[580px] h-[300px] flex flex-col gap-3 text-white p-7 bg-[#0062FF] rounded-[15px]">
+      <div className="choosew-[580px] w-full h-[300px] flex flex-col gap-3 text-white p-7 bg-[#0062FF] rounded-[15px]">
         <p className="text-[19px]">Проектная и командная работа</p>
         <h3 className="w-[320px] pb-2 leading-8 text-[30px]">
           Не учёба ради галочки. А ради результата
@@ -42,7 +48,7 @@ export const TheyChooseRight = () => {
         </div>
       </div>
 
-      <div className="w-[580px] h-[300px] flex flex-col gap-3 text-black p-7 gradient-white rounded-[15px]">
+      <div className="choose:w-[580px] w-full h-[300px] flex flex-col gap-3 text-black p-7 gradient-white rounded-[15px]">
         <p className="text-[19px]">Сертификаты и карьерный рост</p>
         <h3 className="pb-2 leading-8 text-[30px]">
           Цифровые сертификаты, которые реально работают
