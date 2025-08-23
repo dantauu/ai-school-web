@@ -47,7 +47,7 @@ const bottomResultData = [
 
 export const ResultSection = () => {
   return (
-    <>
+    <div>
       <h3 className="w-[605px] leading-12 text-[45px]">
         Не просто знания. Результат, который можно показывать
       </h3>
@@ -78,6 +78,6 @@ export const ResultSection = () => {
           Подобрать курс под себя
         </Button>
       </div>
-    </>
+    </div>
   )
 }

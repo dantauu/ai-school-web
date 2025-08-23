@@ -10,7 +10,7 @@ export const QuestionsSection = () => {
     setOpen(open === id ? null : id)
   }
   return (
-    <>
+    <div>
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
@@ -38,6 +38,6 @@ export const QuestionsSection = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }

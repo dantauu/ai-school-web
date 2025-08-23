@@ -5,7 +5,7 @@ import { WantTry } from "@/ui/home/how-show/want-try/inedx"
 
 export const HowShowSection = () => {
   return (
-    <>
+    <div>
       <div className="flex flex-col gap-30">
         <div className="w-full h-[480px] flex justify-between p-7 border rounded-[15px] border-white gradient-grey">
           <div className="flex flex-col gap-3 justify-center">
@@ -27,6 +27,6 @@ export const HowShowSection = () => {
         </div>
         <WantTry />
       </div>
-    </>
+    </div>
   )
 }
