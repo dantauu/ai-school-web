@@ -2,7 +2,9 @@
 import Button from "@/shared/ui/buttons"
 import SvgCourse from "@/assets/icons/Course"
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
-import SvgMenu from "@/assets/icons/Menu"
+import BurgerMenu from "@/ui/menu"
+import { useEffect, useState } from "react"
+import { MenuModal } from "@/widgets/modals/menu-modal"
 
 const items = [
   { id: 1, text: "Курсы", icon: <SvgCourse /> },
@@ -12,10 +14,23 @@ const items = [
 
 const Header = () => {
   const isMedia = useMediaQuery("(max-width: 940px")
+  const [open, setOpen] = useState(false)
+  const handleOpen = () => {
+    setOpen((prev) => !prev)
+  }
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"
+
+      return () => {
+        document.body.style.overflow = ""
+      }
+    }
+  }, [open])
   return (
     <header className="flex items-center justify-between">
       <div className="container flex items-center justify-between">
-        <h1 className="530:text-[30px] text-[16.5px]">AI-School by Grafov</h1>
+        <h1 className="relative z-7 530:text-[30px] text-[16.5px]">AI-School by Grafov</h1>
         {!isMedia && (
           <div className="flex gap-8">
             {items.map((item) => (
@@ -30,11 +45,7 @@ const Header = () => {
         )}
         <div className="flex items-center gap-3">
           {/*<LangToggle />*/}
-          {isMedia ? (
-            <Button variant="default">
-              <SvgMenu />
-            </Button>
-          ) : (
+          {!isMedia && (
             <Button
               className="w-[170px] h-[56px] gradient-blue"
               variant="gradient"
@@ -42,11 +53,13 @@ const Header = () => {
               Записаться
             </Button>
           )}
-          <Button variant="blur" className="w-[130px] h-[56px] rounded-[27px]">
+          <Button variant="blur" className="relative z-7 w-[130px] h-[56px] rounded-[27px]">
             Войти
           </Button>
+          {isMedia && <BurgerMenu toggle={handleOpen} open={open} />}
         </div>
       </div>
+      {open && <MenuModal />}
     </header>
   )
 }
