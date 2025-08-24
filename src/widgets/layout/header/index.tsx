@@ -14,7 +14,7 @@ const Header = () => {
   const isMedia = useMediaQuery("(max-width: 940px")
   return (
     <header className="flex items-center justify-between">
-      <h1 className="text-[30px]">AI-School by Grafov</h1>
+      <h1 className="530:text-[30px] text-[16.5px]">AI-School by Grafov</h1>
       {!isMedia && (
         <div className="flex gap-8">
           {items.map((item) => (

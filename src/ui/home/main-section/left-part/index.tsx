@@ -8,7 +8,7 @@ export const LeftPartMain = () => {
         Стань тем, кого ищут на рынке
       </h3>
       <div className="flex flex-col gap-5">
-        <h1 className="less-desctop:text-[65px] less-desctop:leading-normal less-desctop:w-auto max-w-[310px] leading-10 text-[40px]">
+        <h1 className="less-desctop:text-[65px] less-desctop:leading-normal less-desctop:max-w-full max-w-[310px] leading-10 text-[40px]">
           AI-school by Grafov
         </h1>
         <p className="max-w-[540px] text-[21px]">
