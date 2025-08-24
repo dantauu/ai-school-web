@@ -29,7 +29,7 @@ export const OurCourseLayout = ({
 }: OurCourseProps) => {
   return (
     <div className="w-full 1510:flex-row flex flex-col-reverse items-center">
-      <div className="w-full h-full flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
+      <div className="530:w-full h-full w-[320px] flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
         <div className="flex flex-col pb-4">
           <p>Курс №{countCourse}</p>
           <p className="530:text-[50px] 530:leading-normal leading-10 text-[40px] pb-5">
@@ -68,7 +68,7 @@ export const OurCourseLayout = ({
         </div>
       </div>
       <div className="">
-        <img className="h-full object-cover -ml-[13.8px]" src={img} />
+        <img className="h-full 530:w-auto w-[320px] -ml-[13.8px]" src={img} />
       </div>
     </div>
   )
