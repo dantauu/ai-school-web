@@ -2,7 +2,7 @@ import FormRequestWidget from "@/widgets/form-request"
 
 export const FormRequestSection = () => {
   return (
-    <div>
+    <div className="530:py-[110px] py-[70px]">
       <FormRequestWidget
         text={
           <>
