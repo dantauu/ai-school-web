@@ -34,7 +34,11 @@ export const MenuModal = () => {
               key={item.id}
               variant="default"
             >
-              <span className={`${item.id === 5 && "flex items-center justify-center w-[50px] h-[50px] rounded-full gradient-white"}`}>{item.icon}</span>
+              <span
+                className={`${item.id === 5 && "flex items-center justify-center w-[50px] h-[50px] rounded-full gradient-white"}`}
+              >
+                {item.icon}
+              </span>
               {item.text}
             </Button>
           ))}
@@ -47,7 +51,9 @@ export const MenuModal = () => {
             <p className="max-w-[168px]">{item.description}</p>
           </div>
         ))}
-        <Button className="w-full h-[50px] gradient-blue" variant="gradient">Записаться</Button>
+        <Button className="w-full h-[50px] gradient-blue" variant="gradient">
+          Записаться
+        </Button>
       </div>
     </div>
   )

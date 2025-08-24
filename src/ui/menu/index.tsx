@@ -7,7 +7,6 @@ type BurgerMenuProps = {
 }
 
 export default function BurgerMenu({ open, toggle }: BurgerMenuProps) {
-
   return (
     <button
       onClick={toggle}

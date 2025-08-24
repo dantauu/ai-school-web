@@ -1,8 +1,8 @@
 import type React from "react"
 import { cn } from "@/lib/utils/cn"
+import { motion } from "framer-motion"
 
 const baseStyles = "flex items-center justify-center gap-[5px] cursor-pointer"
-
 const variants = {
   gradient: `${baseStyles} text-white rounded-[27px] shadow-white-shadow`,
   blur: `${baseStyles} text-white bg-blur-bg rounded-[27px]`,
@@ -40,6 +40,107 @@ const Button = ({
         {children}
       </button>
     </div>
+  )
+}
+
+type ButtonGradient = {
+  children?: React.ReactNode
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
+  className?: string
+  type?: "submit" | "reset" | "button"
+}
+
+export const ButtonGradientBlue = ({
+  type,
+  onClick,
+  className,
+  children,
+}: ButtonGradient) => {
+  return (
+    <motion.button
+      type={type}
+      onClick={onClick}
+      initial={{
+        backgroundImage:
+          "linear-gradient(-40deg, rgb(14, 79, 255) 30%, rgb(44, 13, 136) 60%, rgb(253, 7, 191) 100%)",
+      }}
+      whileHover={{
+        backgroundImage:
+          "linear-gradient(-40deg, rgb(253, 7, 191) 0%, rgb(44, 13, 136) 40%, rgb(14, 79, 255) 70%)",
+      }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className={cn(
+        className,
+        "shadow-white-shadow rounded-[27px] cursor-pointer"
+      )}
+    >
+      {children}
+    </motion.button>
+  )
+}
+
+
+export const ButtonGradientWhite = ({
+                                     type,
+                                     onClick,
+                                     className,
+                                     children,
+                                   }: ButtonGradient) => {
+  return (
+    <motion.button
+      type={type}
+      onClick={onClick}
+      initial={{
+        backgroundImage:
+          "linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%)",
+      }}
+      whileHover={{
+        backgroundImage:
+          "linear-gradient(90deg, #0bd3fb 0%, #c3ffff 100%)",
+      }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+      className={cn(
+        className,
+        "shadow-white-shadow rounded-[27px] cursor-pointer"
+      )}
+    >
+      {children}
+    </motion.button>
+  )
+}
+
+type ButtonBlurProps = {
+  className?: string
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+export const ButtonGradientHover = ({
+  className,
+  onClick,
+}: ButtonBlurProps) => {
+  return (
+    <motion.button
+      type="button"
+      onClick={onClick}
+      className={cn(
+        "relative overflow-hidden rounded-[27px] text-white px-6 py-3 flex items-center justify-center w-[130px] h-[56px]",
+        className
+      )}
+      initial={{
+        backgroundImage:
+          "linear-gradient(rgba(245,245,245,0.15), rgba(245,245,245,0.15))",
+        boxShadow: "none",
+      }}
+      whileHover={{
+        backgroundImage:
+          "linear-gradient(-40deg,rgb(14,79,255) 30%,rgb(44,13,136) 60%,rgb(253,7,191) 100%)",
+        boxShadow:
+          "4px 5px 20px #38fcfe66, -2px 1px 7px #38fcfe66, inset 0 -2px 4px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.4)",
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
+      <span className="relative z-10">Войти</span>
+    </motion.button>
   )
 }
 export default Button

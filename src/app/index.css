@@ -17,6 +17,13 @@
     rgb(44, 13, 136) 60%,
     rgb(253, 7, 191) 100%
   );
+  /* for hover */
+  --color-gradient-blue-reverse: linear-gradient(
+    -40deg,
+    rgb(253, 7, 191) 0%,
+    rgb(44, 13, 136) 40%,
+    rgb(14, 79, 255) 70%
+  );
   --color-gradient-dark-blue: linear-gradient(90deg, #070067 0%, #0062ff 100%);
   --color-gradient-dark-blue-vertical: linear-gradient(
     180deg,
@@ -25,6 +32,7 @@
   );
   --color-gradient-light-blue: linear-gradient(90deg, #0de4fd 0%, #1649f7 100%);
   --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
+  --color-gradient-white-reverse: linear-gradient(90deg, #0bd3fb 0%, #c3ffff 100%);
   --color-gradient-purple: linear-gradient(
     90deg,
     #0062ff 0%,

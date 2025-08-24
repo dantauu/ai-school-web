@@ -1,9 +1,12 @@
 "use client"
-import Button from "@/shared/ui/buttons"
+import Button, {
+  ButtonGradientBlue,
+  ButtonGradientHover,
+} from "@/shared/ui/buttons"
 import SvgCourse from "@/assets/icons/Course"
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
 import BurgerMenu from "@/ui/menu"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { MenuModal } from "@/widgets/modals/menu-modal"
 
 const items = [
@@ -30,7 +33,9 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between">
       <div className="container flex items-center justify-between">
-        <h1 className="relative z-7 530:text-[30px] text-[16.5px]">AI-School by Grafov</h1>
+        <h1 className="relative z-7 530:text-[30px] text-[16.5px]">
+          AI-School by Grafov
+        </h1>
         {!isMedia && (
           <div className="flex gap-8">
             {items.map((item) => (
@@ -46,16 +51,11 @@ const Header = () => {
         <div className="flex items-center gap-3">
           {/*<LangToggle />*/}
           {!isMedia && (
-            <Button
-              className="w-[170px] h-[56px] gradient-blue"
-              variant="gradient"
-            >
+            <ButtonGradientBlue className="w-[170px] h-[56px]">
               Записаться
-            </Button>
+            </ButtonGradientBlue>
           )}
-          <Button variant="blur" className="relative z-7 w-[130px] h-[56px] rounded-[27px]">
-            Войти
-          </Button>
+          <ButtonGradientHover />
           {isMedia && <BurgerMenu toggle={handleOpen} open={open} />}
         </div>
       </div>

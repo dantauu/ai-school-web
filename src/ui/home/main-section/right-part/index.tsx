@@ -1,3 +1,5 @@
+"use client"
+
 import SvgStudy from "@/assets/icons/Study"
 import SvgTools from "@/assets/icons/Tools"
 import avatar1 from "@/assets/images/avatar-1.png"
@@ -6,7 +8,7 @@ import avatar3 from "@/assets/images/avatar-3.png"
 import avatar4 from "@/assets/images/avatar-4.png"
 import avatar5 from "@/assets/images/avatar-5.png"
 import videoFrame from "@/assets/images/frame-video.png"
-import Button from "@/shared/ui/buttons"
+import { ButtonGradientBlue } from "@/shared/ui/buttons"
 
 const data = [
   {
@@ -58,9 +60,9 @@ export const RightPartMain = () => {
         </div>
         <div className="flex flex-col gap-3 max-w-[415px] bg-blur-bg rounded-[19px] p-2">
           <img src={videoFrame.src} />
-          <Button className="w-full h-[48px] gradient-blue" variant="gradient">
+          <ButtonGradientBlue className="w-full h-[48px]">
             Посмотреть как это работает
-          </Button>
+          </ButtonGradientBlue>
         </div>
       </div>
     </div>

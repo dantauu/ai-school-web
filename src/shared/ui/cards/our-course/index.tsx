@@ -1,4 +1,5 @@
-import Button from "@/shared/ui/buttons"
+"use client"
+import Button, { ButtonGradientBlue } from "@/shared/ui/buttons"
 
 export type ListItem = {
   id: number
@@ -47,12 +48,11 @@ export const OurCourseLayout = ({
             <p className="text-[20px]">Полный курс*</p>
             <p className="text-[40px]">От {price} Р</p>
             <div className="530:flex-row flex flex-col gap-4">
-              <Button
+              <ButtonGradientBlue
                 className="530:w-[160px] w-full h-[50px] gradient-blue"
-                variant="gradient"
               >
                 Подробнее
-              </Button>
+              </ButtonGradientBlue>
               <Button
                 className="w-[240px] h-[50px] text-black gradient-white"
                 variant="gradient"
