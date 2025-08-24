@@ -1,5 +1,7 @@
 import arrow from "@/assets/images/arrow.svg"
 import Button from "@/shared/ui/buttons"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 export const WantTry = () => {
   return (
@@ -9,18 +11,16 @@ export const WantTry = () => {
       </p>
       <img className="hidden 1510:flex" src={arrow.src} />
       <div className="1070:flex-row 1070:w-auto w-full flex flex-col gap-3">
-        <Button
-          className="1070:w-[180px] w-full h-[50px] text-black gradient-white"
-          variant="gradient"
+        <ButtonGradientWhite
+          className="1070:w-[180px] w-full h-[50px] text-black"
         >
           Выбери курс
-        </Button>
-        <Button
-          className="1070:w-[250px] w-full h-[50px] gradient-blue"
-          variant="gradient"
+        </ButtonGradientWhite>
+        <ButtonGradientBlue
+          className="1070:w-[250px] w-full h-[50px]"
         >
           Помогите с выбором
-        </Button>
+        </ButtonGradientBlue>
       </div>
     </div>
   )

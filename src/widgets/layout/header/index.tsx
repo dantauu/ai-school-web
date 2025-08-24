@@ -1,6 +1,5 @@
 "use client"
 import Button, {
-  ButtonGradientBlue,
   ButtonGradientHover,
 } from "@/shared/ui/buttons"
 import SvgCourse from "@/assets/icons/Course"
@@ -8,6 +7,7 @@ import { useMediaQuery } from "@/lib/hooks/use-media-query"
 import BurgerMenu from "@/ui/menu"
 import React, { useEffect, useState } from "react"
 import { MenuModal } from "@/widgets/modals/menu-modal"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 const items = [
   { id: 1, text: "Курсы", icon: <SvgCourse /> },
@@ -40,10 +40,14 @@ const Header = () => {
           <div className="flex gap-8">
             {items.map((item) => (
               <div key={item.id}>
-                <Button variant="default">
+                <Button
+                  variant="default"
+                  className="relative pb-1 overflow-hidden after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:bg-white after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+                >
                   {item.icon}
                   {item.text}
                 </Button>
+
               </div>
             ))}
           </div>

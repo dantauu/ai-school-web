@@ -55,7 +55,7 @@ export const PracticeToolsSection = () => {
                 <Button
                   key={tool.id}
                   variant="default"
-                  className="px-5 py-2 whitespace-nowrap bg-[#308dde] rounded-[8px]"
+                  className="px-5 py-2 whitespace-nowrap bg-[#308dde] rounded-[8px] duration-350 hover:bg-white hover:text-black"
                 >
                   {tool.text}
                 </Button>

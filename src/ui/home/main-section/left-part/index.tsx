@@ -1,7 +1,8 @@
 "use client"
 
-import { ButtonGradientWhite } from "@/shared/ui/buttons"
+
 import SvgTicket from "@/assets/icons/Ticket"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 export const LeftPartMain = () => {
   return (
@@ -24,9 +25,7 @@ export const LeftPartMain = () => {
             </div>
             <p>Твой билет в цифровую эпоху</p>
           </div>
-          <ButtonGradientWhite
-            className="w-[190px] h-[45px] text-[16px] gradient-white text-black"
-          >
+          <ButtonGradientWhite className="w-[190px] h-[45px] text-[16px] text-black">
             Выбрать свой курс
           </ButtonGradientWhite>
         </div>

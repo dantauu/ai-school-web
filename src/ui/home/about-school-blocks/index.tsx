@@ -1,4 +1,8 @@
+"use client"
+
 import Button from "@/shared/ui/buttons"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 export const SchoolBlocksSection = () => {
   return (
@@ -13,12 +17,11 @@ export const SchoolBlocksSection = () => {
             Платформа, где обучение подстроено под реальность: быстро, понятно,
             по делу
           </p>
-          <Button
-            className="w-full h-[50px] text-black gradient-white"
-            variant="gradient"
+          <ButtonGradientWhite
+            className="w-full h-[50px] text-black"
           >
             Записаться на курс
-          </Button>
+          </ButtonGradientWhite>
         </div>
         <div className="flex flex-col justify-center gap-4 p-8 gradient-purple-reverse rounded-[15px]">
           <p className="530:leading-normal leading-8 text-[34px]">
@@ -28,12 +31,11 @@ export const SchoolBlocksSection = () => {
             Нейросети, no-code, AI-ассистенты — максимум пользы за минимум
             времени
           </p>
-          <Button
-            className="w-full h-[50px] text-white gradient-blue"
-            variant="gradient"
+          <ButtonGradientBlue
+            className="w-full h-[50px] text-white"
           >
             О школе и подходе
-          </Button>
+          </ButtonGradientBlue>
         </div>
       </div>
     </div>

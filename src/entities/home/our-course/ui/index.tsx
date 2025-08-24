@@ -1,23 +1,12 @@
+"use client"
 import { courses } from "@/lib/data/course"
 import { OurCourseLayout } from "@/shared/ui/cards/our-course"
 import { cn } from "@/lib/utils/cn"
-import Button from "@/shared/ui/buttons"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 export type ListItem = {
   id: number
   text: string
-}
-
-export type OurCourseProps = {
-  id: number
-  countCourse: number
-  title: string
-  list: ListItem[]
-  price: string
-  titleAbout: string
-  descriptionAbout: string
-  img: string
-  description: string
 }
 
 export const OurCourseSection = ({ className }: { className: string }) => {
@@ -42,12 +31,11 @@ export const OurCourseSection = ({ className }: { className: string }) => {
           />
         ))}
       </div>
-      <Button
-        className="w-full h-[50px] text-black gradient-white"
-        variant="gradient"
+      <ButtonGradientWhite
+        className="w-full h-[50px] text-black"
       >
         Посмотреть все курсы
-      </Button>
+      </ButtonGradientWhite>
     </div>
   )
 }

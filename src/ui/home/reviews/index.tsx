@@ -1,8 +1,8 @@
+"use client"
 import reviewOne from "@/assets/images/reviews-1.png"
 import reviewTwo from "@/assets/images/reviews-2.png"
-import { cn } from "@/lib/utils/cn"
 import { Play } from "@/shared/ui/buttons/play"
-import Button from "@/shared/ui/buttons"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 const video = [
   { id: 1, video: reviewOne.src },
@@ -33,9 +33,9 @@ export const ReviewsSection = () => {
           </div>
         ))}
       </div>
-      <Button className="w-full h-[50px] gradient-blue" variant="gradient">
+      <ButtonGradientBlue className="w-full h-[50px]">
         Ещё отзывы
-      </Button>
+      </ButtonGradientBlue>
     </div>
   )
 }

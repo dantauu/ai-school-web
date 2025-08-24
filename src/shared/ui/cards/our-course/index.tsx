@@ -1,5 +1,7 @@
 "use client"
-import Button, { ButtonGradientBlue } from "@/shared/ui/buttons"
+
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 export type ListItem = {
   id: number
@@ -48,17 +50,14 @@ export const OurCourseLayout = ({
             <p className="text-[20px]">Полный курс*</p>
             <p className="text-[40px]">От {price} Р</p>
             <div className="530:flex-row flex flex-col gap-4">
-              <ButtonGradientBlue
-                className="530:w-[160px] w-full h-[50px] gradient-blue"
-              >
+              <ButtonGradientBlue className="530:w-[160px] w-full h-[50px]">
                 Подробнее
               </ButtonGradientBlue>
-              <Button
-                className="w-[240px] h-[50px] text-black gradient-white"
-                variant="gradient"
+              <ButtonGradientWhite
+                className="w-[240px] h-[50px] text-black"
               >
                 Записаться на курс
-              </Button>
+              </ButtonGradientWhite>
             </div>
           </div>
           <div className="p-4 rounded-[20px] bg-blur-bg">

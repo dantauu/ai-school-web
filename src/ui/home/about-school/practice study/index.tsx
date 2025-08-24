@@ -24,7 +24,7 @@ export const PracticeStudy = () => {
       <div className="flex gap-2 flex-wrap">
         {skills.map((item) => (
           <Button
-            className={`px-[14px] py-[10px] rounded-[10px] bg-[#1b72bd] ${item.id === 12 && "bg-white text-black"}`}
+            className={`px-[14px] py-[10px] rounded-[10px] bg-[#1b72bd] duration-350 hover:bg-white hover:text-black ${item.id === 12 && "bg-white text-black"}`}
             key={item.id}
             variant="default"
           >

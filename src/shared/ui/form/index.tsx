@@ -1,7 +1,7 @@
 "use client"
 
-import Button from "@/shared/ui/buttons"
 import { IMaskInput } from "react-imask"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 export const FormRequest = () => {
   return (
@@ -24,12 +24,11 @@ export const FormRequest = () => {
         />
       </div>
       <div className="520:flex-row flex flex-col 520:items-center gap-3">
-        <Button
-          className="520:w-[160px] w-full h-[50px] gradient-blue"
-          variant="gradient"
+        <ButtonGradientBlue
+          className="520:w-[260px] w-full h-[50px]"
         >
           Отправить
-        </Button>
+        </ButtonGradientBlue>
         <p className="text-[14px]">
           Нажимая на кнопку «Отправить», вы даёте согласие на{" "}
           <span className="cursor-pointer underline">

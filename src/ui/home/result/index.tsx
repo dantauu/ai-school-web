@@ -1,10 +1,12 @@
+"use client"
+
 import SvgMuscule from "@/assets/icons/Muscule"
 import SvgSuiteCase from "@/assets/icons/SuiteCase"
 import SvgMoney from "@/assets/icons/Money"
 import SvgHeart from "@/assets/icons/Heart"
 import SvgBage from "@/assets/icons/Bage"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
-import Button from "@/shared/ui/buttons"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 const topResultData = [
   {
@@ -76,12 +78,11 @@ export const ResultSection = () => {
           <span className="text-gradient-white">с готовым результатом</span>, а
           не с голой теорией
         </h3>
-        <Button
-          className="w-full h-[50px] mt-4 gradient-blue"
-          variant="gradient"
+        <ButtonGradientBlue
+          className="w-full h-[50px] mt-4"
         >
           Подобрать курс под себя
-        </Button>
+        </ButtonGradientBlue>
       </div>
     </div>
   )

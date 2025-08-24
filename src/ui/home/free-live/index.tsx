@@ -1,5 +1,7 @@
-import Button from "@/shared/ui/buttons"
+"use client"
+
 import freeLiveImage from "@/assets/images/free-live.png"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 const liveListData = [
   { id: 1, text: "Познакомишься с экспертами и кураторами" },
@@ -37,12 +39,11 @@ export const FreeLiveSection = () => {
               ))}
             </ul>
           </div>
-          <Button
-            className="less-desctop:w-[240px] w-full h-[50px] gradient-white text-black"
-            variant="gradient"
+          <ButtonGradientWhite
+            className="less-desctop:w-[240px] w-full h-[50px] text-black"
           >
             Записаться
-          </Button>
+          </ButtonGradientWhite>
         </div>
         <div className="flex flex-col">
           <img className="w-[600px] h-[350px]" src={freeLiveImage.src} />

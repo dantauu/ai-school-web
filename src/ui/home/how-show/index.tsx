@@ -1,7 +1,9 @@
-import Button from "@/shared/ui/buttons"
+"use client"
+
 import howShowImage from "@/assets/images/how-show.png"
 import { Play } from "@/shared/ui/buttons/play"
 import { WantTry } from "@/ui/home/how-show/want-try/inedx"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 export const HowShowSection = () => {
   return (
@@ -13,12 +15,11 @@ export const HowShowSection = () => {
               Как выглядит обучение внутри ?
             </h3>
             <p className="text-[20px]">1 минута - и ты всё поймёшь</p>
-            <Button
-              className="1510:w-[240px] w-full h-[50px] gradient-blue"
-              variant="gradient"
+            <ButtonGradientBlue
+              className="1510:w-[240px] w-full h-[50px]"
             >
               Смотреть
-            </Button>
+            </ButtonGradientBlue>
           </div>
           <div className="relative">
             <img src={howShowImage.src} />

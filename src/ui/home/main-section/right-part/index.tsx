@@ -8,7 +8,8 @@ import avatar3 from "@/assets/images/avatar-3.png"
 import avatar4 from "@/assets/images/avatar-4.png"
 import avatar5 from "@/assets/images/avatar-5.png"
 import videoFrame from "@/assets/images/frame-video.png"
-import { ButtonGradientBlue } from "@/shared/ui/buttons"
+import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+
 
 const data = [
   {

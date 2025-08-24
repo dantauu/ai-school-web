@@ -1,8 +1,9 @@
+"use client"
 import SvgBrain from "@/assets/icons/Brain"
 import SvgChat from "@/assets/icons/Chat"
-import Button from "@/shared/ui/buttons"
 import aboutImage from "@/assets/images/about-school.png"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 const items = [
   { id: 1, icon: <SvgBrain />, text: "Курсы направленные на практику" },
@@ -25,12 +26,11 @@ export const StudyMain = () => {
             className="overflow-x-auto flex gap-5"
           />
         </div>
-        <Button
-          className="gradient-white w-full h-[50px] text-black"
-          variant="gradient"
+        <ButtonGradientWhite
+          className="w-full h-[50px] text-black"
         >
           Подробнее
-        </Button>
+        </ButtonGradientWhite>
       </div>
 
       <div className="flex items-center">
