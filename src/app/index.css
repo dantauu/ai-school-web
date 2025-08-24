@@ -2,6 +2,8 @@
 
 @theme {
   --breakpoint-mobile: 360px;
+  --breakpoint-530: 530px;
+  --breakpoint-520: 520px;
   --breakpoint-less-desctop: 1400px;
   --breakpoint-choose: 1675px;
   --breakpoint-form: 1250px;
@@ -71,7 +73,7 @@
   }
   .text-gradient-white {
     background: var(--color-gradient-white);
-    @apply bg-clip-text text-transparent
+    @apply bg-clip-text text-transparent;
   }
 }
 

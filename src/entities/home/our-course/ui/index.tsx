@@ -22,7 +22,9 @@ export type OurCourseProps = {
 
 export const OurCourseSection = ({ className }: { className: string }) => {
   return (
-    <div className={cn("flex flex-col gap-7", className)}>
+    <div
+      className={cn("flex flex-col gap-7 less-desctop:mt-0 mt-10", className)}
+    >
       <h3 className="text-[40px]">Наши курсы</h3>
       <div className="flex flex-col gap-10">
         {courses.map((item) => (

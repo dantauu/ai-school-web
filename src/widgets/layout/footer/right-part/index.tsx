@@ -20,12 +20,12 @@ export const RightPartFooter = () => {
       <div className="1510:flex-row flex flex-col gap-8">
         {itemRightPart.map((item) => (
           <div key={item.id}>
-            <p className="text-[25px]">{item.title}</p>
+            <p className="text-[25px] text-gradient-white">{item.title}</p>
             <p className="max-w-[168px]">{item.description}</p>
           </div>
         ))}
       </div>
-      <div className="1510:flex-row flex flex-col gap-4">
+      <div className="flex gap-4">
         <Button
           className="w-[50px] h-[50px] rounded-full gradient-white"
           variant="default"

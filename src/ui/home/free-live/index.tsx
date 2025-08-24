@@ -15,25 +15,30 @@ export const FreeLiveSection = () => {
       <div className="less-desctop:flex-row flex flex-col w-full justify-between items-stretch gap-4 p-7 rounded-[15px] gradient-dark-blue-vertical">
         <div className="flex flex-1 gap-3 flex-col justify-between">
           <div className="flex flex-col gap-2">
-            <h3 className="max-w-[640px] leading-11 text-[47px]">
-              Присоединяйся к <span className="text-gradient-white">беслатному</span> вводному эфиру
+            <h3 className="max-w-[640px] leading-11 530:text-[47px] text-[32px]">
+              Присоединяйся к{" "}
+              <span className="text-gradient-white">беслатному</span> вводному
+              эфиру
             </h3>
-            <div>
-              <p className="text-[21px]">
+            <div className="flex flex-col gap-3">
+              <p className="text-[22px] leading-7">
                 Чтобы понять, куда ты идёшь и с кем будешь учиться.
               </p>
-              <p className="leading-4 text-[21px]">На эфире ты:</p>
+              <p className="leading-4 text-[22px]">На эфире ты:</p>
             </div>
-            <ul className="pl-4 pt-3">
+            <ul className="flex flex-col gap-3 pl-4 pt-3">
               {liveListData.map((item) => (
-                <li key={item.id} className="text-[17.8px] list-disc">
+                <li
+                  key={item.id}
+                  className="530:text-[17.8px] text-[19px] list-disc"
+                >
                   {item.text}
                 </li>
               ))}
             </ul>
           </div>
           <Button
-            className="w-[240px] h-[50px] gradient-white text-black"
+            className="less-desctop:w-[240px] w-full h-[50px] gradient-white text-black"
             variant="gradient"
           >
             Записаться

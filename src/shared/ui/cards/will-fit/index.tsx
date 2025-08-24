@@ -32,7 +32,7 @@ export const WillFitCard = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className={`w-[580px] h-[250px] flex flex-col gap-1 rounded-[12px] p-3 border ${
+          className={`max-w-[580px] h-auto flex flex-col gap-1 rounded-[12px] p-3 border ${
             item.id === 1
               ? "border-[#0062ff] bg-[rgb(20,97,135)]"
               : item.id === 2
@@ -42,7 +42,7 @@ export const WillFitCard = () => {
         >
           <img className="w-[112px] h-[112px]" src={item.image} />
           <p className="text-[23px]">{item.title}</p>
-          <p className="w-[470px] text-[17px]">{item.description}</p>
+          <p className="max-w-[470px] text-[17px]">{item.description}</p>
         </div>
       ))}
     </div>

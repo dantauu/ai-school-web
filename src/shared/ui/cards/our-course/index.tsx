@@ -32,7 +32,9 @@ export const OurCourseLayout = ({
       <div className="w-full h-full flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
         <div className="flex flex-col pb-4">
           <p>Курс №{countCourse}</p>
-          <p className="text-[50px]">{title}</p>
+          <p className="530:text-[50px] 530:leading-normal leading-10 text-[40px] pb-5">
+            {title}
+          </p>
           <p>{description}</p>
         </div>
         <ul className="list-disc pb-5 pl-3">
@@ -44,9 +46,9 @@ export const OurCourseLayout = ({
           <div className="flex flex-col gap-2">
             <p className="text-[20px]">Полный курс*</p>
             <p className="text-[40px]">От {price} Р</p>
-            <div className="flex gap-4">
+            <div className="530:flex-row flex flex-col gap-4">
               <Button
-                className="w-[160px] h-[50px] gradient-blue"
+                className="530:w-[160px] w-full h-[50px] gradient-blue"
                 variant="gradient"
               >
                 Подробнее

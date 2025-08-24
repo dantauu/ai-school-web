@@ -36,8 +36,9 @@ export const PracticeToolsSection = () => {
       <p className="text-[21px] text-[#fff6]">
         Практика на топовых инструментах
       </p>
-      <h3 className="text-[45px]">
-        AI-инструменты не в теории, <span className="text-gradient-white">а в твоих руках</span>
+      <h3 className="leading-10 530:text-[45px] text-[32px]">
+        AI-инструменты не в теории,{" "}
+        <span className="text-gradient-white">а в твоих руках</span>
       </h3>
       <p className="text-[19px]">
         Ты не просто смотришь — ты создаёшь: ботов, тексты, визуалы, модели.

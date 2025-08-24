@@ -35,7 +35,7 @@ export const TheyChooseLeft = () => {
               </p>
             </div>
           </div>
-          <div className="min-w-[500px] h-[620px] p-8 rounded-[15px] gradient-dark-blue-vertical">
+          <div className="w-full h-auto p-8 rounded-[15px] gradient-dark-blue-vertical">
             <img src={lvlChoose.src} />
             <p className="pt-4 text-[18px]">Поддержка на каждом уровне</p>
             <h4 className="pb-2 text-[30px]">Любой уровень. Полная опора</h4>
@@ -49,7 +49,10 @@ export const TheyChooseLeft = () => {
         </div>
 
         <div className="choose:flex-row w-full flex flex-col gap-8 p-8 rounded-[15px] gradient-purple-reverse">
-          <img className="max-w-[400px] max-h-[288px] object-cover" src={photoChoose.src} />
+          <img
+            className="max-w-[400px] max-h-[288px] object-cover"
+            src={photoChoose.src}
+          />
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-2">
               <p className="text-[18px]">Сообщество и эксперты</p>

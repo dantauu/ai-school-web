@@ -4,11 +4,17 @@ import avatarTwo from "@/assets/images/women-choose.svg"
 export const TheyChooseRight = () => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="choose:w-[580px] w-full h-[340px] flex flex-col items-stretch gap-3 text-white p-7 gradient-purple rounded-[15px]">
-        <div className="flex items-center gap-5">
+      <div className="choose:w-[580px] w-full h-[300px] flex flex-col items-stretch gap-3 text-white choose:p-7 p-5 gradient-purple rounded-[15px]">
+        <div className="flex items-center choose:gap-9 gap-15">
           <div className="flex -space-x-5">
-            <img src={avatarOne.src} />
-            <img src={avatarTwo.src} />
+            <img
+              className="choose:w-[56px] w-auto choose:h-[56px] h-auto"
+              src={avatarOne.src}
+            />
+            <img
+              className="choose:w-[56px] w-auto choose:h-[56px] h-auto"
+              src={avatarTwo.src}
+            />
           </div>
           <p className="text-[19px]">
             AI ассистенты + поддержка в реальном времени

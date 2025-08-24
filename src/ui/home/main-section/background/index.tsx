@@ -1,6 +1,6 @@
 export const Background = () => {
   return (
-    <>
+    <div className="overflow-hidden inset-0">
       <video
         className="absolute top-0 left-0 w-full h-full object-fill"
         autoPlay={true}
@@ -23,18 +23,19 @@ export const Background = () => {
           zIndex: -1,
         }}
       ></div>
-      <div
-        className="
-    absolute bottom-0 right-0
-    w-[400px] h-[300px]
-    less-desctop:w-[1400px] less-desctop:h-[990px]
-    bg-cover bg-center
-  "
-        style={{
-          backgroundImage: 'url("/static/women-robot.svg")',
-          zIndex: -1,
-        }}
-      ></div>
-    </>
+      {/*<div*/}
+      {/*  className="*/}
+      {/*    absolute top-20 right-30*/}
+      {/*    w-[550px] h-[550px]*/}
+      {/*    less-desctop:w-[1400px] less-desctop:h-[990px] less-desctop:right-150*/}
+      {/*    less-desctop:bottom-0*/}
+      {/*    translate-x-1/3*/}
+      {/*    bg-[url('/static/women-robot.svg')]*/}
+      {/*    bg-cover bg-center*/}
+      {/*    pointer-events-none*/}
+      {/*  "*/}
+      {/*  style={{ zIndex: -1 }}*/}
+      {/*/>*/}
+    </div>
   )
 }
