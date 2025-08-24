@@ -17,9 +17,7 @@ export const SchoolBlocksSection = () => {
             Платформа, где обучение подстроено под реальность: быстро, понятно,
             по делу
           </p>
-          <ButtonGradientWhite
-            className="w-full h-[50px] text-black"
-          >
+          <ButtonGradientWhite className="w-full h-[50px] text-black">
             Записаться на курс
           </ButtonGradientWhite>
         </div>
@@ -31,9 +29,7 @@ export const SchoolBlocksSection = () => {
             Нейросети, no-code, AI-ассистенты — максимум пользы за минимум
             времени
           </p>
-          <ButtonGradientBlue
-            className="w-full h-[50px] text-white"
-          >
+          <ButtonGradientBlue className="w-full h-[50px] text-white">
             О школе и подходе
           </ButtonGradientBlue>
         </div>

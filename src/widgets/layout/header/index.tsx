@@ -1,22 +1,22 @@
 "use client"
-import Button, {
-  ButtonGradientHover,
-} from "@/shared/ui/buttons"
+import Button, { ButtonGradientHover } from "@/shared/ui/buttons"
 import SvgCourse from "@/assets/icons/Course"
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
 import BurgerMenu from "@/ui/menu"
 import React, { useEffect, useState } from "react"
 import { MenuModal } from "@/widgets/modals/menu-modal"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { useRouter } from "next/navigation"
 
 const items = [
-  { id: 1, text: "Курсы", icon: <SvgCourse /> },
-  { id: 2, text: "О школе" },
-  { id: 3, text: "Контакты" },
+  { id: 1, text: "Курсы", path: "/", icon: <SvgCourse /> },
+  { id: 2, text: "О школе", path: "/about-school" },
+  { id: 3, text: "Контакты", path: "/" },
 ]
 
 const Header = () => {
   const isMedia = useMediaQuery("(max-width: 940px")
+  const router = useRouter()
   const [open, setOpen] = useState(false)
   const handleOpen = () => {
     setOpen((prev) => !prev)
@@ -43,11 +43,11 @@ const Header = () => {
                 <Button
                   variant="default"
                   className="relative pb-1 overflow-hidden after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1.5px] after:bg-white after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+                  onClick={() => router.push(item.path)}
                 >
                   {item.icon}
                   {item.text}
                 </Button>
-
               </div>
             ))}
           </div>

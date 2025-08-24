@@ -7,9 +7,11 @@
   --breakpoint-less-desctop: 1400px;
   --breakpoint-choose: 1675px;
   --breakpoint-form: 1250px;
+  --breakpoint-1155: 1155px;
   --breakpoint-1295: 1295px;
   --breakpoint-1510: 1510px;
   --breakpoint-1070: 1070px;
+  --breakpoint-975: 975px;
   --color-main-back: #031c52;
   --color-gradient-blue: linear-gradient(
     -40deg,
@@ -48,6 +50,11 @@
     #0062ff 100%
   );
   --color-gradient-grey: linear-gradient(180deg, #031c52 0%, #f5f5f5 100%);
+  --color-gradient-grey-light: linear-gradient(
+    180deg,
+    #031c52 0%,
+    #0062ff 100%
+  );
   --color-blur-bg: rgba(245, 245, 245, 0.15);
   --shadow-white-shadow:
     4px 5px 20px #38fcfe66, -2px 1px 7px #38fcfe66,
@@ -91,6 +98,9 @@
   }
   .gradient-grey {
     background: var(--color-gradient-grey);
+  }
+  .gradient-grey {
+    background: var(--color-gradient-grey-light);
   }
   .text-gradient-white {
     background: var(--color-gradient-white);

@@ -24,9 +24,7 @@ export const FormRequest = () => {
         />
       </div>
       <div className="520:flex-row flex flex-col 520:items-center gap-3">
-        <ButtonGradientBlue
-          className="520:w-[260px] w-full h-[50px]"
-        >
+        <ButtonGradientBlue className="520:w-[260px] w-full h-[50px]">
           Отправить
         </ButtonGradientBlue>
         <p className="text-[14px]">

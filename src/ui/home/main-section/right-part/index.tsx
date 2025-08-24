@@ -10,7 +10,6 @@ import avatar5 from "@/assets/images/avatar-5.png"
 import videoFrame from "@/assets/images/frame-video.png"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
-
 const data = [
   {
     id: 1,
