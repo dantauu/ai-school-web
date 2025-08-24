@@ -26,14 +26,16 @@ export default function Home() {
         <ResultSection />
         <PracticeToolsSection />
         <TheyChooseSection />
-        <FormRequestSection />
+      </div>
+      <FormRequestSection />
+      <div className="container flex flex-col gap-25">
         <HowStudySection />
         <HowShowSection />
         <QuestionsSection />
         <FreeLiveSection />
         <SchoolBlocksSection />
-        <RecordedForm />
       </div>
+      <RecordedForm />
     </div>
   )
 }

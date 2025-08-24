@@ -56,7 +56,7 @@ export const RightPartMain = () => {
           </div>
           <p>10 000+ учеников</p>
         </div>
-        <div className="flex flex-col gap-3 w-[415px] bg-blur-bg rounded-[19px] p-2">
+        <div className="flex flex-col gap-3 max-w-[415px] bg-blur-bg rounded-[19px] p-2">
           <img src={videoFrame.src} />
           <Button className="w-full h-[48px] gradient-blue" variant="gradient">
             Посмотреть как это работает

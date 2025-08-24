@@ -32,7 +32,7 @@ export const OurCourseLayout = ({
       <div className="530:w-full h-full w-[320px] flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
         <div className="flex flex-col pb-4">
           <p>Курс №{countCourse}</p>
-          <p className="530:text-[50px] 530:leading-normal leading-10 text-[40px] pb-5">
+          <p className="530:text-[50px] 530:leading-normal leading-10 text-[32px] pb-5">
             {title}
           </p>
           <p>{description}</p>

@@ -25,7 +25,7 @@ export const Background = () => {
       ></div>
       <div
         className="
-          absolute top-20 right-41
+          absolute top-20 right-46
           w-[550px] h-[550px]
           less-desctop:w-[1400px] less-desctop:h-[990px] less-desctop:right-150
           less-desctop:bottom-0

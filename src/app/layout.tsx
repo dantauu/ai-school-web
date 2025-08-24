@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="less-desctop:px-[40px] px-[20px] pt-[20px]">
+    <html lang="ru">
+      <body className="pt-[20px]">
         <Header />
         {children}
         <Footer className="mt-[110px]" />

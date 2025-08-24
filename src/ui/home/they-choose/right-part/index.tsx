@@ -20,7 +20,7 @@ export const TheyChooseRight = () => {
             AI ассистенты + поддержка в реальном времени
           </p>
         </div>
-        <h3 className="w-[410px] pb-2 leading-8 text-[30px]">
+        <h3 className="max-w-[410px] pb-2 leading-8 text-[30px]">
           Никогда не оставайся один на один с вопросом
         </h3>
         <p className="leading-5.5 text-[18.5px]">

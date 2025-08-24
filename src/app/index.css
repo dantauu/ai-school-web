@@ -44,8 +44,17 @@
 }
 
 @layer utilities {
-  .container {
-    max-width: 1920px;
+  @media (max-width: 1920px) {
+    .container {
+      max-width: 1920px;
+      padding-inline: 40px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .container {
+      max-width: 1920px;
+      padding-inline: 20px;
+    }
   }
   .gradient-blue {
     background: var(--color-gradient-blue);
