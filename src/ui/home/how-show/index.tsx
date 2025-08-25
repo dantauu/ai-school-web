@@ -15,9 +15,7 @@ export const HowShowSection = () => {
               Как выглядит обучение внутри ?
             </h3>
             <p className="text-[20px]">1 минута - и ты всё поймёшь</p>
-            <ButtonGradientBlue
-              className="1510:w-[240px] w-full h-[50px]"
-            >
+            <ButtonGradientBlue className="1510:w-[240px] w-full h-[50px]">
               Смотреть
             </ButtonGradientBlue>
           </div>

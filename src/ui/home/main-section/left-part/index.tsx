@@ -1,6 +1,5 @@
 "use client"
 
-
 import SvgTicket from "@/assets/icons/Ticket"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 

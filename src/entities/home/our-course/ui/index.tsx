@@ -31,9 +31,7 @@ export const OurCourseSection = ({ className }: { className: string }) => {
           />
         ))}
       </div>
-      <ButtonGradientWhite
-        className="w-full h-[50px] text-black"
-      >
+      <ButtonGradientWhite className="w-full h-[50px] text-black">
         Посмотреть все курсы
       </ButtonGradientWhite>
     </div>

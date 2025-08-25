@@ -26,9 +26,7 @@ export const StudyMain = () => {
             className="overflow-x-auto flex gap-5"
           />
         </div>
-        <ButtonGradientWhite
-          className="w-full h-[50px] text-black"
-        >
+        <ButtonGradientWhite className="w-full h-[50px] text-black">
           Подробнее
         </ButtonGradientWhite>
       </div>

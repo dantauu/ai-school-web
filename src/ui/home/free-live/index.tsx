@@ -39,9 +39,7 @@ export const FreeLiveSection = () => {
               ))}
             </ul>
           </div>
-          <ButtonGradientWhite
-            className="less-desctop:w-[240px] w-full h-[50px] text-black"
-          >
+          <ButtonGradientWhite className="less-desctop:w-[240px] w-full h-[50px] text-black">
             Записаться
           </ButtonGradientWhite>
         </div>

@@ -78,9 +78,7 @@ export const ResultSection = () => {
           <span className="text-gradient-white">с готовым результатом</span>, а
           не с голой теорией
         </h3>
-        <ButtonGradientBlue
-          className="w-full h-[50px] mt-4"
-        >
+        <ButtonGradientBlue className="w-full h-[50px] mt-4">
           Подобрать курс под себя
         </ButtonGradientBlue>
       </div>

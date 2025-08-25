@@ -11,14 +11,10 @@ export const WantTry = () => {
       </p>
       <img className="hidden 1510:flex" src={arrow.src} />
       <div className="1070:flex-row 1070:w-auto w-full flex flex-col gap-3">
-        <ButtonGradientWhite
-          className="1070:w-[180px] w-full h-[50px] text-black"
-        >
+        <ButtonGradientWhite className="1070:w-[180px] w-full h-[50px] text-black">
           Выбери курс
         </ButtonGradientWhite>
-        <ButtonGradientBlue
-          className="1070:w-[250px] w-full h-[50px]"
-        >
+        <ButtonGradientBlue className="1070:w-[250px] w-full h-[50px]">
           Помогите с выбором
         </ButtonGradientBlue>
       </div>

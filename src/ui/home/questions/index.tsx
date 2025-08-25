@@ -23,9 +23,7 @@ export const QuestionsSection = () => {
             </h3>
           </div>
           <p className="text-[18px]">Мы попробуем развеять твои сомнения</p>
-          <ButtonGradientBlue
-            className="w-[248px] h-[50px] gradient-blue"
-          >
+          <ButtonGradientBlue className="w-[248px] h-[50px] gradient-blue">
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>

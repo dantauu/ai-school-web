@@ -8,9 +8,7 @@ export const WillFitSection = () => {
     <div className="flex flex-col gap-9">
       <div className="530:flex-row flex flex-col justify-between 530:items-center">
         <h3 className="text-[45px]">Кому подойдёт</h3>
-        <ButtonGradientWhite
-          className="w-[220px] h-[50px] text-black"
-        >
+        <ButtonGradientWhite className="w-[220px] h-[50px] text-black">
           Посмотреть курсы
         </ButtonGradientWhite>
       </div>

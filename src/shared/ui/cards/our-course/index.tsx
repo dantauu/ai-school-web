@@ -53,9 +53,7 @@ export const OurCourseLayout = ({
               <ButtonGradientBlue className="530:w-[160px] w-full h-[50px]">
                 Подробнее
               </ButtonGradientBlue>
-              <ButtonGradientWhite
-                className="w-[240px] h-[50px] text-black"
-              >
+              <ButtonGradientWhite className="w-[240px] h-[50px] text-black">
                 Записаться на курс
               </ButtonGradientWhite>
             </div>
