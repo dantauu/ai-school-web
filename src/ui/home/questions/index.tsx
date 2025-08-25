@@ -2,7 +2,6 @@
 import { DropdownQuestion } from "@/shared/ui/dropdown/question"
 import { useState } from "react"
 import { faqData } from "@/lib/data/questions"
-import Button from "@/shared/ui/buttons"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
 export const QuestionsSection = () => {
@@ -18,16 +17,16 @@ export const QuestionsSection = () => {
             <h3 className="530:text-[47px] text-[32px] leading-10">
               <span className="text-gradient-white">Давайте честно</span>,
             </h3>
-            <h3 className="530:text-[47px] text-[32px] leading-10">
+            <h3 className="530:text-[47px] max-w-[540px] text-[32px] leading-10">
               мы понимаем что курсов много и довериться сложно
             </h3>
           </div>
           <p className="text-[18px]">Мы попробуем развеять твои сомнения</p>
-          <ButtonGradientBlue className="w-[248px] h-[50px] gradient-blue">
+          <ButtonGradientBlue className="1295:w-[248px] w-full h-[50px] gradient-blue">
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>
-        <div>
+        <div className="1295:w-fit w-full">
           {faqData.map((item) => (
             <DropdownQuestion
               key={item.id}

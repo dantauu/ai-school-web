@@ -12,7 +12,7 @@ const items = [
 
 export const StudyMain = () => {
   return (
-    <div className="less-desctop:flex-row flex flex-col items-stretch justify-between choose:h-[530px] h-full">
+    <div className="less-desctop:flex-row flex flex-col items-stretch justify-between choose:h-[530px] h-full 585:gap-0 gap-5">
       <div className="flex flex-col gap-5 justify-between">
         <div>
           <h3 className="pb-3 text-[27px]">О школе</h3>

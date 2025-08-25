@@ -59,7 +59,7 @@ export const ButtonGradientHover = ({
       type="button"
       onClick={onClick}
       className={cn(
-        "relative z-10 overflow-hidden rounded-[27px] text-white px-6 py-3 flex items-center justify-center w-[130px] h-[56px] cursor-pointer",
+        "relative z-10 overflow-hidden rounded-[27px] text-white px-6 py-3 flex items-center justify-center 585:w-[130px] w-[90px] 585:h-[56px] h-[44px] cursor-pointer",
         className
       )}
       initial={{

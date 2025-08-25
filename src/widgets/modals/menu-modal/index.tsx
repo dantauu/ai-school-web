@@ -55,7 +55,7 @@ export const MenuModal = ({
           ))}
         </div>
       </div>
-      <div className="1510:flex-row flex flex-col gap-8">
+      <div className="flex flex-col gap-4">
         {itemBottomPart.map((item) => (
           <div key={item.id}>
             <p className="text-[25px] text-gradient-white">{item.title}</p>

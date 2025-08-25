@@ -1,4 +1,9 @@
+"use client"
+
+import { useMediaQuery } from "@/lib/hooks/use-media-query"
+
 export const Background = () => {
+  const isMedia = useMediaQuery('(max-width: 585px)');
   return (
     <div className="overflow-hidden inset-0">
       <video
@@ -23,8 +28,19 @@ export const Background = () => {
           zIndex: -1,
         }}
       ></div>
-      <div
-        className="
+      {isMedia ? (
+        <div
+          className="
+          absolute top-25 right-0
+          w-[350px] h-[450px]
+          bg-[url('/static/robot-mobile.svg')]
+          pointer-events-none
+        "
+          style={{ zIndex: -1 }}
+        />
+      ) : (
+        <div
+          className="
           absolute top-20 right-46
           w-[550px] h-[550px]
           less-desctop:w-[1400px] less-desctop:h-[990px] less-desctop:right-150
@@ -34,8 +50,9 @@ export const Background = () => {
           bg-cover bg-center
           pointer-events-none
         "
-        style={{ zIndex: -1 }}
-      />
+          style={{ zIndex: -1 }}
+        />
+      )}
     </div>
   )
 }
