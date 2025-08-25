@@ -16,7 +16,7 @@ const itemsDignities = [
 
 export const DignitySection = () => {
   return (
-    <div className="975:flex-row 975:gap-20 w-full h-fit flex flex-col justify-center items-center gap-7 py-15 px-3 gradient-grey">
+    <div className="975:flex-row 975:gap-20 975:py-10 w-full h-fit flex flex-col justify-center items-center gap-7 py-5 px-3 gradient-grey">
       <div>
         <h1 className="530:leading-normal 530:text-[57px] leading-10 text-[40px]">
           AI-school by Grafov

@@ -63,7 +63,7 @@ const Header = () => {
           {isMedia && <BurgerMenu toggle={handleOpen} open={open} />}
         </div>
       </div>
-      {open && <MenuModal />}
+      {open && <MenuModal setOpen={setOpen} />}
     </header>
   )
 }

@@ -4,10 +4,12 @@ import { StudySection } from "@/ui/about-school/study"
 import { IdeasSection } from "@/ui/about-school/idea"
 import { WhyDoItSection } from "@/ui/about-school/why-do-it"
 import { DifferenceSection } from "@/ui/about-school/difference"
+import Breadcrumbs from "@/shared/ui/breadcrumbs"
 
 const AboutSchool = () => {
   return (
     <div className="flex flex-col gap-15 975:pt-[70px] pt-[30px]">
+      <Breadcrumbs className="container" location={"О школе"} />
       <DignitySection />
       <div className="flex flex-col gap-15 container">
         <BirthSchoolSection />
