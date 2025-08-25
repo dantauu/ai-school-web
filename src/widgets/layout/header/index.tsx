@@ -4,12 +4,12 @@ import SvgCourse from "@/assets/icons/Course"
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
 import BurgerMenu from "@/ui/menu"
 import React, { useEffect, useState } from "react"
-import { MenuModal } from "@/widgets/modals/menu-modal"
+import { MenuModal } from "@/widgets/modals/menu"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { useRouter } from "next/navigation"
 
 const items = [
-  { id: 1, text: "Курсы", path: "/", icon: <SvgCourse /> },
+  { id: 1, text: "Курсы", path: "/course", icon: <SvgCourse /> },
   { id: 2, text: "О школе", path: "/about-school" },
   { id: 3, text: "Контакты", path: "/" },
 ]

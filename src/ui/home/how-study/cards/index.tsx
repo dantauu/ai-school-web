@@ -32,16 +32,16 @@ const dataCardsTwo = [
 
 export const CardsHowStudy = () => {
   return (
-    <div className="less-desctop:flex-col less-desctop:gap-5 flex flex-row gap-14 overflow-x-auto">
+    <div className="less-desctop:flex-col less-desctop:gap-5 flex flex-row gap-14 less-desctop:overflow-hidden overflow-x-auto">
       <CardBlur
         className="flex justify-between gap-3 shrink-0"
-        classItem="min-w-fit h-[180px] pr-32"
+        classItem="min-w-fit h-[180px] pr-5"
         classText="max-w-[453px] text-[25px]"
         items={dataCardsOne}
       />
       <CardBlur
         className="flex justify-between gap-3 shrink-0"
-        classItem="min-w-fit h-[180px] pr-19"
+        classItem="min-w-fit h-[180px] pr-2"
         classText="max-w-[453px] text-[25px]"
         items={dataCardsTwo}
       />
