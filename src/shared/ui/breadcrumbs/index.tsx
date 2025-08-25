@@ -9,7 +9,9 @@ type BreadcrumbsProps = {
 const Breadcrumbs = ({ location, className }: BreadcrumbsProps) => {
   return (
     <div className={cn("flex gap-4", className)}>
-      <Link href="/" className="text-[#fff6]">Главная</Link>
+      <Link href="/" className="text-[#fff6]">
+        Главная
+      </Link>
       <p>/</p>
       <p className="border-b">{location}</p>
     </div>

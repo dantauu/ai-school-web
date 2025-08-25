@@ -8,7 +8,7 @@ import SvgDoubleChat from "@/assets/icons/DoubleChat"
 import SvgBook from "@/assets/icons/Book"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
 
-const dataCards = [
+const dataCardsOne = [
   { id: 1, icon: <SvgVideoStudy />, text: "Видеоуроки" },
   { id: 2, icon: <SvgPractice />, text: "Практика в каждом модуле" },
   { id: 3, icon: <SvgMaster />, text: "Мастер-классы" },
@@ -17,24 +17,33 @@ const dataCards = [
     icon: <SvgPeoples />,
     text: "Хакатоны и командные проекты под руководством экспертов",
   },
+]
+
+const dataCardsTwo = [
   {
-    id: 5,
+    id: 1,
     icon: <SvgPencil />,
     text: "Лаборатории по созданию собственных AI-проектов",
   },
-  { id: 6, icon: <SvgRobot />, text: "Личный AI-ассистент" },
-  { id: 7, icon: <SvgDoubleChat />, text: "Чат с кураторами" },
-  { id: 8, icon: <SvgBook />, text: "Проекты и обратная связь" },
+  { id: 2, icon: <SvgRobot />, text: "Личный AI-ассистент" },
+  { id: 3, icon: <SvgDoubleChat />, text: "Чат с кураторами" },
+  { id: 4, icon: <SvgBook />, text: "Проекты и обратная связь" },
 ]
 
 export const CardsHowStudy = () => {
   return (
-    <div>
+    <div className="less-desctop:flex-col less-desctop:gap-5 flex flex-row gap-14 overflow-x-auto">
       <CardBlur
-        className="flex 1510:flex-wrap gap-3 overflow-x-auto"
-        classItem="w-fit h-[180px] pr-9 shrink-0"
+        className="flex justify-between gap-3 shrink-0"
+        classItem="min-w-fit h-[180px] pr-32"
         classText="max-w-[453px] text-[25px]"
-        items={dataCards}
+        items={dataCardsOne}
+      />
+      <CardBlur
+        className="flex justify-between gap-3 shrink-0"
+        classItem="min-w-fit h-[180px] pr-19"
+        classText="max-w-[453px] text-[25px]"
+        items={dataCardsTwo}
       />
     </div>
   )

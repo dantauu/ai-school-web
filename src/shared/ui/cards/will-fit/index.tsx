@@ -28,11 +28,11 @@ const data = [
 
 export const WillFitCard = () => {
   return (
-    <div className="flex flex-wrap justify-between gap-7">
+    <div className="975:flex-row flex flex-col justify-between gap-7">
       {data.map((item) => (
         <div
           key={item.id}
-          className={`max-w-[580px] h-auto flex flex-col gap-1 rounded-[12px] p-3 border ${
+          className={`w-full h-auto flex flex-col gap-1 rounded-[12px] p-3 border ${
             item.id === 1
               ? "border-[#0062ff] bg-[rgb(20,97,135)]"
               : item.id === 2

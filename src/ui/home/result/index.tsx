@@ -50,7 +50,7 @@ const bottomResultData = [
 export const ResultSection = () => {
   return (
     <div>
-      <h3 className="max-w-[605px] leading-12 text-[45px]">
+      <h3 className="585:text-[45px] text-[32px] max-w-[605px] 585:leading-12 leading-10">
         Не просто знания.{" "}
         <span className="text-gradient-white">
           Результат, который можно показывать

@@ -12,18 +12,18 @@ const items = [
 
 export const StudyMain = () => {
   return (
-    <div className="choose:flex-row flex flex-col items-stretch justify-between choose:h-[530px] h-full">
+    <div className="less-desctop:flex-row flex flex-col items-stretch justify-between choose:h-[530px] h-full">
       <div className="flex flex-col gap-5 justify-between">
         <div>
           <h3 className="pb-3 text-[27px]">О школе</h3>
-          <h3 className="max-w-[570px] pb-8 text-[45px] leading-12">
+          <h3 className="530:text-[45px] text-[32px] max-w-[570px] pb-8 530:leading-12 leading-10">
             <span className="text-gradient-white">Практичное обучение</span> по
             AI направлениям
           </h3>
           <CardBlur
             items={items}
-            classItem="shrink-0"
-            className="overflow-x-auto flex gap-5"
+            classItem="less-desctop:shrink less-desctop:w-full shrink-0 w-fit"
+            className="overflow-x-auto flex justify-between gap-5"
           />
         </div>
         <ButtonGradientWhite className="w-full h-[50px] text-black">
@@ -31,8 +31,8 @@ export const StudyMain = () => {
         </ButtonGradientWhite>
       </div>
 
-      <div className="flex items-center">
-        <img src={aboutImage.src} alt="О школе" />
+      <div className="flex">
+        <img className="w-full" src={aboutImage.src} alt="О школе" />
       </div>
     </div>
   )

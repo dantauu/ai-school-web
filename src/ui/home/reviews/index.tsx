@@ -16,8 +16,8 @@ const video = [
 export const ReviewsSection = () => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="530:flex-row flex flex-col 530:items-center justify-between">
-        <h3 className="text-[45px]">Отзывы</h3>
+      <div className="585:flex-row flex flex-col 585:items-center justify-between">
+        <h3 className="585:text-[45px] text-[32px]">Отзывы</h3>
         <p>*Все отзывы размещены с согласия учеников</p>
       </div>
       <div className="flex 1070:overscroll-x-none overflow-x-auto 1070:justify-center  gap-7">

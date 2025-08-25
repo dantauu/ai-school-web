@@ -31,7 +31,7 @@ export const CardBlur = ({
             classItem
           )}
         >
-          {item.icon}
+          <span className="min-w-[30px] min-h-[30px]">{item.icon}</span>
           <p className={cn("text-[28px]", classText)}>{item.text}</p>
           <p className="text-[18px]">{item.description}</p>
         </div>

@@ -44,7 +44,7 @@ export const FreeLiveSection = () => {
           </ButtonGradientWhite>
         </div>
         <div className="flex flex-col">
-          <img className="w-[600px] h-[350px]" src={freeLiveImage.src} />
+          <img className="w-full h-full" src={freeLiveImage.src} />
           <div className="bg-[#308dde] p-5 rounded-[14px]">
             <p className="font-bold">
               Эфир — это не продажа, а честный взгляд на обучение.
