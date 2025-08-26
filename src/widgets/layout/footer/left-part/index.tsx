@@ -1,3 +1,4 @@
+"use client"
 import SvgCourse from "@/assets/icons/Course"
 import Button from "@/shared/ui/buttons"
 import { useRouter } from "next/navigation"
