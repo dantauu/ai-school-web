@@ -4,7 +4,7 @@ import SvgTelegram from "@/assets/icons/Telegram"
 import { useRouter } from "next/navigation"
 
 const itemTopPart = [
-  { id: 1, text: "Курсы", icon: <SvgCourse />, path: "/" },
+  { id: 1, text: "Курсы", icon: <SvgCourse />, path: "/course" },
   { id: 2, text: "О школе", path: "/about-school" },
   { id: 3, text: "Контакты", path: "/" },
   { id: 4, text: "Вопрос-ответ", path: "/" },

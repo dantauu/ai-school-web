@@ -1,14 +1,16 @@
 import SvgCourse from "@/assets/icons/Course"
 import Button from "@/shared/ui/buttons"
+import { useRouter } from "next/navigation"
 
 const itemLeftPart = [
-  { id: 1, text: "Курсы", icon: <SvgCourse /> },
-  { id: 2, text: "О школе" },
-  { id: 3, text: "Контакты" },
-  { id: 4, text: "Вопрос-ответ" },
+  { id: 1, text: "Курсы", icon: <SvgCourse />, path: "/course" },
+  { id: 2, text: "О школе", path: "/about-school" },
+  { id: 3, text: "Контакты", path: "/" },
+  { id: 4, text: "Вопрос-ответ", path: "/" },
 ]
 
 export const LeftPartFooter = () => {
+  const router = useRouter()
   return (
     <div>
       <div className="1510:flex-row flex flex-col 1510:gap-9 1510:items-center gap-4">
@@ -21,6 +23,7 @@ export const LeftPartFooter = () => {
               className="w-full 530:border-none border-b border-[#ffffff3d] pb-2"
               key={item.id}
               variant="default"
+              onClick={() => router.push(item.path)}
             >
               {item.icon}
               {item.text}

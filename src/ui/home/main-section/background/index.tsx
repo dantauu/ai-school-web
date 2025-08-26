@@ -35,6 +35,7 @@ export const Background = () => {
           w-[350px] h-[450px]
           bg-[url('/static/robot-mobile.svg')]
           pointer-events-none
+          bg-no-repeat
         "
           style={{ zIndex: -1 }}
         />
@@ -47,6 +48,7 @@ export const Background = () => {
           less-desctop:bottom-0
           translate-x-1/3
           bg-[url('/static/women-robot.svg')]
+          bg-no-repeat
           bg-cover bg-center
           pointer-events-none
         "
