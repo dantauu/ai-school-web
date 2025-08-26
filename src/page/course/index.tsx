@@ -14,6 +14,7 @@ import { useEffect, useState } from "react"
 import { FilterModal } from "@/widgets/modals/filter"
 import Button from "@/shared/ui/buttons"
 import SvgFilter from "@/assets/icons/Filter"
+import FormRequestWidget from "@/widgets/form-request"
 
 const filterComponents: Record<number, React.ReactNode> = {
   1: <DirectionFilter />,
@@ -37,30 +38,52 @@ export const CoursePage = () => {
     }
   }, [open])
   return (
-    <div className="container">
-      <Breadcrumbs location={"Курсы"} />
-      <h3 className="text-[60px]">Наши курсы</h3>
-      {isMedia ? (
-        <Button
-          className="flex items-center w-full h-[60px] justify-between bg-blur-bg rounded-[10px] px-3 cursor-pointer"
-          variant="default"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <p>Настроить фильтры</p>
-          <SvgFilter />
-        </Button>
-      ) : (
-        <div className="flex gap-5">
-          {filterItems.map((item) => (
-            <FilterItem icon={item.id === 4 && <SvgFilter />} key={item.id} text={item.text}>
-              {filterComponents[item.id]}
-            </FilterItem>
-          ))}
-        </div>
-      )}
-      <OurCourseSection hasTittle={false} hasButton={false} className="py-10" />
+    <div>
+      <div className="container flex flex-col gap-4">
+        <Breadcrumbs className="pt-5" location={"Курсы"} />
+        <h3 className="975:text-[60px] text-[40px]">Наши курсы</h3>
+        {isMedia ? (
+          <Button
+            className="flex items-center w-full h-[60px] justify-between bg-blur-bg rounded-[10px] px-3 cursor-pointer"
+            variant="default"
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            <p>Настроить фильтры</p>
+            <SvgFilter />
+          </Button>
+        ) : (
+          <div className="flex gap-5">
+            {filterItems.map((item) => (
+              <FilterItem
+                icon={item.id === 4 && <SvgFilter />}
+                key={item.id}
+                text={item.text}
+              >
+                {filterComponents[item.id]}
+              </FilterItem>
+            ))}
+          </div>
+        )}
+        <OurCourseSection
+          hasTittle={false}
+          hasButton={false}
+          className="less-desctop:py-10 pb-5"
+        />
+      </div>
       <Pagination totalPages={3} currentPage={page} perPage={1} />
       {open && <FilterModal setOpen={setOpen} />}
+      <FormRequestWidget
+        className="mt-20"
+        text={
+          <>
+            Готовы <span className="text-gradient-white">прокачаться</span> в
+            AI?
+          </>
+        }
+        description={
+          "Оставь заявку — наш специалист подскажет, какой курс подходит именно тебе, ответит на все вопросы и поможет стартовать без стресса."
+        }
+      />
     </div>
   )
 }

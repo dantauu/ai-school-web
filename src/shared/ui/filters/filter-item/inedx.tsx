@@ -20,7 +20,7 @@ export const FilterItem = ({ text, children, icon }: FilterItemProps) => {
         <div className="flex items-center gap-2">
           {icon}
           <p>{text}</p>
-          </div>
+        </div>
         <motion.div
           animate={{ rotate: open ? -180 : 0 }}
           transition={{ duration: 0.2 }}

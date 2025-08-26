@@ -18,7 +18,7 @@ export const OurCourseSection = ({
   return (
     <div
       className={cn(
-        "flex flex-col 975:gap-7 less-desctop:mt-0 mt-10",
+        "flex flex-col 975:gap-7 less-desctop:mt-0 mt-7",
         className
       )}
     >
