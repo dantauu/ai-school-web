@@ -1,16 +1,19 @@
 export const Radio = ({
-                        id,
-                        name,
-                        checked,
-                        onChange,
-                      }: {
+  id,
+  name,
+  checked,
+  onChange,
+}: {
   id?: string
   name: string
   checked?: boolean
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }) => {
   return (
-    <label htmlFor={id} className="relative w-5.5 h-5.5 cursor-pointer">
+    <label
+      htmlFor={id}
+      className="relative 975:w-5.5 975:h-5.5 w-[32px] h-[32px] cursor-pointer"
+    >
       <input
         type="radio"
         id={id}

@@ -8,7 +8,10 @@ export const Checkbox = ({
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }) => {
   return (
-    <label htmlFor={id} className="relative w-5.5 h-5.5 cursor-pointer">
+    <label
+      htmlFor={id}
+      className="relative 975:w-5.5 975:h-5.5 w-[32px] h-[32px] cursor-pointer"
+    >
       <input
         type="checkbox"
         id={id}
@@ -24,7 +27,7 @@ export const Checkbox = ({
       />
       <svg
         className={`
-          absolute left-1/2 top-1/2 w-4 h-4 text-[#fff]
+          absolute left-1/2 top-1/2 975:w-4 975:h-4 w-[32px] h-[32px] text-[#fff]
           -translate-x-1/2 -translate-y-1/2
           opacity-0 peer-checked:opacity-100
           transition-opacity duration-200

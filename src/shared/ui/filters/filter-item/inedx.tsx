@@ -1,13 +1,14 @@
-import { useState } from "react"
+import React, { SVGProps, useState } from "react"
 import SvgArrow from "@/assets/icons/Arrow"
 import { motion, AnimatePresence } from "framer-motion"
 
 type FilterItemProps = {
   text: string
   children?: React.ReactNode
+  icon: React.ReactNode
 }
 
-export const FilterItem = ({ text, children }: FilterItemProps) => {
+export const FilterItem = ({ text, children, icon }: FilterItemProps) => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -16,7 +17,10 @@ export const FilterItem = ({ text, children }: FilterItemProps) => {
         className="flex items-center w-full h-[60px] justify-between bg-blur-bg rounded-[10px] px-3 cursor-pointer"
         onClick={() => setOpen((prev) => !prev)}
       >
-        <p>{text}</p>
+        <div className="flex items-center gap-2">
+          {icon}
+          <p>{text}</p>
+          </div>
         <motion.div
           animate={{ rotate: open ? -180 : 0 }}
           transition={{ duration: 0.2 }}

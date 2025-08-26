@@ -10,7 +10,11 @@ type OurCourseProps = {
   hasButton?: boolean
 }
 
-export const OurCourseSection = ({ hasTittle = true, hasButton = true, className }: OurCourseProps) => {
+export const OurCourseSection = ({
+  hasTittle = true,
+  hasButton = true,
+  className,
+}: OurCourseProps) => {
   return (
     <div
       className={cn(
@@ -18,9 +22,7 @@ export const OurCourseSection = ({ hasTittle = true, hasButton = true, className
         className
       )}
     >
-      {hasTittle && (
-        <h3 className="530:text-[40px] text-[32px]">Наши курсы</h3>
-      )}
+      {hasTittle && <h3 className="530:text-[40px] text-[32px]">Наши курсы</h3>}
       <div className="flex flex-col gap-10">
         {courses.map((item) => (
           <OurCourseLayout

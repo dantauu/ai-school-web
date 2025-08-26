@@ -4,7 +4,7 @@ import SvgCourse from "@/assets/icons/Course"
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
 import BurgerMenu from "@/ui/menu"
 import React, { useEffect, useState } from "react"
-import { MenuModal } from "@/widgets/modals/menu-modal"
+import { MenuModal } from "@/widgets/modals/menu"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { useRouter } from "next/navigation"
 

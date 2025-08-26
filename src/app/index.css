@@ -109,7 +109,7 @@
   }
   .scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: white transparent
+    scrollbar-color: white transparent;
   }
 }
 
@@ -118,7 +118,8 @@
     margin: 0;
     -ms-overflow-style: none;
   }
-  html, body {
+  html,
+  body {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }

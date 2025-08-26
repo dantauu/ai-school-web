@@ -9,6 +9,11 @@ import { LanguageFilter } from "@/widgets/dropdowns/filter/language"
 import { PopulationFilter } from "@/widgets/dropdowns/filter/population"
 import { Pagination } from "@/shared/ui/pagination"
 import { useSearchParams } from "next/navigation"
+import { useMediaQuery } from "@/lib/hooks/use-media-query"
+import { useEffect, useState } from "react"
+import { FilterModal } from "@/widgets/modals/filter"
+import Button from "@/shared/ui/buttons"
+import SvgFilter from "@/assets/icons/Filter"
 
 const filterComponents: Record<number, React.ReactNode> = {
   1: <DirectionFilter />,
@@ -20,19 +25,42 @@ const filterComponents: Record<number, React.ReactNode> = {
 export const CoursePage = () => {
   const searchParams = useSearchParams()
   const page = Number(searchParams.get("page") ?? 1)
+  const isMedia = useMediaQuery("(max-width: 975px)")
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden"
+
+      return () => {
+        document.body.style.overflow = ""
+      }
+    }
+  }, [open])
   return (
-      <div className="container">
-        <Breadcrumbs location={"Курсы"} />
-        <h3 className="text-[60px]">Наши курсы</h3>
+    <div className="container">
+      <Breadcrumbs location={"Курсы"} />
+      <h3 className="text-[60px]">Наши курсы</h3>
+      {isMedia ? (
+        <Button
+          className="flex items-center w-full h-[60px] justify-between bg-blur-bg rounded-[10px] px-3 cursor-pointer"
+          variant="default"
+          onClick={() => setOpen((prev) => !prev)}
+        >
+          <p>Настроить фильтры</p>
+          <SvgFilter />
+        </Button>
+      ) : (
         <div className="flex gap-5">
           {filterItems.map((item) => (
-            <FilterItem key={item.id} text={item.text}>
+            <FilterItem icon={item.id === 4 && <SvgFilter />} key={item.id} text={item.text}>
               {filterComponents[item.id]}
             </FilterItem>
           ))}
         </div>
-        <OurCourseSection hasTittle={false} hasButton={false} className="py-10" />
-        <Pagination totalPages={3} currentPage={page} perPage={1} />
-      </div>
+      )}
+      <OurCourseSection hasTittle={false} hasButton={false} className="py-10" />
+      <Pagination totalPages={3} currentPage={page} perPage={1} />
+      {open && <FilterModal setOpen={setOpen} />}
+    </div>
   )
 }
