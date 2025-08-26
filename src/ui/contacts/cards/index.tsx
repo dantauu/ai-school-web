@@ -1,4 +1,3 @@
-
 const itemsSociety = [
   { id: 1, name: "ОРГН:", text: "1272837015718" },
   { id: 2, name: "ИНН:", text: "7721581040" },
@@ -15,14 +14,12 @@ const data = [
   {
     id: 2,
     title: "+7 987 654-32-10",
-    description:
-      "Вопросы по покупке и содержанию курсов",
+    description: "Вопросы по покупке и содержанию курсов",
   },
   {
     id: 3,
     title: "help@email.com",
-    description:
-      "Вопросы по учебному процессу",
+    description: "Вопросы по учебному процессу",
   },
 ]
 
@@ -38,7 +35,11 @@ export const ContactCards = () => {
               : "bg-blur-bg border-[#ffffff33]"
           }`}
         >
-          <p className={`text-[19px] ${item.id !== 1 && "text-gradient-white text-[24px]"}`}>{item.title}</p>
+          <p
+            className={`text-[19px] ${item.id !== 1 && "text-gradient-white text-[24px]"}`}
+          >
+            {item.title}
+          </p>
 
           {item.id === 1 ? (
             <div className="flex flex-col gap-1">
