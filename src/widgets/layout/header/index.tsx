@@ -9,7 +9,7 @@ import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { useRouter } from "next/navigation"
 
 const items = [
-  { id: 1, text: "Курсы", path: "/", icon: <SvgCourse /> },
+  { id: 1, text: "Курсы", path: "/course", icon: <SvgCourse /> },
   { id: 2, text: "О школе", path: "/about-school" },
   { id: 3, text: "Контакты", path: "/" },
 ]

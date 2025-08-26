@@ -22,7 +22,9 @@ export const DropdownQuestion = ({
     >
       <div className="flex items-center justify-between gap-4">
         <h3 className="530:text-lg text-[20px] font-medium">{title}</h3>
-        <SvgPlus className={`min-w-5 min-h-5 duration-200 ${isOpen && "rotate-45"}`} />
+        <SvgPlus
+          className={`min-w-5 min-h-5 duration-200 ${isOpen && "rotate-45"}`}
+        />
       </div>
       {isOpen && (
         <p className="w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed whitespace-pre-line">

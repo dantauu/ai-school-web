@@ -107,17 +107,24 @@
     background: var(--color-gradient-white);
     @apply bg-clip-text text-transparent;
   }
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: white transparent
+  }
 }
 
 @layer base {
   * {
     margin: 0;
+    -ms-overflow-style: none;
+  }
+  html, body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-
-    *::-webkit-scrollbar {
-      display: none;
-    }
+  }
+  *::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
   body {
     height: 100vh;

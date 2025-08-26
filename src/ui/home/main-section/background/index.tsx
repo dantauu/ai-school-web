@@ -3,7 +3,7 @@
 import { useMediaQuery } from "@/lib/hooks/use-media-query"
 
 export const Background = () => {
-  const isMedia = useMediaQuery('(max-width: 585px)');
+  const isMedia = useMediaQuery("(max-width: 585px)")
   return (
     <div className="overflow-hidden inset-0">
       <video

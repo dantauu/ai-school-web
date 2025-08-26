@@ -1,5 +1,5 @@
 import { MainSection } from "@/ui/home/main-section"
-import { OurCourseSection } from "@/entities/home/our-course/ui"
+import { OurCourseSection } from "@/widgets/our-course"
 import { AboutSection } from "@/ui/home/about-school"
 import { ReviewsSection } from "@/ui/home/reviews"
 import { WillFitSection } from "@/ui/home/will-fit"
