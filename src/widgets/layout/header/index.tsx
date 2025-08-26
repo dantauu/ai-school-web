@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation"
 const items = [
   { id: 1, text: "Курсы", path: "/course", icon: <SvgCourse /> },
   { id: 2, text: "О школе", path: "/about-school" },
-  { id: 3, text: "Контакты", path: "/" },
+  { id: 3, text: "Контакты", path: "/contacts" },
 ]
 
 const Header = () => {

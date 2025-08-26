@@ -6,8 +6,8 @@ import { useRouter } from "next/navigation"
 const itemLeftPart = [
   { id: 1, text: "Курсы", icon: <SvgCourse />, path: "/course" },
   { id: 2, text: "О школе", path: "/about-school" },
-  { id: 3, text: "Контакты", path: "/" },
-  { id: 4, text: "Вопрос-ответ", path: "/" },
+  { id: 3, text: "Контакты", path: "/contacts" },
+  { id: 4, text: "Вопрос-ответ", path: "/questions" },
 ]
 
 export const LeftPartFooter = () => {
