@@ -1,42 +1,39 @@
 "use client"
-import { Checkbox } from "@/shared/ui/checkboxes/checkbox"
 import { useState } from "react"
+import { Radio } from "@/shared/ui/checkboxes/radio"
 
 export const LanguageFilter = () => {
-  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({})
+  const [checkedItems, setCheckedItems] = useState<string>("any")
 
-  const handleChange = (id: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCheckedItems((prev) => ({
-      ...prev,
-      [id]: e.target.checked,
-    }))
-  }
 
   return (
     <div className="flex flex-col gap-3 w-full p-3 rounded-[10px] bg-[#18336d]">
       <label className="flex items-center gap-2 cursor-pointer">
-        <Checkbox
+        <Radio
           id="any"
-          checked={checkedItems["any"] || false}
-          onChange={handleChange("any")}
+          name="language"
+          checked={checkedItems === "any"}
+          onChange={() => setCheckedItems("any")}
         />
         <p>Любой</p>
       </label>
 
       <label className="flex items-center gap-2 cursor-pointer">
-        <Checkbox
-          id="beginner"
-          checked={checkedItems["beginner"] || false}
-          onChange={handleChange("beginner")}
+        <Radio
+          id="russia"
+          name="russia"
+          checked={checkedItems === "russia"}
+          onChange={() => setCheckedItems("russia")}
         />
         <p>Только на русском</p>
       </label>
 
       <label className="flex items-center gap-2 cursor-pointer">
-        <Checkbox
-          id="pro"
-          checked={checkedItems["pro"] || false}
-          onChange={handleChange("pro")}
+        <Radio
+          id="english"
+          name="english"
+          checked={checkedItems === "english"}
+          onChange={() => setCheckedItems("english")}
         />
         <p>Только на английском</p>
       </label>

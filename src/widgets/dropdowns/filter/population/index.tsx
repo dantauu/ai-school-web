@@ -3,40 +3,33 @@ import { Checkbox } from "@/shared/ui/checkboxes/checkbox"
 import { useState } from "react"
 
 export const PopulationFilter = () => {
-  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({})
-
-  const handleChange = (id: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCheckedItems((prev) => ({
-      ...prev,
-      [id]: e.target.checked,
-    }))
-  }
+  const [checkedItems, setCheckedItems] = useState<string>("population")
 
   return (
     <div className="flex flex-col gap-3 w-full p-3 rounded-[10px] bg-[#18336d]">
       <label className="flex items-center gap-2 cursor-pointer">
         <Checkbox
-          id="any"
-          checked={checkedItems["any"] || false}
-          onChange={handleChange("any")}
+          id="population"
+          checked={checkedItems === "population"}
+          onChange={() => setCheckedItems("population")}
         />
         <p>По популярности</p>
       </label>
 
       <label className="flex items-center gap-2 cursor-pointer">
         <Checkbox
-          id="beginner"
-          checked={checkedItems["beginner"] || false}
-          onChange={handleChange("beginner")}
+          id="age"
+          checked={checkedItems === "age"}
+          onChange={() => setCheckedItems("age")}
         />
         <p>По возрасту цены</p>
       </label>
 
       <label className="flex items-center gap-2 cursor-pointer">
         <Checkbox
-          id="pro"
-          checked={checkedItems["pro"] || false}
-          onChange={handleChange("pro")}
+          id="price"
+          checked={checkedItems === "price"}
+          onChange={() => setCheckedItems("price")}
         />
         <p>По убыванию цены</p>
       </label>

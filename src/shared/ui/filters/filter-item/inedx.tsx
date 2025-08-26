@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import SvgArrow from "@/assets/icons/Arrow"
 import { motion, AnimatePresence } from "framer-motion"

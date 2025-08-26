@@ -16,7 +16,7 @@ export const DirectionFilter = () => {
     <div className="flex flex-col gap-3 w-full p-3 rounded-[10px] bg-[#18336d]">
       <div className="flex items-center gap-2 bg-[#fff2] w-full h-[60px] px-2 rounded-[10px]">
         <SvgSearch />
-        <input placeholder="Найти направление" />
+        <input className="w-full h-full" placeholder="Найти направление" />
       </div>
         <div className="h-[90px] overflow-y-auto flex flex-col gap-2 scrollbar">
         <label className="flex items-center gap-2 cursor-pointer">
