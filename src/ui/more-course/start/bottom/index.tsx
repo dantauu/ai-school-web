@@ -44,7 +44,7 @@ export const StartBottom = () => {
         {itemsBottom.map((item) => (
           <div
             key={item.id}
-            className="flex w-full gap-3 p-3 rounded-[10px] bg-[#0062FF]"
+            className={`flex w-full gap-3 p-3 rounded-[10px] ${item.id === 3 ? "gradient-purple" : "bg-[#0062FF]"}`}
           >
             {item.icon}
             <div className="flex gap-2">

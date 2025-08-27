@@ -34,6 +34,7 @@
     #0062ff 100%
   );
   --color-gradient-light-blue: linear-gradient(90deg, #0de4fd 0%, #1649f7 100%);
+  --color-gradient-cold-blue: linear-gradient(90deg, #1649f7 0%, #0de4fd 100%);
   --color-gradient-white: linear-gradient(90deg, #c3ffff 0%, #0bd3fb 100%);
   --color-gradient-white-reverse: linear-gradient(
     90deg,
@@ -50,7 +51,7 @@
     rgba(253, 8, 176, 0.8) 0%,
     #0062ff 100%
   );
-  --color-gradient-grey: linear-gradient(180deg, #031c52 0%, #f5f5f5 100%);
+  --color-gradient-grey: linear-gradient(180deg, #031c52 30%, #c2c2c2 100%);
   --color-gradient-grey-light: linear-gradient(
     180deg,
     #031c52 0%,
@@ -97,13 +98,16 @@
   .gradient-light-blue {
     background: var(--color-gradient-light-blue);
   }
+  .gradient-cold-blue {
+    background: var(--color-gradient-cold-blue);
+  }
   .gradient-dark-blue-vertical {
     background: var(--color-gradient-dark-blue-vertical);
   }
   .gradient-grey {
     background: var(--color-gradient-grey);
   }
-  .gradient-grey {
+  .gradient-grey-light {
     background: var(--color-gradient-grey-light);
   }
   .text-gradient-white {

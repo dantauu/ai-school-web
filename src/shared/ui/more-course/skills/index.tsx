@@ -23,10 +23,10 @@ export const Skills = ({
   className,
 }: skillsType) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between gap-10">
       <div
         className={cn(
-          `flex flex-col gradient-white-reverse p-4 rounded-[12px]`,
+          `flex flex-col w-full gradient-cold-blue p-4 rounded-[12px]`,
           className
         )}
       >
@@ -39,7 +39,7 @@ export const Skills = ({
           ))}
         </ul>
       </div>
-      <div className="flex flex-col gap-4 bg-white rounded-[12px] text-black p-5">
+      <div className="flex flex-col w-full gap-4 bg-white rounded-[12px] text-black p-5">
         <p className="text-[32px]">Результат:</p>
         <ul className="pl-4">
           {resultItems.map((item) => (
