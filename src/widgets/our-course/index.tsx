@@ -25,18 +25,7 @@ export const OurCourseSection = ({
       {hasTittle && <h3 className="530:text-[40px] text-[32px]">Наши курсы</h3>}
       <div className="flex flex-col gap-10">
         {courses.map((item) => (
-          <OurCourseLayout
-            id={item.id}
-            title={item.title}
-            countCourse={item.countCourse}
-            img={item.img}
-            description={item.description}
-            descriptionAbout={item.descriptionAbout}
-            list={item.list}
-            price={item.price}
-            titleAbout={item.titleAbout}
-            key={item.id}
-          />
+          <OurCourseLayout key={item.id} {...item} />
         ))}
       </div>
       {hasButton && (

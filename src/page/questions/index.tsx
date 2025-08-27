@@ -1,4 +1,4 @@
-import { QuestionsSection } from "@/ui/home/questions"
+import { QuestionsSection } from "@/widgets/questions"
 import Breadcrumbs from "@/shared/ui/breadcrumbs"
 
 export const QuestionsPage = () => {
