@@ -21,6 +21,7 @@ export const SpecialPage = () => {
             "Прямое применение AI в профессии уже после первых занятий."
           }
           titleLeft={"Что вы освоите:"}
+          className="gradient-cold-blue"
           skillsItems={skillsListSpecial}
           resultItems={resultListSpecial}
         />

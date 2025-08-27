@@ -2,7 +2,7 @@ type couchProps = {
   img: string
   name: string
   direction: string
-  message: string
+  message?: string
 }
 
 export const Couch = ({ img, direction, message, name }: couchProps) => {
@@ -12,9 +12,11 @@ export const Couch = ({ img, direction, message, name }: couchProps) => {
       <div className="flex flex-col gap-3 bg-blur-bg p-3 rounded-[12px]">
         <div className="flex flex-col gap-2 bg-[#F5F5F526] rounded-[9px] p-1">
           <p className="text-[21px]">{name}</p>
-          <p className="text-[18px] max-w-[300px]">{direction}</p>
+          <p className="text-[18px] max-w-[311px]">{direction}</p>
         </div>
-        <p>{message}</p>
+        {message && (
+          <p>{message}</p>
+        )}
       </div>
     </div>
   )

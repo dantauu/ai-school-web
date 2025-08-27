@@ -17,9 +17,10 @@ export const CareerStartPage = () => {
         <StartSection />
         <Skills
           likeText={
-            "Идеально, если вы хотите сменить профессию, войти в digital, освоить рынок будущего уже сейчас"
+            "Прямое применение AI в профессии уже после первых занятий."
           }
           titleLeft={"Что вы освоите:"}
+          className="gradient-cold-blue"
           skillsItems={skillsList}
           resultItems={resultList}
         />

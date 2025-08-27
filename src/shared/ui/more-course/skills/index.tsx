@@ -26,7 +26,7 @@ export const Skills = ({
     <div className="flex justify-between gap-10">
       <div
         className={cn(
-          `flex flex-col w-full gradient-cold-blue p-4 rounded-[12px]`,
+          `flex flex-col w-full p-4 rounded-[12px]`,
           className
         )}
       >
