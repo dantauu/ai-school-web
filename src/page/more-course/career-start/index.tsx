@@ -9,7 +9,7 @@ import { CouchSection } from "@/widgets/more-course/couch"
 import { PriceSection } from "@/shared/ui/more-course/price"
 import { ImportantSection } from "@/shared/ui/more-course/important"
 
-export const CoursePage = () => {
+export const CareerStartPage = () => {
   return (
     <>
         <Breadcrumbs className="py-[30px] px-[40px]" location={"Карьерный старт в AI"} />
