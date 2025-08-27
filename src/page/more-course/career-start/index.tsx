@@ -1,7 +1,7 @@
 import { ReviewsSection } from "@/ui/home/reviews"
 import { StartSection } from "@/ui/more-course/start"
 import { Skills } from "@/shared/ui/more-course/skills"
-import { resultList, skillsList } from "@/lib/data/more-course/start"
+import { resultList, skillsList } from "@/lib/data/more-course/career-start"
 import { PassesStudySection } from "@/ui/more-course/passes-study"
 import { AfterCourseSection } from "@/widgets/more-course/after-course"
 import Breadcrumbs from "@/shared/ui/breadcrumbs"

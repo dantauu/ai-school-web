@@ -7,37 +7,36 @@ const itemsBottom = [
   {
     id: 1,
     title: "Количество:",
-    text: "36 занятий по 90 минут",
+    text: "24 занятия по 90 минут",
     icon: <SvgCount />,
   },
   {
     id: 2,
     title: "Продолжительность:",
-    text: "36 занятий по 90 минут",
+    text: "2 месяца",
     icon: <SvgTime />,
   },
   {
     id: 3,
     title: "Итог:",
-    text: "минимум 3 реальных проекта в резюме",
+    text: "личный AI-набор для работы + 2–3 проекта в портфолио",
     icon: <SvgPeoples />,
   },
 ]
 
-export const StartBottom = () => {
+export const SpecialBottom = () => {
   return (
     <div className="flex flex-col gap-5">
       <div className="flex gap-5">
         <div className="flex items-center gap-2 p-4 w-full bg-white rounded-[10px]">
           <SvgPeoples className="text-[#145A96]" />
           <p className="text-black">
-            Для кого: новичков без опыта в IT, кто хочет войти в digital и
-            построить карьеру в AI-сфере.
+            Для кого: экспертов в свой сфере и предпринимателей, кто хочет повысить продуктивность и автоматизировать работу с помощью нейросетей.
           </p>
         </div>
         <div className="flex p-3 gap-2 bg-[#38FCFE4D] rounded-[10px]">
           <SvgBook />
-          <p>Формат: 3 занятия в неделю + работа над проектами</p>
+          <p>Формат: 3 занятия в неделю по 90 минут + проектная работа</p>
         </div>
       </div>
       <div className="flex gap-5 justify-between">
@@ -57,3 +56,4 @@ export const StartBottom = () => {
     </div>
   )
 }
+

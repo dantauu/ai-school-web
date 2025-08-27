@@ -27,7 +27,7 @@ export const DropdownQuestion = ({
         />
       </div>
       {isOpen && (
-        <p className="w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed whitespace-pre-line">
+        <p className="1295:w-[530px] w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed">
           {description}
         </p>
       )}

@@ -18,7 +18,7 @@ export const PriceSection = ({ price }: { price: string }) => {
       <div className="flex flex-col gap-8 justify-between">
         <div>
           <p className="text-[17px]">Стоимость обучения*</p>
-          <p className="text-[52px]">Полный курс - {price}</p>
+          <p className="text-[52px]">Полный курс - {price} ₽</p>
         </div>
         <div className="flex flex-col gap-2 w-fit bg-blur-bg rounded-[12px] p-3">
           <p>*Доступна оплата частями</p>
