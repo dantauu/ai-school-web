@@ -85,6 +85,9 @@
   .gradient-white {
     background: var(--color-gradient-white);
   }
+  .gradient-white-reverse {
+    background: var(--color-gradient-white-reverse);
+  }
   .gradient-purple {
     background: var(--color-gradient-purple);
   }

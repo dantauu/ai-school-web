@@ -2,6 +2,7 @@
 
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { useRouter } from "next/navigation"
 
 export type ListItem = {
   id: number
@@ -18,6 +19,7 @@ export type OurCourseProps = {
   descriptionAbout: string
   img: string
   description: string
+  path: string
 }
 
 export const OurCourseLayout = ({
@@ -29,7 +31,9 @@ export const OurCourseLayout = ({
   descriptionAbout,
   img,
   description,
+  path,
 }: OurCourseProps) => {
+  const router = useRouter()
   return (
     <div className="w-full 1510:flex-row flex flex-col-reverse items-center">
       <div className="530:w-full h-full w-[320px] flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
@@ -50,7 +54,10 @@ export const OurCourseLayout = ({
             <p className="text-[20px]">Полный курс*</p>
             <p className="text-[40px]">От {price} Р</p>
             <div className="530:flex-row flex flex-col gap-4">
-              <ButtonGradientBlue className="530:w-[160px] w-full h-[50px]">
+              <ButtonGradientBlue
+                onClick={() => router.push(path)}
+                className="530:w-[160px] w-full h-[50px]"
+              >
                 Подробнее
               </ButtonGradientBlue>
               <ButtonGradientWhite className="w-[240px] h-[50px] text-black">

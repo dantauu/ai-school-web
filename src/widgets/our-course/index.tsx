@@ -35,6 +35,7 @@ export const OurCourseSection = ({
             list={item.list}
             price={item.price}
             titleAbout={item.titleAbout}
+            path={item.path}
             key={item.id}
           />
         ))}
