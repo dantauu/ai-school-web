@@ -9,7 +9,7 @@ export const CouchSection = ({ description }: { description: string }) => {
         Наши <span className="text-gradient-white">преподаватели</span>
       </h3>
       <p className="text-[18px]">{description}</p>
-      <div className="flex justify-between items-center gap-2">
+      <div className="flex justify-between items-center gap-2 overflow-x-auto">
         {couchItems.map((item) => (
           <Couch
             key={item.id}

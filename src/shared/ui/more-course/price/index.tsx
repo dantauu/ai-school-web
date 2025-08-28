@@ -34,21 +34,21 @@ const conditionsOne = [
 
 export const PriceSection = ({ price }: { price: string }) => {
   return (
-    <div className="flex justify-between border border-white rounded-[12px] p-5">
-      <div className="flex flex-col gap-8 justify-between">
+    <div className="1455:flex-row flex flex-col justify-between 1455:gap-0 gap-4 border bg-blur-bg border-white rounded-[12px] p-5">
+      <div className="flex flex-col 1455:gap-8 gap-2 justify-between">
         <div>
           <p className="text-[17px]">Стоимость обучения*</p>
-          <p className="text-[52px]">Полный курс - {price} ₽</p>
+          <p className="830:max-w-full max-w-[250px] 830:text-[52px] text-[32px]">Полный курс - {price} ₽</p>
         </div>
-        <div className="flex flex-col gap-2 w-fit bg-blur-bg rounded-[12px] p-3">
+        <div className="flex flex-col gap-2 1455:w-fit w-full bg-blur-bg rounded-[12px] p-3">
           <p>*Доступна оплата частями</p>
           <p>Разбей сумму на удобные платежи — пиши нам, всё расскажем.</p>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid 1455:grid-cols-2 grid-cols-1 gap-5">
         {conditionsOne.map((item) => (
           <div
-            className="flex items-center gap-2 bg-white px-4 py-2 rounded-[8px]"
+            className="flex items-center gap-2 bg-white px-4 1455:py-2 py-4 rounded-[8px]"
             key={item.id}
           >
             {item.icon}

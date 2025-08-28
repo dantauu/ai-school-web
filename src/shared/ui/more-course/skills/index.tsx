@@ -23,7 +23,7 @@ export const Skills = ({
   className,
 }: skillsType) => {
   return (
-    <div className="flex justify-between gap-10">
+    <div className="1155:flex-row flex flex-col justify-between 1155:gap-10 gap-4">
       <div className={cn(`flex flex-col w-full p-4 rounded-[12px]`, className)}>
         <p className="text-[32px]">{titleLeft}</p>
         <ul className="pl-4">
