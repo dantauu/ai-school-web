@@ -30,18 +30,20 @@ const passesItemsTwo = [
 export const SpecialStudySection = () => {
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="text-[42px]">
+      <h3 className="830:text-[42px] text-[32px] leading-8">
         <span className="text-gradient-white">Как проходит</span> обучение:
       </h3>
-      <div className="1155:flex-col flex justify-between flex-row gap-4 overflow-x-auto">
+      <div className="1155:flex-col flex flex-row gap-4 overflow-x-auto">
         <CardBlur
-          classItem="1155:w-full w-fit max-h-[180px] pr-40"
-          className="flex justify-between gap-5 w-full shrink-0"
+          classItem="w-full 1155:h-[220px] h-[150px]"
+          className="flex gap-5 shrink-0 justify-between"
+          classText="1155:text-[28px] text-[20px]"
           items={passesItemsOne}
         />
         <CardBlur
-          classItem="1155:w-full w-fit max-h-[180px] pr-40"
-          className="flex justify-between gap-5 w-full shrink-0"
+          classItem="w-full 1155:h-[220px] h-[150px]"
+          className="flex gap-5 shrink-0 justify-between"
+          classText="1155:text-[28px] text-[20px]"
           items={passesItemsTwo}
         />
       </div>

@@ -9,11 +9,11 @@ export const CouchSpecialSection = ({
 }) => {
   return (
     <div className="flex flex-col gap-2">
-      <h3 className="text-[42px]">
+      <h3 className="975:text-[42px] text-[32px]">
         Наши <span className="text-gradient-white">преподаватели</span>
       </h3>
       <p className="text-[18px]">{description}</p>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 overflow-x-auto">
         {couchSpecialItems.map((item) => (
           <Couch
             key={item.id}

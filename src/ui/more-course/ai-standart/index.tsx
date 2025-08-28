@@ -3,7 +3,7 @@ import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 export const AiStandardSection = () => {
   return (
     <div className="flex flex-col gap-3 w-full p-5 rounded-[12px] gradient-purple">
-      <h3 className="text-[42px] text-center leading-12">
+      <h3 className="975:text-[42px] 975:leading-12 text-[24px] text-center leading-8">
         Этот курс —{" "}
         <span className="text-gradient-white">
           для тех, кто не хочет «выпасть» из реальности

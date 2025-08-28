@@ -32,7 +32,7 @@ const passesItemsTwo = [
 export const PassesStudySection = () => {
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="830:text-[42px] text-[32px]">
+      <h3 className="830:text-[42px] text-[32px] leading-8">
         <span className="text-gradient-white">Как проходит</span> обучение:
       </h3>
       <div className="1155:flex-col flex flex-row gap-4 overflow-x-auto">

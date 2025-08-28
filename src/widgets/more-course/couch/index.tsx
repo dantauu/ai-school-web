@@ -5,7 +5,7 @@ import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 export const CouchSection = ({ description }: { description: string }) => {
   return (
     <div className="flex flex-col gap-2">
-      <h3 className="text-[42px]">
+      <h3 className="530:text-[42px] text-[32px]">
         Наши <span className="text-gradient-white">преподаватели</span>
       </h3>
       <p className="text-[18px]">{description}</p>
