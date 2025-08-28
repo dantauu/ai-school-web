@@ -1,4 +1,4 @@
-import { ReviewsSection } from "@/ui/home/reviews"
+import { ReviewsSection } from "@/shared/ui/reviews"
 import { StartSection } from "@/ui/more-course/start"
 import { Skills } from "@/shared/ui/more-course/skills"
 import { resultList, skillsList } from "@/lib/data/more-course/career-start"
@@ -8,11 +8,15 @@ import Breadcrumbs from "@/shared/ui/breadcrumbs"
 import { CouchSection } from "@/widgets/more-course/couch"
 import { PriceSection } from "@/shared/ui/more-course/price"
 import { ImportantSection } from "@/shared/ui/more-course/important"
+import { reviewsHome } from "@/lib/data/reviews"
 
 export const CareerStartPage = () => {
   return (
     <>
-        <Breadcrumbs className="py-[30px] px-[40px]" location={"Карьерный старт в AI"} />
+      <Breadcrumbs
+        className="py-[30px] px-[40px]"
+        location={"Карьерный старт в AI"}
+      />
       <div className="flex flex-col gap-25 container">
         <StartSection />
         <Skills
@@ -31,7 +35,14 @@ export const CareerStartPage = () => {
             "Наставники, которые помогут тебе освоить AI и применить в жизни"
           }
         />
-        <ReviewsSection />
+        <ReviewsSection
+          title={
+            <>
+              Отзывы <span className="text-gradient-white">о курсе</span>
+            </>
+          }
+          reviews={reviewsHome}
+        />
         <PriceSection price={"60 000"} />
         <ImportantSection />
       </div>

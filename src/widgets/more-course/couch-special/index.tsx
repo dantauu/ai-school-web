@@ -2,7 +2,11 @@ import { Couch } from "@/shared/ui/cards/couch"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import { couchSpecialItems } from "@/lib/data/more-course/for-special"
 
-export const CouchSpecialSection = ({ description }: { description: string }) => {
+export const CouchSpecialSection = ({
+  description,
+}: {
+  description: string
+}) => {
   return (
     <div className="flex flex-col gap-2">
       <h3 className="text-[42px]">

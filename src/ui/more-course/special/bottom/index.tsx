@@ -31,7 +31,9 @@ export const SpecialBottom = () => {
         <div className="flex items-center gap-2 p-4 w-full bg-white rounded-[10px]">
           <SvgPeoples className="text-[#145A96]" />
           <p className="text-black">
-            Для кого: экспертов в свой сфере и предпринимателей, кто хочет повысить продуктивность и автоматизировать работу с помощью нейросетей.
+            Для кого: экспертов в свой сфере и предпринимателей, кто хочет
+            повысить продуктивность и автоматизировать работу с помощью
+            нейросетей.
           </p>
         </div>
         <div className="flex p-3 gap-2 bg-[#38FCFE4D] rounded-[10px]">
@@ -56,4 +58,3 @@ export const SpecialBottom = () => {
     </div>
   )
 }
-

@@ -1,4 +1,3 @@
-
 import { SpecialBottom } from "@/ui/more-course/special/bottom"
 import { SpecialTop } from "@/ui/more-course/special/top"
 

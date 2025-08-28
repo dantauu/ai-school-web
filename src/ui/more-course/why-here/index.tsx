@@ -13,7 +13,10 @@ export const WhyHereSection = () => {
         </ul>
       </div>
       <div className="flex items-center w-full border px-10 border-[#0BD3FB] rounded-[12px]">
-        <h3 className="text-[42px]">Наш курс — это реальный старт в AI, пока другие просто играют в «информатику».</h3>
+        <h3 className="text-[42px]">
+          Наш курс — это реальный старт в AI, пока другие просто играют в
+          «информатику».
+        </h3>
       </div>
     </div>
   )

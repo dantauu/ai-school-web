@@ -6,7 +6,8 @@ export const StartTop = () => {
       <div className="w-full flex flex-col gap-2">
         <div className="w-fit p-3 bg-blur-bg rounded-[10px]">
           <p>
-            Ускоряйтесь. Делегируйте рутину нейросетям и фокусируйтесь на главном.
+            Ускоряйтесь. Делегируйте рутину нейросетям и фокусируйтесь на
+            главном.
           </p>
         </div>
         <h3 className="text-[52px]">Карьерный старт в AI</h3>

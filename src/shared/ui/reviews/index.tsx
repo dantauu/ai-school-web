@@ -1,27 +1,27 @@
 "use client"
-import reviewOne from "@/assets/images/reviews-1.png"
-import reviewTwo from "@/assets/images/reviews-2.png"
 import { Play } from "@/shared/ui/buttons/play"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import React from "react"
 
-const video = [
-  { id: 1, video: reviewOne.src },
-  { id: 2, video: reviewTwo.src },
-  { id: 3, video: reviewOne.src },
-  { id: 4, video: reviewTwo.src },
-  { id: 5, video: reviewOne.src },
-  { id: 6, video: reviewTwo.src },
-]
+type Review = {
+  id: number
+  video: string
+}
 
-export const ReviewsSection = () => {
+type ReviewsProps = {
+  reviews: Review[]
+  title: string | React.ReactNode
+}
+
+export const ReviewsSection = ({ reviews, title }: ReviewsProps) => {
   return (
     <div className="flex flex-col gap-5">
       <div className="585:flex-row flex flex-col 585:items-center justify-between">
-        <h3 className="585:text-[45px] text-[32px]">Отзывы</h3>
+        <h3 className="585:text-[45px] text-[32px]">{title}</h3>
         <p>*Все отзывы размещены с согласия учеников</p>
       </div>
       <div className="flex 1070:overscroll-x-none overflow-x-auto 1070:justify-center  gap-7">
-        {video.map((item, i) => (
+        {reviews.map((item, i) => (
           <div
             key={item.id}
             className={`relative 1070:w-auto 1070:h-auto w-[160px] h-[335px] 1070:shrink shrink-0 rounded-xl overflow-hidden ${

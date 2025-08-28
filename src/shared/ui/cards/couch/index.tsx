@@ -14,9 +14,7 @@ export const Couch = ({ img, direction, message, name }: couchProps) => {
           <p className="text-[21px]">{name}</p>
           <p className="text-[18px] max-w-[311px]">{direction}</p>
         </div>
-        {message && (
-          <p>{message}</p>
-        )}
+        {message && <p>{message}</p>}
       </div>
     </div>
   )

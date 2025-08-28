@@ -5,11 +5,31 @@ import SvgSuiteCase from "@/assets/icons/SuiteCase"
 import SvgCert from "@/assets/icons/Cert"
 
 const conditionsOne = [
-  { id: 1, text: "3 месяца обучения", icon: <SvgTime className="text-[#031C52]" /> },
-  { id: 2, text: "36 занятий по 90 минут", icon: <SvgCount className="text-[#031C52]" /> },
-  { id: 3, text: "Поддержка преподавателей и куратора", icon: <SvgHeart className="text-[#031C52]" /> },
-  { id: 4, text: "Работа над проектами в портфолио", icon: <SvgSuiteCase className="text-[#031C52]" /> },
-  { id: 5, text: "Сертификат об окончании", icon: <SvgCert className="text-[#031C52]" /> },
+  {
+    id: 1,
+    text: "3 месяца обучения",
+    icon: <SvgTime className="text-[#031C52]" />,
+  },
+  {
+    id: 2,
+    text: "36 занятий по 90 минут",
+    icon: <SvgCount className="text-[#031C52]" />,
+  },
+  {
+    id: 3,
+    text: "Поддержка преподавателей и куратора",
+    icon: <SvgHeart className="text-[#031C52]" />,
+  },
+  {
+    id: 4,
+    text: "Работа над проектами в портфолио",
+    icon: <SvgSuiteCase className="text-[#031C52]" />,
+  },
+  {
+    id: 5,
+    text: "Сертификат об окончании",
+    icon: <SvgCert className="text-[#031C52]" />,
+  },
 ]
 
 export const PriceSection = ({ price }: { price: string }) => {
@@ -27,7 +47,10 @@ export const PriceSection = ({ price }: { price: string }) => {
       </div>
       <div className="grid grid-cols-2 gap-5">
         {conditionsOne.map((item) => (
-          <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-[8px]" key={item.id}>
+          <div
+            className="flex items-center gap-2 bg-white px-4 py-2 rounded-[8px]"
+            key={item.id}
+          >
             {item.icon}
             <p className="text-[#031C52]">{item.text}</p>
           </div>

@@ -31,7 +31,8 @@ export const KidsBottom = () => {
         <div className="flex items-center gap-2 p-4 w-full bg-white rounded-[10px]">
           <SvgPeoples className="text-[#145A96]" />
           <p className="text-black">
-            Для кого: школьникам 5–11 классов, которым интересно, как работают нейросети и технологии будущего.
+            Для кого: школьникам 5–11 классов, которым интересно, как работают
+            нейросети и технологии будущего.
           </p>
         </div>
         <div className="flex p-3 gap-2 bg-[#38FCFE4D] rounded-[10px]">
@@ -56,4 +57,3 @@ export const KidsBottom = () => {
     </div>
   )
 }
-

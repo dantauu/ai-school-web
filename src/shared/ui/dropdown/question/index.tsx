@@ -1,4 +1,5 @@
 import SvgPlus from "@/assets/icons/Plus"
+import { cn } from "@/lib/utils/cn"
 
 type DropdownProps = {
   id: number
@@ -6,6 +7,7 @@ type DropdownProps = {
   description: string
   isOpen: boolean
   onToggle: (id: number) => void
+  classDescription?: string
 }
 
 export const DropdownQuestion = ({
@@ -14,6 +16,7 @@ export const DropdownQuestion = ({
   description,
   isOpen,
   onToggle,
+  classDescription,
 }: DropdownProps) => {
   return (
     <div
@@ -27,7 +30,12 @@ export const DropdownQuestion = ({
         />
       </div>
       {isOpen && (
-        <p className="1295:w-[530px] w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed">
+        <p
+          className={cn(
+            `1295:w-[530px] w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed`,
+            classDescription
+          )}
+        >
           {description}
         </p>
       )}
