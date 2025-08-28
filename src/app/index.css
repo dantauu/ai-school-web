@@ -64,6 +64,10 @@
     4px 5px 20px #38fcfe66, -2px 1px 7px #38fcfe66,
     inset 0 -2px 4px rgba(0, 0, 0, 0.6),
     inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  --shadow-img-shadow:
+          5px 5px 10px #0BD3FB, -2px 1px 7px #38fcfe66,
+          inset 0 -2px 4px rgba(0, 0, 0, 0.6),
+          inset 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 @layer utilities {

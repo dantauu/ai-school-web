@@ -49,9 +49,9 @@ export const DirectionFilter = () => {
         </label>
         <label className="flex items-center gap-2 cursor-pointer">
           <Checkbox
-            id="any3"
-            checked={checkedItems["any3"] || false}
-            onChange={handleChange("any3")}
+            id="any4"
+            checked={checkedItems["any4"] || false}
+            onChange={handleChange("any4")}
           />
           <p>Направление</p>
         </label>
