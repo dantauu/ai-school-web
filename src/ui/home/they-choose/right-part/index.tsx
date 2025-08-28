@@ -4,7 +4,7 @@ import avatarTwo from "@/assets/images/women-choose.svg"
 export const TheyChooseRight = () => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="choose:w-[580px] w-full h-fit flex flex-col items-stretch gap-3 text-white choose:p-7 p-5 gradient-purple rounded-[15px]">
+      <div className="choose:w-[580px] w-full h-fit flex flex-col items-stretch gap-3 text-white choose:p-7 p-5.5 gradient-purple rounded-[15px]">
         <div className="flex items-center choose:gap-9 gap-15">
           <div className="flex -space-x-5">
             <img
@@ -16,11 +16,11 @@ export const TheyChooseRight = () => {
               src={avatarTwo.src}
             />
           </div>
-          <p className="text-[19px]">
+          <p className="530:text-[19px] text-[16px]">
             AI ассистенты + поддержка в реальном времени
           </p>
         </div>
-        <h3 className="max-w-[410px] pb-2 leading-8 text-[30px]">
+        <h3 className="max-w-[410px] pb-2 530:leading-8 leading-5 530:text-[30px] text-[21px]">
           Никогда не оставайся один на один с вопросом
         </h3>
         <p className="leading-5.5 text-[18.5px]">
@@ -31,9 +31,11 @@ export const TheyChooseRight = () => {
         </p>
       </div>
 
-      <div className="w-full h-fit flex flex-col gap-3 text-white p-7 bg-[#0062FF] rounded-[15px]">
-        <p className="text-[19px]">Проектная и командная работа</p>
-        <h3 className="max-w-[320px] pb-2 leading-8 text-[30px]">
+      <div className="w-full h-fit flex flex-col gap-3 text-white p-7.5 bg-[#0062FF] rounded-[15px]">
+        <p className="530:text-[19px] text-[16px]">
+          Проектная и командная работа
+        </p>
+        <h3 className="max-w-[320px] pb-2 530:leading-8 leading-5 530:text-[30px] text-[21px]">
           Не учёба ради галочки. А ради результата
         </h3>
         <div>
@@ -48,9 +50,11 @@ export const TheyChooseRight = () => {
         </div>
       </div>
 
-      <div className="less-desctop:h-[300px] w-full h-fit flex flex-col gap-3 text-black p-7 gradient-white rounded-[15px]">
-        <p className="text-[19px]">Сертификаты и карьерный рост</p>
-        <h3 className="pb-2 leading-8 text-[30px]">
+      <div className="w-full h-full flex flex-col gap-3 text-black p-6 gradient-white rounded-[15px]">
+        <p className="530:text-[19px] leading-[16px]">
+          Сертификаты и карьерный рост
+        </p>
+        <h3 className="pb-2 530:leading-8 leading-5 530:text-[30px] text-[20px]">
           Цифровые сертификаты, которые реально работают
         </h3>
         <p className="leading-5.5 text-[18.5px]">

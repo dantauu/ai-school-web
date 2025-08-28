@@ -1,5 +1,4 @@
 "use client"
-import { Play } from "@/shared/ui/buttons/play"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import React from "react"
 
@@ -15,21 +14,27 @@ type ReviewsProps = {
 
 export const ReviewsSection = ({ reviews, title }: ReviewsProps) => {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col 1295:gap-9 gap-15">
       <div className="585:flex-row flex flex-col 585:items-center justify-between">
-        <h3 className="585:text-[45px] text-[32px]">{title}</h3>
+        <h3 className="585:text-[45px] text-[32px] 585:leading-10 leading-8 pb-2">
+          {title}
+        </h3>
         <p>*Все отзывы размещены с согласия учеников</p>
       </div>
-      <div className="flex 1070:overscroll-x-none overflow-x-auto 1070:justify-center  gap-7">
+      <div className="grid grid-cols-2 gap-4 1295:flex 1295:flex-nowrap 1070:justify-between 1070:gap-7">
         {reviews.map((item, i) => (
           <div
             key={item.id}
-            className={`relative 1070:w-auto 1070:h-auto w-[160px] h-[335px] 1070:shrink shrink-0 rounded-xl overflow-hidden ${
-              (i + 1) % 2 === 0 ? "1070:mt-8 mt-0" : ""
+            className={`1070:w-auto 1070:h-[500px] w-full h-[335px]  rounded-xl overflow-hidden ${
+              (i + 1) % 2 === 0 ? "1070:mt-0" : "-mt-8"
             }`}
           >
-            <Play className="absolute inset-0 flex items-center justify-center" />
-            <img src={item.video} alt="" />
+            <iframe
+              className="w-full h-full"
+              src="https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"
+              allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
         ))}
       </div>

@@ -10,19 +10,24 @@ export const StartTop = () => {
             главном.
           </p>
         </div>
-        <h3 className="830:text-[52px] text-[32px]">Карьерный старт в AI</h3>
+        <h3 className="830:text-[52px] text-[32px] 830:leading-normal leading-9">
+          Карьерный старт в AI
+        </h3>
         <p className="max-w-[935px]">
           — это практическая программа для новичков без технического
           бэкграунда.{" "}
         </p>
-        <p>
+        <p className="830:pb-0 pb-4 leading-5">
           Всего за 3 месяца ты соберёшь портфолио из 3 собственных AI-проектов,
           разберёшься в направлениях и инструментах искусственного интеллекта,
           научишься применять нейросети и Python на реальных задачах и
           подготовишься к своему первому шагу в AI-карьеру.
         </p>
       </div>
-      <img className="w-[260px] h-[274px]" src={startImage.src} />
+      <img
+        className="830:w-[260px] 830:h-[274px] w-full h-full"
+        src={startImage.src}
+      />
     </div>
   )
 }

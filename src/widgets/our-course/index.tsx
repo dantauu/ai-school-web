@@ -3,6 +3,7 @@ import { courses } from "@/lib/data/course"
 import { OurCourseLayout } from "@/shared/ui/cards/our-course"
 import { cn } from "@/lib/utils/cn"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { useRouter } from "next/navigation"
 
 type OurCourseProps = {
   className?: string
@@ -15,6 +16,7 @@ export const OurCourseSection = ({
   hasButton = true,
   className,
 }: OurCourseProps) => {
+  const router = useRouter()
   return (
     <div
       className={cn(
@@ -29,7 +31,10 @@ export const OurCourseSection = ({
         ))}
       </div>
       {hasButton && (
-        <ButtonGradientWhite className="w-full h-[50px] text-black 975:mt-0 mt-4">
+        <ButtonGradientWhite
+          onClick={() => router.push("/course")}
+          className="w-full h-[50px] text-black 975:mt-0 mt-4"
+        >
           Посмотреть все курсы
         </ButtonGradientWhite>
       )}

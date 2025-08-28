@@ -4,7 +4,7 @@ import { couchKidsItems } from "@/lib/data/more-course/for-kids"
 export const CouchKidsSection = ({ description }: { description: string }) => {
   return (
     <div className="flex flex-col gap-2">
-      <h3 className="530:text-[42px] text-[32px]">
+      <h3 className="530:text-[42px] text-[32px] 530:leading-normal leading-7 pb-2">
         Наши <span className="text-gradient-white">преподаватели</span>
       </h3>
       <p className="text-[18px]">{description}</p>

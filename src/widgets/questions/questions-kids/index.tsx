@@ -11,14 +11,14 @@ export const QuestionsKids = () => {
   }
   return (
     <div>
-      <div className="1295:flex-row 1295:items-stretch items-center flex flex-col gap-10 justify-between">
+      <div className="1295:flex-row 1295:items-stretch  flex flex-col gap-10 justify-between">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-2">
             <h3 className="530:text-[47px] text-[32px] leading-10">
               Остались вопросы?
             </h3>
+            <p className="text-[18px]">Напишите нам</p>
           </div>
-          <p className="text-[18px]">Напишите нам</p>
           <ButtonGradientBlue className="1295:w-[248px] w-full h-[50px] gradient-blue">
             Задать свой вопрос
           </ButtonGradientBlue>

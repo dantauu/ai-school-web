@@ -1,22 +1,23 @@
 import SvgBook from "@/assets/icons/Book"
 import SvgSuiteCase from "@/assets/icons/SuiteCase"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import SvgBrainSchema from "@/assets/icons/BrainSchema"
 
 const itemsDifference = [
   {
     id: 1,
     text: "Учим так, чтобы понял даже новичок, но не заскучал и эксперт",
-    icon: <SvgBook />,
+    icon: <SvgBook className="min-w-[27px] min-h-[27px]" />,
   },
   {
     id: 2,
     text: "Строим курс как систему: от первых шагов до прокачанного портфолио",
-    icon: <SvgSuiteCase />,
+    icon: <SvgSuiteCase className="min-w-[27px] min-h-[27px]" />,
   },
   {
     id: 3,
     text: "Используем передовые AI-решения внутри самого обучения",
-    icon: <SvgSuiteCase />,
+    icon: <SvgBrainSchema className="min-w-[27px] min-h-[27px]" />,
   },
 ]
 

@@ -8,7 +8,7 @@ export const ImportantSection = () => {
           Важное — не цена, а{" "}
           <span className="text-gradient-white">результат</span>
         </h3>
-        <p className="max-w-[750px] text-[25px] leading-7">
+        <p className="max-w-[750px] 530:text-[25px] text-[20px] leading-7">
           Ты получаешь не просто знания, а новые навыки, примеры работ и
           понимание, как зарабатывать с AI.
         </p>

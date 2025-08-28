@@ -28,7 +28,7 @@ const data = [
 
 export const WillFitCard = () => {
   return (
-    <div className="975:flex-row flex flex-col justify-between gap-7">
+    <div className="975:flex-row flex flex-col justify-between 530:gap-7 gap-3">
       {data.map((item) => (
         <div
           key={item.id}
@@ -40,9 +40,11 @@ export const WillFitCard = () => {
                 : "border-white bg-[rgb(39,61,106)]"
           }`}
         >
-          <img className="w-[112px] h-[112px]" src={item.image} />
-          <p className="text-[23px]">{item.title}</p>
-          <p className="max-w-[470px] text-[17px]">{item.description}</p>
+          <img className="w-[80px] h-[80px]" src={item.image} />
+          <p className="530:text-[23px] text-[20px]">{item.title}</p>
+          <p className="max-w-[470px] text-[16px] leading-5 530:leading-normal">
+            {item.description}
+          </p>
         </div>
       ))}
     </div>

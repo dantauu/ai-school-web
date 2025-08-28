@@ -10,7 +10,7 @@ export const SpecialTop = () => {
             главном.
           </p>
         </div>
-        <h3 className="830:leading-13 leading-10 830:text-[52px] text-[32px]">
+        <h3 className="830:leading-13 leading-8 830:text-[52px] text-[32px] pb-2">
           Курс «AI для специалистов
           <br /> и предпринимателей»
         </h3>
@@ -20,13 +20,16 @@ export const SpecialTop = () => {
           AI-инструменты и внедрить их в свою работу от генерации контента до
           клиентской поддержки и аналитики.
         </p>
-        <p className="max-w-[1090px] text-[18px]">
+        <p className="max-w-[1090px] text-[18px] pb-4">
           Курс даст системное понимание, где и как применять ИИ без технических
           сложностей, а также позволит собрать портфолио из 2–3 реальных
           AI-кейсов.
         </p>
       </div>
-      <img className="w-[280px] h-[290px]" src={specialImage.src} />
+      <img
+        className="830:w-[260px] 830:h-[274px] w-full h-full"
+        src={specialImage.src}
+      />
     </div>
   )
 }

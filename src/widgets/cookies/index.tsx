@@ -2,11 +2,24 @@
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import Button from "@/shared/ui/buttons"
 import SvgCross from "@/assets/icons/Cross"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Cookies = () => {
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
+  const ONE_MONTH = 30 * 24 * 60 * 60
+  function getCookie(name: string): string | null {
+    const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"))
+    return match ? match[2] : null
+  }
+  useEffect(() => {
+    const consent = getCookie("cookiesConsent")
+    if (!consent) {
+      setShow(true)
+    }
+  }, [])
+
   const handleClose = () => {
+    document.cookie = `cookiesConsent=1; max-age=${ONE_MONTH}; path=/`
     setShow(false)
   }
   if (!show) return

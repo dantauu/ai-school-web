@@ -2,8 +2,10 @@
 
 import SvgTicket from "@/assets/icons/Ticket"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { useRouter } from "next/navigation"
 
 export const LeftPartMain = () => {
+  const router = useRouter()
   return (
     <div className="flex flex-col h-full justify-between">
       <h3 className="w-[330px] less-desctop:leading-12 leading-8 text-[32px] less-desctop:text-[45px] pb-30 less-desctop:pb-0">
@@ -24,7 +26,10 @@ export const LeftPartMain = () => {
             </div>
             <p>Твой билет в цифровую эпоху</p>
           </div>
-          <ButtonGradientWhite className="585:w-[190px] w-full h-[45px] text-[16px] text-black">
+          <ButtonGradientWhite
+            onClick={() => router.push("/course")}
+            className="585:w-[190px] w-full h-[45px] text-[16px] text-black"
+          >
             Выбрать свой курс
           </ButtonGradientWhite>
         </div>

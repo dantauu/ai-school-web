@@ -66,8 +66,8 @@ export const OurCourseLayout = ({
             </div>
           </div>
           <div className="p-4 rounded-[20px] bg-blur-bg">
-            <p>{titleAbout}</p>
-            <p>{descriptionAbout}</p>
+            <p className="530:text-[16px] text-[15px]">{titleAbout}</p>
+            <p className="975:leading-normal leading-4">{descriptionAbout}</p>
           </div>
         </div>
       </div>

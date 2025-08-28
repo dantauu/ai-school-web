@@ -21,7 +21,13 @@ const data = [
     id: 2,
     icon: <SvgTools />,
     title: "Инструменты делают работу за тебя",
-    text: "Боты, нейросети и крутые AI-фишки",
+    text: (
+      <>
+        &#34;Боты, нейросети и крутые AI-
+        <br />
+        фишки&#34;
+      </>
+    ),
   },
 ]
 
@@ -36,15 +42,17 @@ const avatars = [
 export const RightPartMain = () => {
   return (
     <div className="flex flex-col less-desctop:gap-15">
-      <div className="flex flex-row less-desctop:h-auto h-[162px] less-desctop:flex-col overflow-x-auto gap-5 pb-10 less-desctop:pb-0">
+      <div className="flex flex-col 830:flex-row less-desctop:flex-col 830:items-stretch items-center justify-between h-auto gap-5 pb-10 830:pl-0 less-desctop:pb-0">
         {data.map((item) => (
-          <div className="flex gap-3 shrink-0" key={item.id}>
+          <div className="flex w-[355px] gap-3" key={item.id}>
             <div className="flex items-center justify-center w-[48px] h-[48px] bg-[#145A96] rounded-full mt-2">
               {item.icon}
             </div>
             <div className="flex flex-col leading-8">
-              <p className="w-[258px] text-[25px]">{item.title}</p>
-              <p className="w-[330px] text-[20px]">{item.text}</p>
+              <p className="max-w-[258px] 830:text-[25px] text-[18.5px] 830:leading-normal leading-6">
+                {item.title}
+              </p>
+              <p className="830:text-[20px] text-[18.5px]">{item.text}</p>
             </div>
           </div>
         ))}
