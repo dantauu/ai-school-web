@@ -40,11 +40,14 @@ export const SpecialPage = () => {
             "Практики, которые сами используют нейросети каждый день — в бизнесе, маркетинге, дизайне и технологиях."
           }
         />
-        <ReviewsSection title={
-          <>
-            Отзывы <span className="text-gradient-white">о курсе</span>
-          </>
-        } reviews={reviewsHome} />
+        <ReviewsSection
+          title={
+            <>
+              Отзывы <span className="text-gradient-white">о курсе</span>
+            </>
+          }
+          reviews={reviewsHome}
+        />
         <PriceSection price={"100 000"} />
         <ImportantSection />
       </div>

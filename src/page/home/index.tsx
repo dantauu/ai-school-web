@@ -14,6 +14,7 @@ import { FreeLiveSection } from "@/ui/home/free-live"
 import { SchoolBlocksSection } from "@/ui/home/about-school-blocks"
 import { RecordedForm } from "@/ui/home/record-form"
 import { reviewsHome } from "@/lib/data/reviews"
+import { Cookies } from "@/widgets/cookies"
 
 export default function HomePage() {
   return (
@@ -37,6 +38,7 @@ export default function HomePage() {
         <SchoolBlocksSection />
       </div>
       <RecordedForm />
+      <Cookies />
     </div>
   )
 }

@@ -33,8 +33,8 @@ export const KidsBottom = () => {
           <div className="1070:flex-row flex flex-col gap-1">
             <p className="min-w-fit text-black">Для кого:</p>
             <p className="text-black">
-              новичков без опыта в IT, кто хочет войти в digital и
-              построить карьеру в AI-сфере.
+              новичков без опыта в IT, кто хочет войти в digital и построить
+              карьеру в AI-сфере.
             </p>
           </div>
         </div>
