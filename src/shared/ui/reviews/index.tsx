@@ -16,7 +16,9 @@ export const ReviewsSection = ({ reviews, title }: ReviewsProps) => {
   return (
     <div className="flex flex-col 1295:gap-9 gap-15">
       <div className="585:flex-row flex flex-col 585:items-center justify-between">
-        <h3 className="585:text-[45px] text-[32px]">{title}</h3>
+        <h3 className="585:text-[45px] text-[32px] 585:leading-10 leading-8 pb-2">
+          {title}
+        </h3>
         <p>*Все отзывы размещены с согласия учеников</p>
       </div>
       <div className="grid grid-cols-2 gap-4 1295:flex 1295:flex-nowrap 1070:justify-between 1070:gap-7">

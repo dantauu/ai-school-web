@@ -26,7 +26,10 @@ export const SpecialTop = () => {
           AI-кейсов.
         </p>
       </div>
-      <img className="830:w-[260px] 830:h-[274px] w-full h-full" src={specialImage.src} />
+      <img
+        className="830:w-[260px] 830:h-[274px] w-full h-full"
+        src={specialImage.src}
+      />
     </div>
   )
 }

@@ -12,8 +12,8 @@ export const WhyHereSection = () => {
           <li>Ваш ребёнок достоин большего</li>
         </ul>
       </div>
-      <div className="flex items-center w-full border px-10 border-[#0BD3FB] rounded-[12px]">
-        <h3 className="830:text-[42px] 830:leading-normal leading-8 text-[24px]">
+      <div className="flex items-center w-full border px-8 py-7 border-[#0BD3FB] rounded-[12px]">
+        <h3 className="830:text-[42px] 830:leading-13 leading-8 text-[24px]">
           Наш курс — это реальный старт в AI, пока другие просто играют в
           «информатику».
         </h3>

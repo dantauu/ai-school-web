@@ -23,7 +23,10 @@ export const KidsTop = () => {
           </p>
         </div>
       </div>
-      <img className="830:w-[260px] 830:h-[274px] w-full h-full" src={kidImage.src} />
+      <img
+        className="830:w-[260px] 830:h-[274px] w-full h-full"
+        src={kidImage.src}
+      />
     </div>
   )
 }
