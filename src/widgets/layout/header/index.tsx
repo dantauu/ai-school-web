@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react"
 import { MenuModal } from "@/widgets/modals/menu"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 const items = [
   { id: 1, text: "Курсы", path: "/course", icon: <SvgCourse /> },
@@ -33,9 +34,11 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between">
       <div className="container flex items-center justify-between">
-        <h1 className="relative z-7 530:text-[30px] text-[16.5px]">
-          AI-School by Grafov
-        </h1>
+        <Link className="select-none" href={"/"}>
+          <h1 className="relative z-7 530:text-[30px] text-[16.5px]">
+            AI-School by Grafov
+          </h1>
+        </Link>
         {!isMedia && (
           <div className="flex gap-8">
             {items.map((item) => (

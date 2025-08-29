@@ -15,15 +15,16 @@ export const StudyMain = () => {
     <div className="less-desctop:flex-row flex flex-col items-stretch justify-between choose:h-[530px] h-full 585:gap-0 gap-5">
       <div className="flex flex-col gap-5 justify-between">
         <div>
-          <h3 className="pb-3 text-[27px]">О школе</h3>
+          <h3 className="pb-3 530:text-[27px] text-[20px]">О школе</h3>
           <h3 className="530:text-[45px] text-[32px] max-w-[570px] pb-8 530:leading-12 leading-10">
             <span className="text-gradient-white">Практичное обучение</span> по
             AI направлениям
           </h3>
           <CardBlur
             items={items}
-            classItem="less-desctop:shrink less-desctop:w-full shrink-0 w-fit"
-            className="overflow-x-auto flex justify-between gap-5"
+            classItem="less-desctop:shrink less-desctop:w-full shrink-0 w-[308px] 975:h-auto h-fit"
+            classText="less-desctop:text-[28px] max-w-full text-[20px]"
+            className="overflow-x-auto flex justify-between gap-3"
           />
         </div>
         <ButtonGradientWhite className="w-full h-[50px] text-black">

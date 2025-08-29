@@ -33,10 +33,10 @@ const dataTools = [
 export const PracticeToolsSection = () => {
   return (
     <div className="flex flex-col gap-1">
-      <p className="text-[21px] text-[#fff6]">
+      <p className="text-[21px] leading-7 text-[#fff6]">
         Практика на топовых инструментах
       </p>
-      <h3 className="leading-10 530:text-[45px] text-[32px]">
+      <h3 className="530:leading-10 530:text-[45px] leading-7 text-[32px] pb-2">
         AI-инструменты не в теории,{" "}
         <span className="text-gradient-white">а в твоих руках</span>
       </h3>
@@ -48,7 +48,7 @@ export const PracticeToolsSection = () => {
         {dataTools.map((card) => (
           <div
             key={card.id}
-            className={`h-[150px] flex flex-col justify-center gap-3 p-6 rounded-[15px] ${card.id === 1 ? "bg-[#0062FF]" : card.id === 2 ? "bg-[#145A96]" : "bg-[#fff2]"}`}
+            className={`h-fit flex flex-col justify-center gap-3 p-4 rounded-[15px] ${card.id === 1 ? "bg-[#0062FF]" : card.id === 2 ? "bg-[#145A96]" : "bg-[#fff2]"}`}
           >
             <div className="flex flex-wrap gap-2">
               {card.items.map((tool) => (
