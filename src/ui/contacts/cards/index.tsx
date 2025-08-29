@@ -29,14 +29,14 @@ export const ContactCards = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className={`w-full h-auto flex flex-col gap-3 rounded-[12px] p-8 border ${
+          className={`w-full 975:h-auto h-full flex flex-col gap-3 rounded-[12px] p-5 border ${
             item.id === 1
               ? "border-[#ffffff33] bg-[rgb(20,97,135)]"
               : "bg-blur-bg border-[#ffffff33]"
           }`}
         >
           <p
-            className={`text-[19px] ${item.id !== 1 && "text-gradient-white text-[24px]"}`}
+            className={`text-[19px] leading-5 ${item.id !== 1 && "text-gradient-white leading-6 text-[24px]"}`}
           >
             {item.title}
           </p>
