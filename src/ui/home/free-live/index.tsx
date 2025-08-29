@@ -2,6 +2,8 @@
 
 import freeLiveImage from "@/assets/images/free-live.png"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 const liveListData = [
   { id: 1, text: "Познакомишься с экспертами и кураторами" },
@@ -12,6 +14,7 @@ const liveListData = [
 ]
 
 export const FreeLiveSection = () => {
+  const dispatch = useAppDispatch()
   return (
     <>
       <div className="less-desctop:flex-row flex flex-col w-full justify-between items-stretch gap-4 p-7 rounded-[15px] gradient-dark-blue-vertical">
@@ -39,7 +42,7 @@ export const FreeLiveSection = () => {
               ))}
             </ul>
           </div>
-          <ButtonGradientWhite className="less-desctop:w-[240px] w-full h-[50px] text-black">
+          <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="less-desctop:w-[240px] w-full h-[50px] text-black">
             Записаться
           </ButtonGradientWhite>
         </div>

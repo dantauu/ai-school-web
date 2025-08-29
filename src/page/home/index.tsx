@@ -1,3 +1,4 @@
+"use client"
 import { MainSection } from "@/ui/home/main-section"
 import { OurCourseSection } from "@/widgets/our-course"
 import { AboutSection } from "@/ui/home/about-school"

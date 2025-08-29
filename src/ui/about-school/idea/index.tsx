@@ -28,7 +28,7 @@ export const IdeasSection = () => {
           .
         </p>
       </div>
-      <div className="flex items-center bg-[#0bd3fb91] rounded-[15px] pt-1 pr-4">
+      <div className="flex items-center gap-2 bg-[#0bd3fb91] rounded-[15px] p-3 pr-4">
         <img className="w-[110px] h-[110px]" src={createImage.src} />
         <div>
           <p className="text-[21px]">Родион Графов</p>

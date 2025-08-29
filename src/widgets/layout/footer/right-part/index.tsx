@@ -1,5 +1,6 @@
 import Button from "@/shared/ui/buttons"
 import SvgTelegram from "@/assets/icons/Telegram"
+import Link from "next/link"
 
 const itemRightPart = [
   {
@@ -32,12 +33,14 @@ export const RightPartFooter = () => {
         >
           <SvgTelegram />
         </Button>
-        <Button
-          className="w-[191px] h-[50px] gradient-white text-black"
-          variant="gradient"
-        >
-          Выбрать курс
-        </Button>
+        <Link href={"/course"}>
+          <Button
+            className="w-[191px] h-[50px] gradient-white text-black"
+            variant="gradient"
+          >
+            Выбрать курс
+          </Button>
+        </Link>
       </div>
     </div>
   )

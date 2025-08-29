@@ -3,9 +3,12 @@ import { DropdownQuestion } from "@/shared/ui/dropdown/question"
 import { useState } from "react"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { questionsData } from "@/lib/data/more-course/for-kids"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 export const QuestionsKids = () => {
   const [open, setOpen] = useState<number | null>()
+  const dispatch = useAppDispatch()
   const handleToggle = (id: number) => {
     setOpen(open === id ? null : id)
   }
@@ -19,7 +22,7 @@ export const QuestionsKids = () => {
             </h3>
             <p className="text-[18px]">Напишите нам</p>
           </div>
-          <ButtonGradientBlue className="1295:w-[248px] w-full h-[50px] gradient-blue">
+          <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="1295:w-[248px] w-full h-[50px] gradient-blue">
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>

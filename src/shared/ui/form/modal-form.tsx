@@ -3,12 +3,12 @@
 import { IMaskInput } from "react-imask"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 
-export const FormRequest = () => {
+export const ModalFormRequest = () => {
   return (
-    <form>
-      <div className="w-full max-w-[540px] flex flex-col gap-5">
+    <form className="w-full max-w-[540px] h-full flex flex-col">
+      <div className="w-full max-w-[540px] h-full flex flex-col gap-5">
         <div className="flex flex-col gap-3">
-          <div className="form:flex-row flex flex-col gap-3">
+          <div className="flex flex-col gap-3">
             <input
               className="w-full h-[64px] pl-5 rounded-[10px] text-black placeholder:text-black bg-white"
               placeholder={"Введите имя"}
@@ -32,8 +32,8 @@ export const FormRequest = () => {
             required
           />
         </div>
-        <div className="520:flex-row flex flex-col 520:items-center gap-3">
-          <ButtonGradientBlue className="520:w-[260px] w-full h-[50px]">
+        <div className="mt-auto flex flex-col gap-3">
+          <ButtonGradientBlue className="w-full h-[50px]">
             Отправить
           </ButtonGradientBlue>
           <p className="text-[14px]">

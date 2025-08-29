@@ -11,6 +11,7 @@
     "icons:build": "rimraf ./src/assets/icons && npx @svgr/cli --typescript --jsx-runtime automatic --out-dir src/assets/icons --index-template config/svgr-index-template.js -- src/assets/icons-source && npx prettier ./src/assets/icons --write"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
@@ -18,6 +19,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-imask": "^7.6.1",
+    "react-redux": "^9.2.0",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

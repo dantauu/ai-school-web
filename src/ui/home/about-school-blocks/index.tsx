@@ -1,10 +1,13 @@
 "use client"
 
-import Button from "@/shared/ui/buttons"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import Link from "next/link"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 export const SchoolBlocksSection = () => {
+  const dispatch = useAppDispatch()
   return (
     <div className="flex flex-col gap-5">
       <h3 className="530:text-[45px] text-[32px]">О школе</h3>
@@ -17,7 +20,7 @@ export const SchoolBlocksSection = () => {
             Платформа, где обучение подстроено под реальность: быстро, понятно,
             по делу
           </p>
-          <ButtonGradientWhite className="w-full h-[50px] text-black">
+          <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="w-full h-[50px] text-black">
             Записаться на курс
           </ButtonGradientWhite>
         </div>
@@ -29,9 +32,11 @@ export const SchoolBlocksSection = () => {
             Нейросети, no-code, AI-ассистенты — максимум пользы за минимум
             времени
           </p>
-          <ButtonGradientBlue className="w-full h-[50px] text-white">
-            О школе и подходе
-          </ButtonGradientBlue>
+          <Link href={"/about-school"}>
+            <ButtonGradientBlue className="w-full h-[50px] text-white">
+              О школе и подходе
+            </ButtonGradientBlue>
+          </Link>
         </div>
       </div>
     </div>

@@ -8,6 +8,8 @@ import { MenuModal } from "@/widgets/modals/menu"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 const items = [
   { id: 1, text: "Курсы", path: "/course", icon: <SvgCourse /> },
@@ -22,6 +24,7 @@ const Header = () => {
   const handleOpen = () => {
     setOpen((prev) => !prev)
   }
+  const dispatch = useAppDispatch()
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden"
@@ -58,7 +61,10 @@ const Header = () => {
         <div className="flex items-center gap-3">
           {/*<LangToggle />*/}
           {!isMedia && (
-            <ButtonGradientBlue className="w-[170px] h-[56px]">
+            <ButtonGradientBlue
+              onClick={() => dispatch(openFormModal())}
+              className="w-[170px] h-[56px]"
+            >
               Записаться
             </ButtonGradientBlue>
           )}

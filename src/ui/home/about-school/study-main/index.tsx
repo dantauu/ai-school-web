@@ -4,6 +4,7 @@ import SvgChat from "@/assets/icons/Chat"
 import aboutImage from "@/assets/images/about-school.png"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import Link from "next/link"
 
 const items = [
   { id: 1, icon: <SvgBrain />, text: "Курсы направленные на практику" },
@@ -27,9 +28,11 @@ export const StudyMain = () => {
             className="overflow-x-auto flex justify-between gap-3"
           />
         </div>
-        <ButtonGradientWhite className="w-full h-[50px] text-black">
-          Подробнее
-        </ButtonGradientWhite>
+        <Link href={"/about-school"}>
+          <ButtonGradientWhite className="w-full h-[50px] text-black">
+            Подробнее
+          </ButtonGradientWhite>
+        </Link>
       </div>
 
       <div className="flex">

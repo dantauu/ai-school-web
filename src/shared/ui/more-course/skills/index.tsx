@@ -1,6 +1,9 @@
+"use client"
 import { cn } from "@/lib/utils/cn"
 import SvgLike from "@/assets/icons/Like"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 type items = {
   id: number
@@ -22,6 +25,7 @@ export const Skills = ({
   likeText,
   className,
 }: skillsType) => {
+  const dispatch = useAppDispatch()
   return (
     <div className="1155:flex-row flex flex-col justify-between 1155:gap-10 gap-4">
       <div className={cn(`flex flex-col w-full p-4 rounded-[12px]`, className)}>
@@ -47,7 +51,7 @@ export const Skills = ({
           <SvgLike className="min-w-[24px] min-h-[24px]" />
           <p className="text-white max-w-[595px]">{likeText}</p>
         </div>
-        <ButtonGradientBlue className="w-full h-[45px] text-white">
+        <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="w-full h-[45px] text-white">
           Записаться на курс
         </ButtonGradientBlue>
       </div>
