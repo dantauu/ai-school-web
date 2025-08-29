@@ -28,20 +28,23 @@ export const SpecialBottom = () => {
   return (
     <div className="flex flex-col 1070:gap-5 gap-2">
       <div className="1070:flex-row flex flex-col 1070:gap-5 gap-2">
-        <div className="flex items-center gap-2 p-4 w-full bg-white rounded-[10px]">
-          <div className="1070:flex-row flex flex-col gap-1">
+        <div className="830:flex-row 830:items-center items-stretch flex flex-col 830:gap-10 gap-2 p-4 w-full bg-white rounded-[10px]">
+          <div className="flex items-center gap-3">
             <SvgPeoples className="text-[#145A96] min-w-[28px] min-h-[26px]" />
-            <p className="text-black">
-              Для кого: экспертов в свой сфере и предпринимателей, кто хочет
-              повысить продуктивность и автоматизировать работу с помощью
-              нейросетей.
+            <p className="min-w-fit text-black">Для кого:</p>
+          </div>
+          <div className="1070:flex-row flex flex-col">
+            <p className="text-black leading-5">
+              экспертов в свой сфере и предпринимателей, кто хочет повысить продуктивность и автоматизировать работу с помощью нейросетей.
             </p>
           </div>
         </div>
-        <div className="flex p-3 gap-2 bg-[#38FCFE4D] rounded-[10px]">
-          <SvgBook />
-          <div className="1070:flex-row flex flex-col">
+        <div className="830:flex-row flex flex-col p-3 gap-2 bg-[#38FCFE4D] rounded-[10px]">
+          <div className="flex gap-3">
+            <SvgBook />
             <p>Формат:</p>
+          </div>
+          <div className="1070:flex-row flex flex-col">
             <p>3 занятия в неделю по 90 минут + проектная работа</p>
           </div>
         </div>
@@ -50,11 +53,13 @@ export const SpecialBottom = () => {
         {itemsBottom.map((item) => (
           <div
             key={item.id}
-            className={`flex w-full gap-3 p-3 rounded-[10px] ${item.id === 3 ? "gradient-purple" : "bg-[#0062FF]"}`}
+            className={`830:flex-row flex flex-col w-full gap-2 p-3 rounded-[10px] ${item.id === 3 ? "gradient-purple" : "bg-[#0062FF]"}`}
           >
-            {item.icon}
-            <div className="1070:flex-row flex flex-col gap-2">
+            <div className="flex gap-3">
+              {item.icon}
               <p>{item.title}</p>
+            </div>
+            <div className="1070:flex-row flex flex-col gap-2">
               <p>{item.text}</p>
             </div>
           </div>

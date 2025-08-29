@@ -11,10 +11,10 @@ export const KidsTop = () => {
           </p>
         </div>
         <div className="flex flex-col gap-5">
-          <h3 className="830:text-[52px] text-[32px]">
+          <h3 className="1155:text-[52px] 1155:leading-normal leading-7 text-[32px]">
             Курс «AI для подростков и детей»
           </h3>
-          <p className="max-w-[935px] text-[18px]">
+          <p className="max-w-[935px] text-[18px] pb-4">
             Это увлекательное и доступное обучение искусственному интеллекту и
             цифровым навыкам для школьников 10–18 лет, которое поможет детям не
             просто понять, что такое AI, но и сделать свои собственные цифровые
@@ -23,7 +23,7 @@ export const KidsTop = () => {
           </p>
         </div>
       </div>
-      <img className="w-[280px] h-[290px]" src={kidImage.src} />
+      <img className="830:w-[260px] 830:h-[274px] w-full h-full" src={kidImage.src} />
     </div>
   )
 }
