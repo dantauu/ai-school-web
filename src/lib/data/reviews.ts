@@ -6,12 +6,18 @@ import parentOne from "@/assets/images/parent-1.png"
 import parentTwo from "@/assets/images/parent-2.png"
 
 export const reviewsHome = [
-  { id: 1, video: reviewOne.src },
-  { id: 2, video: reviewTwo.src },
-  { id: 3, video: reviewOne.src },
-  { id: 4, video: reviewTwo.src },
-  { id: 5, video: reviewOne.src },
-  { id: 6, video: reviewTwo.src },
+  { id: 1, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 2, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 3, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 4, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 5, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 6, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 7, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 8, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 9, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 10, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 11, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
+  { id: 12, video: "https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0" },
 ]
 
 export const reviewsKids = [

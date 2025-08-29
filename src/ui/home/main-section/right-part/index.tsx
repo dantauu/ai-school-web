@@ -7,8 +7,8 @@ import avatar2 from "@/assets/images/avatar-2.png"
 import avatar3 from "@/assets/images/avatar-3.png"
 import avatar4 from "@/assets/images/avatar-4.png"
 import avatar5 from "@/assets/images/avatar-5.png"
-import videoFrame from "@/assets/images/frame-video.png"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { useState } from "react"
 
 const data = [
   {
@@ -40,6 +40,7 @@ const avatars = [
 ]
 
 export const RightPartMain = () => {
+  const [isPlaying, setIsPlaying] = useState(false)
   return (
     <div className="flex flex-col less-desctop:gap-15">
       <div className="flex flex-col 830:flex-row less-desctop:flex-col 830:items-stretch items-center justify-between h-auto gap-5 pb-10 830:pl-0 less-desctop:pb-0">
@@ -66,9 +67,14 @@ export const RightPartMain = () => {
           </div>
           <p>10 000+ учеников</p>
         </div>
-        <div className="flex flex-col gap-3 max-w-[415px] bg-blur-bg rounded-[19px] p-2">
-          <img src={videoFrame.src} />
-          <ButtonGradientBlue className="w-full h-[48px]">
+        <div className="flex flex-col gap-3 w-full less-desctop:w-[415px] less-desctop:h-[250px] bg-blur-bg rounded-[19px] p-2">
+          <iframe
+            className="w-full h-full rounded-[12px]"
+            src={`https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0`}
+            allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"
+            allowFullScreen
+          ></iframe>
+          <ButtonGradientBlue className="w-full min-h-[48px]">
             Посмотреть как это работает
           </ButtonGradientBlue>
         </div>
