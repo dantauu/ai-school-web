@@ -3,6 +3,8 @@
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import { useRouter } from "next/navigation"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 export type ListItem = {
   id: number
@@ -34,6 +36,7 @@ export const OurCourseLayout = ({
   path,
 }: OurCourseProps) => {
   const router = useRouter()
+  const dispatch = useAppDispatch()
   return (
     <div className="w-full h-full 975:flex-row flex flex-col-reverse">
       <div className="w-full h-full flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
@@ -60,7 +63,10 @@ export const OurCourseLayout = ({
               >
                 Подробнее
               </ButtonGradientBlue>
-              <ButtonGradientWhite className="w-[240px] h-[50px] text-black">
+              <ButtonGradientWhite
+                onClick={() => dispatch(openFormModal())}
+                className="w-[240px] h-[50px] text-black"
+              >
                 Записаться на курс
               </ButtonGradientWhite>
             </div>

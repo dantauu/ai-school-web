@@ -7,6 +7,7 @@ import SvgHeart from "@/assets/icons/Heart"
 import SvgBage from "@/assets/icons/Bage"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import Link from "next/link"
 
 const topResultData = [
   {
@@ -80,9 +81,11 @@ export const ResultSection = () => {
           <span className="text-gradient-white">с готовым результатом</span>, а
           не с голой теорией
         </h3>
-        <ButtonGradientBlue className="w-full h-[50px] mt-4">
-          Подобрать курс под себя
-        </ButtonGradientBlue>
+        <Link href={"/course"}>
+          <ButtonGradientBlue className="w-full h-[50px] mt-4">
+            Подобрать курс под себя
+          </ButtonGradientBlue>
+        </Link>
       </div>
     </div>
   )

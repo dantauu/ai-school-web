@@ -17,7 +17,7 @@ export const ReviewsSection = ({ reviews, title }: ReviewsProps) => {
   const [allReviews, _setAllReviews] = useState(reviews)
 
   const loadMoreReviews = () => {
-    setVisibleCount(prevCount => prevCount + 6)
+    setVisibleCount((prevCount) => prevCount + 6)
   }
 
   const displayedReviews = allReviews.slice(0, visibleCount)

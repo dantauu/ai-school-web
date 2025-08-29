@@ -3,12 +3,15 @@ import { DropdownQuestion } from "@/shared/ui/dropdown/question"
 import { useState } from "react"
 import { faqData } from "@/lib/data/questions"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 export const QuestionsSection = () => {
   const [open, setOpen] = useState<number | null>()
   const handleToggle = (id: number) => {
     setOpen(open === id ? null : id)
   }
+  const dispatch = useAppDispatch()
   return (
     <div>
       <div className="1295:flex-row 1295:items-stretch items-center flex flex-col gap-10 justify-between">
@@ -22,7 +25,7 @@ export const QuestionsSection = () => {
             </h3>
           </div>
           <p className="text-[18px]">Мы попробуем развеять твои сомнения</p>
-          <ButtonGradientBlue className="1295:w-[248px] w-full h-[50px] gradient-blue">
+          <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="1295:w-[248px] w-full h-[50px] gradient-blue">
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>

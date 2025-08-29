@@ -1,6 +1,10 @@
+"use client"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
+import { useAppDispatch } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 export const ImportantSection = () => {
+  const dispatch = useAppDispatch()
   return (
     <div className="form:flex-row flex flex-col items-center justify-between gap-2 form:px-30 px-4 py-8 border border-white rounded-[12px] gradient-dark-blue">
       <div>
@@ -13,7 +17,7 @@ export const ImportantSection = () => {
           понимание, как зарабатывать с AI.
         </p>
       </div>
-      <ButtonGradientWhite className="form:max-w-[340px] w-full h-[44px] text-black">
+      <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="form:max-w-[340px] w-full h-[44px] text-black">
         Записаться на курс
       </ButtonGradientWhite>
     </div>

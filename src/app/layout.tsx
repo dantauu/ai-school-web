@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
-import Header from "@/widgets/layout/header"
 import "./index.css"
-import { Footer } from "@/widgets/layout/footer"
+import Layout from "@/app/layout/index"
 
 export const metadata: Metadata = {
   title: "AI-School by Grafov",
@@ -13,13 +12,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="ru">
-      <body className="pt-[20px]">
-        <Header />
-        {children}
-        <Footer className="mt-[110px]" />
-      </body>
-    </html>
-  )
+  return <Layout>{children}</Layout>
 }
