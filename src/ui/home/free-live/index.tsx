@@ -42,7 +42,10 @@ export const FreeLiveSection = () => {
               ))}
             </ul>
           </div>
-          <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="less-desctop:w-[240px] w-full h-[50px] text-black">
+          <ButtonGradientWhite
+            onClick={() => dispatch(openFormModal())}
+            className="less-desctop:w-[240px] w-full h-[50px] text-black"
+          >
             Записаться
           </ButtonGradientWhite>
         </div>

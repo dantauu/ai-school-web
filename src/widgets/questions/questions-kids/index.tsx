@@ -22,7 +22,10 @@ export const QuestionsKids = () => {
             </h3>
             <p className="text-[18px]">Напишите нам</p>
           </div>
-          <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="1295:w-[248px] w-full h-[50px] gradient-blue">
+          <ButtonGradientBlue
+            onClick={() => dispatch(openFormModal())}
+            className="1295:w-[248px] w-full h-[50px] gradient-blue"
+          >
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>

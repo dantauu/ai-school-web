@@ -19,7 +19,10 @@ export const WantTry = () => {
             Выбери курс
           </ButtonGradientWhite>
         </Link>
-        <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="1070:w-[250px] w-full h-[50px]">
+        <ButtonGradientBlue
+          onClick={() => dispatch(openFormModal())}
+          className="1070:w-[250px] w-full h-[50px]"
+        >
           Помогите с выбором
         </ButtonGradientBlue>
       </div>

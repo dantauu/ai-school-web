@@ -20,7 +20,10 @@ export const SchoolBlocksSection = () => {
             Платформа, где обучение подстроено под реальность: быстро, понятно,
             по делу
           </p>
-          <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="w-full h-[50px] text-black">
+          <ButtonGradientWhite
+            onClick={() => dispatch(openFormModal())}
+            className="w-full h-[50px] text-black"
+          >
             Записаться на курс
           </ButtonGradientWhite>
         </div>

@@ -15,7 +15,10 @@ export const RoadAiSection = () => {
           Не про теорию. Про навыки, которые нужны уже сейчас
         </p>
       </div>
-      <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="975:w-[220px] w-full h-[50px] text-black">
+      <ButtonGradientWhite
+        onClick={() => dispatch(openFormModal())}
+        className="975:w-[220px] w-full h-[50px] text-black"
+      >
         Задать вопрос
       </ButtonGradientWhite>
     </div>

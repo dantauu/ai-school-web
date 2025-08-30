@@ -25,7 +25,10 @@ export const QuestionsSection = () => {
             </h3>
           </div>
           <p className="text-[18px]">Мы попробуем развеять твои сомнения</p>
-          <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="1295:w-[248px] w-full h-[50px] gradient-blue">
+          <ButtonGradientBlue
+            onClick={() => dispatch(openFormModal())}
+            className="1295:w-[248px] w-full h-[50px] gradient-blue"
+          >
             Задать свой вопрос
           </ButtonGradientBlue>
         </div>

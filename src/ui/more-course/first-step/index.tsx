@@ -16,7 +16,10 @@ export const FirstStepSection = () => {
         </span>{" "}
         своего ребёнка.
       </h3>
-      <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="h-[50px]">
+      <ButtonGradientBlue
+        onClick={() => dispatch(openFormModal())}
+        className="h-[50px]"
+      >
         Записаться на курс
       </ButtonGradientBlue>
     </div>

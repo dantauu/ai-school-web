@@ -17,7 +17,10 @@ export const ImportantSection = () => {
           понимание, как зарабатывать с AI.
         </p>
       </div>
-      <ButtonGradientWhite onClick={() => dispatch(openFormModal())} className="form:max-w-[340px] w-full h-[44px] text-black">
+      <ButtonGradientWhite
+        onClick={() => dispatch(openFormModal())}
+        className="form:max-w-[340px] w-full h-[44px] text-black"
+      >
         Записаться на курс
       </ButtonGradientWhite>
     </div>

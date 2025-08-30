@@ -51,7 +51,10 @@ export const Skills = ({
           <SvgLike className="min-w-[24px] min-h-[24px]" />
           <p className="text-white max-w-[595px]">{likeText}</p>
         </div>
-        <ButtonGradientBlue onClick={() => dispatch(openFormModal())} className="w-full h-[45px] text-white">
+        <ButtonGradientBlue
+          onClick={() => dispatch(openFormModal())}
+          className="w-full h-[45px] text-white"
+        >
           Записаться на курс
         </ButtonGradientBlue>
       </div>

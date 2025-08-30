@@ -20,8 +20,14 @@ const ModalForm = () => {
   }, [isFormOpen])
   if (!isFormOpen) return
   return (
-    <div onClick={() => dispatch(closeFormModal())} className="fixed inset-0 flex items-center justify-center z-50 bg-black/50">
-      <div onClick={(e) => e.stopPropagation()} className="relative 530:w-[425px] 530:h-[620px] w-full h-full flex flex-col py-7 gap-5 px-5 gradient-dark-blue-vertical rounded-xl border border-[#888888]">
+    <div
+      onClick={() => dispatch(closeFormModal())}
+      className="fixed inset-0 flex items-center justify-center z-50 bg-black/50"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative 530:w-[425px] 530:h-[620px] w-full h-full flex flex-col py-7 gap-5 px-5 gradient-dark-blue-vertical rounded-xl border border-[#888888]"
+      >
         <Button
           className="absolute top-5 right-5"
           onClick={() => dispatch(closeFormModal())}
