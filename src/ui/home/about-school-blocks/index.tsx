@@ -12,8 +12,8 @@ export const SchoolBlocksSection = () => {
     <div className="flex flex-col gap-5">
       <h3 className="530:text-[45px] text-[32px]">О школе</h3>
       <div className="1510:flex-row flex flex-col justify-between gap-5">
-        <div className="flex flex-col justify-center gap-4 p-8 gradient-dark-blue rounded-[15px]">
-          <p className="max-w-[500px] 530:leading-normal leading-8 text-[34px]">
+        <div className="flex flex-col justify-center gap-4 530:p-8 p-5 gradient-dark-blue rounded-[15px]">
+          <p className="max-w-[500px] 530:leading-10 leading-7 530:text-[34px] text-[24px]">
             Забудь «как раньше» — учись по‑новому
           </p>
           <p className="max-w-[637px] text-[18px]">
@@ -27,8 +27,8 @@ export const SchoolBlocksSection = () => {
             Записаться на курс
           </ButtonGradientWhite>
         </div>
-        <div className="flex flex-col justify-center gap-4 p-8 gradient-purple-reverse rounded-[15px]">
-          <p className="530:leading-normal leading-8 text-[34px]">
+        <div className="flex flex-col justify-center gap-4 530:p-8 p-5  gradient-purple-reverse rounded-[15px]">
+          <p className="530:leading-normal leading-7 530:text-[34px] text-[24px]">
             Быстрый апгрейд твоих скиллов
           </p>
           <p className="max-w-[637px] text-[18px]">
@@ -36,7 +36,7 @@ export const SchoolBlocksSection = () => {
             времени
           </p>
           <Link href={"/about-school"}>
-            <ButtonGradientBlue className="w-full h-[50px] text-white">
+            <ButtonGradientBlue className="w-full h-[50px] 530:mt-4.5 mt-0 text-white">
               О школе и подходе
             </ButtonGradientBlue>
           </Link>
