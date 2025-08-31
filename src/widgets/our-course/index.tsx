@@ -4,6 +4,7 @@ import { OurCourseLayout } from "@/shared/ui/cards/our-course"
 import { cn } from "@/lib/utils/cn"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import { useRouter } from "next/navigation"
+import purpleRight from "@/assets/backgrounds/purple-right.svg"
 
 type OurCourseProps = {
   className?: string
@@ -25,7 +26,10 @@ export const OurCourseSection = ({
       )}
     >
       {hasTittle && <h3 className="530:text-[40px] text-[32px]">Наши курсы</h3>}
-      <div className="flex flex-col gap-10">
+      <div className="relative z-10 flex flex-col gap-10">
+        <div className="absolute -z-2 975:-top-50 top-100 w-full h-full">
+          <img src={purpleRight.src} />
+        </div>
         {courses.map((item) => (
           <OurCourseLayout key={item.id} {...item} />
         ))}

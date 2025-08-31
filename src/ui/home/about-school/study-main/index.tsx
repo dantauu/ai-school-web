@@ -5,6 +5,7 @@ import aboutImage from "@/assets/images/about-school.png"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import Link from "next/link"
+import purpleLeft from "@/assets/backgrounds/purple-left.svg"
 
 const items = [
   { id: 1, icon: <SvgBrain />, text: "Курсы направленные на практику" },
@@ -21,12 +22,17 @@ export const StudyMain = () => {
             <span className="text-gradient-white">Практичное обучение</span> по
             AI направлениям
           </h3>
-          <CardBlur
-            items={items}
-            classItem="less-desctop:shrink less-desctop:w-full shrink-0 w-[308px] 975:h-auto h-fit"
-            classText="less-desctop:text-[28px] max-w-full text-[20px]"
-            className="overflow-x-auto flex justify-between gap-3"
-          />
+          <div className="relative">
+            <CardBlur
+              items={items}
+              classItem="less-desctop:shrink less-desctop:w-full shrink-0 w-[308px] 975:h-auto h-fit"
+              classText="less-desctop:text-[28px] max-w-full text-[20px]"
+              className="overflow-x-auto flex justify-between gap-3"
+            />
+            <div className="absolute w-full h-full less-desctop:-top-40 less-desctop:left-50 -top-15 -z-5">
+              <img src={purpleLeft.src} />
+            </div>
+          </div>
         </div>
         <Link href={"/about-school"}>
           <ButtonGradientWhite className="w-full h-[50px] text-black">

@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div>
       <MainSection />
-      <div className="container flex flex-col gap-25">
+      <div className="container flex flex-col gap-20">
         <OurCourseSection className="pt-14" />
         <AboutSection />
         <ReviewsSection title={"Отзывы"} reviews={reviewsHome} />

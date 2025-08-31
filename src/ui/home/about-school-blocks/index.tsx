@@ -5,11 +5,12 @@ import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import Link from "next/link"
 import { useAppDispatch } from "@/redux/hooks"
 import { openFormModal } from "@/redux/slices/modal-form"
+import purpleLeft from "@/assets/backgrounds/purple-left.svg"
 
 export const SchoolBlocksSection = () => {
   const dispatch = useAppDispatch()
   return (
-    <div className="flex flex-col gap-5">
+    <div className="relative flex flex-col gap-5">
       <h3 className="530:text-[45px] text-[32px]">О школе</h3>
       <div className="1510:flex-row flex flex-col justify-between gap-5">
         <div className="flex flex-col justify-center gap-4 530:p-8 p-5 gradient-dark-blue rounded-[15px]">
@@ -41,6 +42,9 @@ export const SchoolBlocksSection = () => {
             </ButtonGradientBlue>
           </Link>
         </div>
+      </div>
+      <div className="absolute 1070:-top-50 top-130 -z-5">
+        <img src={purpleLeft.src} />
       </div>
     </div>
   )

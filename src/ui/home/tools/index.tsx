@@ -1,4 +1,5 @@
 import Button from "@/shared/ui/buttons"
+import blue from "@/assets/backgrounds/blue.svg"
 
 const dataTools = [
   {
@@ -32,7 +33,7 @@ const dataTools = [
 
 export const PracticeToolsSection = () => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="relative flex flex-col gap-1">
       <p className="text-[21px] leading-7 text-[#fff6]">
         Практика на топовых инструментах
       </p>
@@ -63,6 +64,9 @@ export const PracticeToolsSection = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="absolute -top-20 -z-5">
+        <img src={blue.src} />
       </div>
     </div>
   )
