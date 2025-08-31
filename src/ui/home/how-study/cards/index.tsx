@@ -35,13 +35,13 @@ export const CardsHowStudy = () => {
     <div className="less-desctop:flex-col less-desctop:gap-5 flex flex-row gap-3 less-desctop:overflow-hidden overflow-x-auto">
       <CardBlur
         className="flex justify-between gap-3 shrink-0"
-        classItem="min-w-fit less-desctop:h-[180px] h-full pr-5"
+        classItem="less-desctop:min-w-fit w-[300px] less-desctop:h-[180px] h-[170px] pr-5"
         classText="max-w-[453px] 530:text-[25px] text-[20px]"
         items={dataCardsOne}
       />
       <CardBlur
         className="flex justify-between gap-3 shrink-0"
-        classItem="w-full less-desctop:h-[180px] h-full pr-5"
+        classItem="w-full less-desctop:h-[180px] h-[170px] pr-5"
         classText="max-w-[453px] 530:text-[25px] text-[20px]"
         items={dataCardsTwo}
       />
