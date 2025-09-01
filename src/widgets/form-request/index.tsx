@@ -25,7 +25,7 @@ const FormRequestWidget = ({
       <div>
         <h3
           className={cn(
-            "530:text-[39px] text-[32px] 530:leading-normal leading-8 pb-1",
+            "530:text-[39px] text-[32px] 530:leading-10 leading-8 pb-1",
             classText
           )}
         >

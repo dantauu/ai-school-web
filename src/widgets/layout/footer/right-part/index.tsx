@@ -1,6 +1,7 @@
 import Button from "@/shared/ui/buttons"
 import SvgTelegram from "@/assets/icons/Telegram"
 import Link from "next/link"
+import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 
 const itemRightPart = [
   {
@@ -36,12 +37,11 @@ export const RightPartFooter = () => {
           <SvgTelegram />
         </Button>
         <Link className="flex-1" href={"/course"}>
-          <Button
+          <ButtonGradientWhite
             className="830:w-[191px] w-full h-[50px] gradient-white text-black"
-            variant="gradient"
           >
             Выбрать курс
-          </Button>
+          </ButtonGradientWhite>
         </Link>
       </div>
     </div>
