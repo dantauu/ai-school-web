@@ -60,17 +60,17 @@ export const ResultSection = () => {
       <p className="py-4 text-[20px] leading-6">
         Вот что ты получишь после прохождения курса
       </p>
-      <div className="flex flex-col 1070:gap-5 gap-2">
+      <div className="1070:flex-col flex flex-row 1070:gap-5 gap-2 overflow-x-auto">
         <CardBlur
           items={topResultData}
-          classItem="1070:w-full min-w-[315px]"
-          className="flex shrink-0 1070:gap-5 gap-2 justify-between overflow-x-auto"
-          classText="1070:text-[28px] text-[20px] leading-6.5"
+          classItem="1070:w-full w-[315px]"
+          className="flex shrink-0 1070:gap-5 gap-2 justify-between"
+          classText="1070:text-[28px] text-[20px]"
         />
         <CardBlur
           items={bottomResultData}
-          classItem="1070:w-full min-w-[315px]"
-          className="flex 1070:gap-5 gap-2 shrink-0 justify-between overflow-x-auto"
+          classItem="1070:w-full w-[315px]"
+          className="flex 1070:gap-5 gap-2 shrink-0 justify-between"
           classText="1070:text-[28px] text-[20px]"
         />
       </div>
