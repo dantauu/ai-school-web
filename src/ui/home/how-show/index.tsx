@@ -9,9 +9,9 @@ export const HowShowSection = () => {
   return (
     <div>
       <div className="flex flex-col 1510:gap-30 gap-15">
-        <div className="w-full h-auto 1510:gap-0 gap-10 1510:flex-row flex flex-col justify-between p-7 border rounded-[15px] border-white gradient-grey">
-          <div className="flex flex-col gap-3 justify-center">
-            <h3 className="585:text-[48px] text-[32px] max-w-[600px] 585:leading-12 leading-10">
+        <div className="w-full h-auto 1510:gap-0 gap-5 1510:flex-row flex flex-col justify-between 830:p-7 p-3 border rounded-[15px] border-white gradient-grey">
+          <div className="flex flex-col gap-2 justify-center">
+            <h3 className="585:text-[48px] text-[32px] max-w-[600px] 585:leading-12 leading-8">
               Как выглядит обучение внутри ?
             </h3>
             <p className="text-[20px]">1 минута - и ты всё поймёшь</p>
@@ -20,7 +20,7 @@ export const HowShowSection = () => {
             </ButtonGradientBlue>
           </div>
           <div className="relative">
-            <img src={howShowImage.src} />
+            <img className="w-full" src={howShowImage.src} />
             <Play className="absolute inset-0 flex justify-center items-center" />
           </div>
         </div>
