@@ -53,9 +53,9 @@ export const OurCourseLayout = ({
           ))}
         </ul>
         <div className="1510:flex-row flex flex-col items-center gap-10 p-5 rounded-[20px] bg-[#ffffff1c]">
-          <div className="flex flex-col gap-2">
-            <p className="text-[20px]">Полный курс*</p>
-            <p className="text-[40px]">От {price} Р</p>
+          <div className="flex flex-col gap-2 w-full">
+            <p className="text-[20px] leading-3">Полный курс*</p>
+            <p className="530:text-[40px] text-[32px]">От {price} Р</p>
             <div className="530:flex-row flex flex-col gap-4">
               <ButtonGradientBlue
                 onClick={() => router.push(path)}
@@ -65,7 +65,7 @@ export const OurCourseLayout = ({
               </ButtonGradientBlue>
               <ButtonGradientWhite
                 onClick={() => dispatch(openFormModal())}
-                className="w-[240px] h-[50px] text-black"
+                className="530:w-[240px] w-full h-[50px] text-black"
               >
                 Записаться на курс
               </ButtonGradientWhite>
@@ -77,7 +77,7 @@ export const OurCourseLayout = ({
           </div>
         </div>
       </div>
-      <div className="shadow-img-shadow rounded-[12px]">
+      <div className="shadow-img-shadow rounded-[20px]">
         <img className="h-full w-full object-cover rounded-[12px]" src={img} />
       </div>
     </div>

@@ -7,6 +7,8 @@ import SvgRobot from "@/assets/icons/Robot"
 import SvgDoubleChat from "@/assets/icons/DoubleChat"
 import SvgBook from "@/assets/icons/Book"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
+import Marquee from "react-fast-marquee"
+import { useMediaQuery } from "@/lib/hooks/use-media-query"
 
 const dataCardsOne = [
   { id: 1, icon: <SvgVideoStudy />, text: "Видеоуроки" },
@@ -31,20 +33,53 @@ const dataCardsTwo = [
 ]
 
 export const CardsHowStudy = () => {
+  const isMedia = useMediaQuery("(max-width: 1400px)")
   return (
-    <div className="less-desctop:gap-3 flex flex-col gap-3">
-      <CardBlur
-        className="flex justify-between gap-3 shrink-0 overflow-x-auto"
-        classItem="less-desctop:w-full less-desctop:min-w-fit min-w-[300px] less-desctop:h-[180px] h-[145px]"
-        classText="max-w-[453px] less-desctop:text-[25px] text-[20px] less-desctop:leading-7 leading-5"
-        items={dataCardsOne}
-      />
-      <CardBlur
-        className="flex justify-between gap-3 shrink-0 overflow-x-auto"
-        classItem="less-desctop:w-full min-w-[300px] less-desctop:h-[180px] h-[145px]"
-        classText="max-w-[453px] less-desctop:text-[25px] text-[20px] less-desctop:leading-7 leading-5"
-        items={dataCardsTwo}
-      />
+    <>
+      {isMedia ? <CardsHowStudyMobile /> : (
+        <div className="less-desctop:gap-3 flex flex-col gap-3">
+          <CardBlur
+            className="flex justify-between gap-3 shrink-0 overflow-x-auto"
+            classItem="less-desctop:w-full less-desctop:min-w-fit min-w-[300px] less-desctop:h-[180px] h-[145px]"
+            classText="max-w-[453px] less-desctop:text-[25px] text-[20px] less-desctop:leading-7 leading-5"
+            items={dataCardsOne}
+          />
+          <CardBlur
+            className="flex justify-between gap-3 shrink-0 overflow-x-auto"
+            classItem="less-desctop:w-full min-w-[300px] less-desctop:h-[180px] h-[145px]"
+            classText="max-w-[453px] less-desctop:text-[25px] text-[20px] less-desctop:leading-7 leading-5"
+            items={dataCardsTwo}
+          />
+        </div>
+      )}
+      </>
+  )
+}
+
+const CardsHowStudyMobile = () => {
+  return (
+    <div>
+      <Marquee
+        autoFill={true}
+        pauseOnHover={false}
+        pauseOnClick={true}
+        speed={115}
+        direction={'right'}>
+        <div className="flex flex-row gap-0">
+          <CardBlur
+            items={dataCardsOne}
+            classItem="ml-2 h-[145px] w-[255px]"
+            className="flex justify-between"
+            classText="text-[20px] leading-5"
+          />
+          <CardBlur
+            items={dataCardsTwo}
+            classItem="ml-2 h-[145px] w-[270px]"
+            className="flex flex-row"
+            classText="text-[20px] leading-5"
+          />
+        </div>
+      </Marquee>
     </div>
   )
 }
