@@ -27,7 +27,7 @@ export const CardBlur = ({
         <div
           key={item.id}
           className={cn(
-            "w-[410px] h-[220px] flex flex-col justify-center gap-3 border bg-blur-bg border-white rounded-[15px] p-5",
+            "w-[410px] h-[220px] flex flex-col justify-center gap-3 border select-none bg-blur-bg border-white rounded-[15px] p-5",
             classItem
           )}
         >

@@ -10,7 +10,7 @@ export const HowStudySection = () => {
           Учи, пробуй, <span className="text-gradient-white">создавай</span>,
           зарабатывай
         </h3>
-        <p className="pt-3 text-[18.5px]">
+        <p className="pt-3 text-[19.5px] leading-6">
           Онлайн-платформа + ИИ + живые кураторы
         </p>
       </div>

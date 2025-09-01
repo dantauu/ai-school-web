@@ -8,6 +8,8 @@ import SvgBage from "@/assets/icons/Bage"
 import { CardBlur } from "@/shared/ui/cards/card-blur"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
 import Link from "next/link"
+import Marquee from "react-fast-marquee"
+import { useMediaQuery } from "@/lib/hooks/use-media-query"
 
 const topResultData = [
   {
@@ -49,6 +51,7 @@ const bottomResultData = [
 ]
 
 export const ResultSection = () => {
+  const isMedia = useMediaQuery("(max-width: 1070px)")
   return (
     <div>
       <h3 className="585:text-[45px] text-[32px] max-w-[605px] 585:leading-12 leading-8">
@@ -60,20 +63,22 @@ export const ResultSection = () => {
       <p className="py-4 text-[20px] leading-6">
         Вот что ты получишь после прохождения курса
       </p>
-      <div className="1070:flex-col flex flex-row 1070:gap-5 gap-2 overflow-x-auto">
-        <CardBlur
-          items={topResultData}
-          classItem="1070:w-full w-[282px]"
-          className="flex shrink-0 1070:gap-5 gap-2 justify-between"
-          classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
-        />
-        <CardBlur
-          items={bottomResultData}
-          classItem="1070:w-full w-[315px]"
-          className="flex 1070:gap-5 gap-2 shrink-0 justify-between"
-          classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
-        />
-      </div>
+      {isMedia ? <ResultMobile/> : (
+        <div className="1070:flex-col flex flex-row 1070:gap-5 gap-2 overflow-x-auto">
+          <CardBlur
+            items={topResultData}
+            classItem="1070:w-full w-[282px]"
+            className="flex shrink-0 1070:gap-5 gap-2 justify-between"
+            classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
+          />
+          <CardBlur
+            items={bottomResultData}
+            classItem="1070:w-full w-[315px]"
+            className="flex 1070:gap-5 gap-2 shrink-0 justify-between"
+            classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
+          />
+        </div>
+      )}
       <div className="1070:mt-[112px] mt-[60px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">
         <p className="530:text-[25px] text-[20px] text-center">главное:</p>
         <h3 className="530:text-[32px] 530:leading-8 leading-7 text-[23px] text-center">
@@ -87,6 +92,34 @@ export const ResultSection = () => {
           </ButtonGradientBlue>
         </Link>
       </div>
+    </div>
+  )
+}
+
+const ResultMobile = () => {
+  return (
+    <div>
+      <Marquee
+        autoFill={true}
+        pauseOnHover={false}
+        pauseOnClick={true}
+        speed={95}
+        direction={'right'}>
+      <div className="flex flex-row gap-0">
+        <CardBlur
+          items={topResultData}
+          classItem="w-[310px] ml-5"
+          className="flex justify-between"
+          classText="text-[20px] leading-5"
+        />
+        <CardBlur
+          items={bottomResultData}
+          classItem="w-[310px] ml-5"
+          className="flex flex-row"
+          classText="text-[20px] leading-5"
+        />
+      </div>
+      </Marquee>
     </div>
   )
 }
