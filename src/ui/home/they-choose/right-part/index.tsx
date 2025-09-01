@@ -20,7 +20,7 @@ export const TheyChooseRight = () => {
             AI ассистенты + поддержка в реальном времени
           </p>
         </div>
-        <h3 className="max-w-[410px] pb-2 530:leading-8 leading-5 530:text-[30px] text-[19px]">
+        <h3 className="max-w-[410px] pb-2 530:leading-8 leading-5 530:text-[30px] text-[19px] font-[280]">
           Никогда не оставайся один на один с вопросом
         </h3>
         <p className="leading-5 830:text-[18px] text-[16px] 830:leading-normal">
@@ -35,8 +35,8 @@ export const TheyChooseRight = () => {
         <p className="530:text-[19px] text-[16px]">
           Проектная и командная работа
         </p>
-        <h3 className="max-w-[320px] pb-2 530:leading-8 leading-5 530:text-[30px] text-[21px]">
-          Не учёба ради галочки. А ради результата
+        <h3 className="pb-2 530:leading-8 leading-5 530:text-[30px] text-[21px] font-[280]">
+          Не учёба ради галочки.<br /> А ради результата
         </h3>
         <div>
           <p className="leading-5.5 830:text-[18px] text-[16px]">
@@ -54,7 +54,7 @@ export const TheyChooseRight = () => {
         <p className="530:text-[19px] leading-[16px]">
           Сертификаты и карьерный рост
         </p>
-        <h3 className="pb-2 530:leading-8 leading-5 530:text-[28px] text-[20px]">
+        <h3 className="pb-2 530:leading-8 leading-5 530:text-[28px] text-[20px] font-[330]">
           Цифровые сертификаты, которые реально работают
         </h3>
         <p className="leading-5.5 830:text-[18px] text-[16px]">

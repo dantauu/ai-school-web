@@ -10,9 +10,9 @@ import purpleLeft from "@/assets/backgrounds/purple-left.svg"
 export const SchoolBlocksSection = () => {
   const dispatch = useAppDispatch()
   return (
-    <div className="relative flex flex-col gap-5">
+    <div className="relative flex flex-col gap-3">
       <h3 className="530:text-[45px] text-[30px]">О школе</h3>
-      <div className="1510:flex-row flex flex-col justify-between gap-5">
+      <div className="1510:flex-row flex flex-col justify-between gap-3">
         <div className="flex flex-col justify-center gap-4 530:p-8 p-5 gradient-dark-blue rounded-[15px]">
           <p className="max-w-[500px] 530:leading-10 leading-7 530:text-[34px] text-[24px]">
             Забудь «как раньше» — учись по‑новому

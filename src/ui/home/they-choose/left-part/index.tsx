@@ -9,7 +9,7 @@ export const TheyChooseLeft = () => {
           <div className="flex flex-col justify-between gap-5">
             <div className="w-full h-full flex flex-col gap-4 text-black p-5 gradient-white rounded-[15px]">
               <p className="text-[19px] leading-5">Современный онлайн-формат</p>
-              <h3 className="530:leading-8 530:text-[27px] leading-5 text-[21px]">
+              <h3 className="530:leading-8 530:text-[27px] leading-5 text-[21px] font-[330]">
                 Учёба без привязки. Только ты, AI и результат
               </h3>
               <ul className="list-disc pl-4">
@@ -27,7 +27,7 @@ export const TheyChooseLeft = () => {
 
             <div className="w-full h-full flex flex-col gap-3 text-white p-5 gradient-light-blue rounded-[15px]">
               <p className="text-[19px]">Персонализация обучения</p>
-              <h3 className="pb-2 530:leading-8 530:text-[30px] leading-6 text-[21px]">
+              <h3 className="pb-2 530:leading-8 530:text-[30px] leading-6 text-[21px] font-[300]">
                 Платформа адаптируется под тебя
               </h3>
               <p className="830:leading-normal leading-4.5 830:text-[18.5px] text-[17px]">
@@ -42,7 +42,7 @@ export const TheyChooseLeft = () => {
             <p className="pt-4 530:text-[18px] text-[16px]">
               Поддержка на каждом уровне
             </p>
-            <h4 className="pb-2 530:leading-normal leading-5 530:pt-0 pt-2 lead 530:text-[30px] text-[20px]">
+            <h4 className="pb-2 530:leading-normal leading-5 530:pt-0 pt-2 lead 530:text-[30px] text-[20px] font-[280]">
               Любой уровень. Полная опора
             </h4>
             <ul className="flex flex-col gap-2 list-disc pl-4">
@@ -64,7 +64,7 @@ export const TheyChooseLeft = () => {
           <div className="flex flex-col justify-between">
             <div className="flex flex-col gap-2">
               <p className="text-[18px]">Сообщество и эксперты</p>
-              <h3 className="530:text-[28px] 530:leading-normal leading-6 text-[21px] pb-3">
+              <h3 className="530:text-[28px] 530:leading-normal leading-6 text-[21px] pb-3 font-[280]">
                 Не просто курсы - комьюнити
               </h3>
             </div>

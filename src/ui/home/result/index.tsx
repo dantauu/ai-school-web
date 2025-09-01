@@ -75,7 +75,7 @@ export const ResultSection = () => {
         />
       </div>
       <div className="1070:mt-[112px] mt-[60px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">
-        <p className="text-[25px] text-center">главное:</p>
+        <p className="530:text-[25px] text-[20px] text-center">главное:</p>
         <h3 className="530:text-[32px] 530:leading-8 leading-7 text-[23px] text-center">
           Ты выйдешь{" "}
           <span className="text-gradient-white">с готовым результатом</span>, а

@@ -29,7 +29,7 @@ export const FreeLiveSection = () => {
               Чтобы понять, куда ты идёшь и с кем будешь учиться.
               <br /> На эфире ты:
             </p>
-            <ul className="flex flex-col gap-3 pl-4 pt-3">
+            <ul className="flex flex-col gap-1.5 pl-4 pt-3">
               {liveListData.map((item) => (
                 <li
                   key={item.id}

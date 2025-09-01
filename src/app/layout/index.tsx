@@ -16,7 +16,7 @@ export default function Layout({
         <Provider store={store}>
           <Header />
           {children}
-          <Footer className="mt-[110px]" />
+          <Footer className="830:mt-[110px] mt-[50px]" />
           <ModalForm />
         </Provider>
       </body>
