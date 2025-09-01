@@ -6,7 +6,7 @@ export const RecordedForm = () => {
       <FormRequestWidget
         text={"Запишись и посмотри всё своими глазами"}
         description={"Реши сам, готов ли ты идти в мир ИИ вместе с нами."}
-        classText={"max-w-[410px] leading-10"}
+        classText={"max-w-[410px]"}
       />
     </div>
   )

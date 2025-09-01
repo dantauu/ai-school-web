@@ -10,7 +10,7 @@ export const WantTry = () => {
   const dispatch = useAppDispatch()
   return (
     <div className="relative w-full 1070:h-[160px] h-full 1070:gap-10 1070:flex-row flex flex-col items-center justify-center gap-3 1070:p-0 p-5 border border-[#7f7f7f] rounded-[15px] gradient-dark-blue">
-      <p className="1070:text-[48px] text-[32px] leading-10">
+      <p className="1070:text-[48px] text-[32px] 1070:leading-10 leading-8">
         Хочешь <span className="text-gradient-white">попробовать</span> ?
       </p>
       <img className="hidden 1510:flex" src={arrow.src} />

@@ -15,7 +15,7 @@ export const LeftPartMain = () => {
         <h1 className="less-desctop:text-[65px] less-desctop:leading-normal less-desctop:max-w-full max-w-[310px] leading-10 text-[40px]">
           AI-school by Grafov
         </h1>
-        <p className="max-w-[540px] text-[21px]">
+        <p className="max-w-[540px] text-[21px] leading-6.5">
           Современная онлайн-школа, где ты быстро и понятно освоишь нейросети,
           ботов, AI-инструменты и начнёшь больше зарабатывать
         </p>

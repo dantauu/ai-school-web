@@ -37,11 +37,11 @@ export const PracticeToolsSection = () => {
       <p className="text-[21px] leading-7 text-[#fff6]">
         Практика на топовых инструментах
       </p>
-      <h3 className="530:leading-10 530:text-[45px] leading-7 text-[32px] pb-2">
+      <h3 className="530:leading-10 530:text-[45px] leading-7 text-[30px] pb-2">
         AI-инструменты не в теории,{" "}
         <span className="text-gradient-white">а в твоих руках</span>
       </h3>
-      <p className="text-[19px]">
+      <p className="530:text-[19px] text-[18px] 530:leading-normal leading-5.5">
         Ты не просто смотришь — ты создаёшь: ботов, тексты, визуалы, модели.
       </p>
 
@@ -56,7 +56,7 @@ export const PracticeToolsSection = () => {
                 <Button
                   key={tool.id}
                   variant="default"
-                  className="px-5 py-2 whitespace-nowrap bg-[#308dde] rounded-[8px] duration-350 hover:bg-white hover:text-black"
+                  className="px-5 py-2 whitespace-nowrap bg-[#0099f8] rounded-[8px] duration-350 hover:bg-white hover:text-black"
                 >
                   {tool.text}
                 </Button>

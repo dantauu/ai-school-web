@@ -8,7 +8,7 @@ export const Footer = ({ className }: { className: string }) => {
     <footer>
       <div
         className={cn(
-          "1510:flex-row 1510h:h-[158px] h-full flex flex-col justify-between px-10 py-5 w-full border-b gap-5 border-white bg-blur-bg",
+          "1510:flex-row 1510h:h-[158px] h-full flex flex-col 830:items-center items-stretch justify-between 830:px-10 px-5 py-5 w-full border-b gap-5 border-white bg-blur-bg",
           className
         )}
       >

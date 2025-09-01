@@ -10,24 +10,24 @@ export const FormRequest = () => {
         <div className="flex flex-col gap-3">
           <div className="form:flex-row flex flex-col gap-3">
             <input
-              className="w-full h-[64px] pl-5 rounded-[10px] text-black placeholder:text-black bg-white"
+              className="w-full 830:h-[64px] h-[48px] pl-5 rounded-[10px] text-black placeholder:text-[#031C52] bg-white"
               placeholder={"Введите имя"}
               required
             />
             <IMaskInput
               mask="+7 (000) 000-00-00"
               placeholder="+7 (___) ___-__-__"
-              className="w-full h-[64px] pl-5 rounded-[10px] text-black placeholder:text-black bg-white"
+              className="w-full 830:h-[64px] h-[48px] pl-5 rounded-[10px] text-black placeholder:text-[#031C52] bg-white"
               required
             />
           </div>
           <input
-            className="w-full h-[64px] pl-5 rounded-[10px] text-black placeholder:text-black bg-white"
+            className="w-full 830:h-[64px] h-[48px] pl-5 rounded-[10px] text-black placeholder:text-[#031C52] bg-white"
             placeholder={"Вставьте ссылку на Telegram/Whatsapp"}
             required
           />
           <input
-            className="w-full h-[64px] pl-5 rounded-[10px] text-black placeholder:text-black bg-white"
+            className="w-full 830:h-[64px] h-[48px] pl-5 rounded-[10px] text-black placeholder:text-[#031C52] bg-white"
             placeholder={"E-mail"}
             required
           />

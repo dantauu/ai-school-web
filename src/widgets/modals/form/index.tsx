@@ -33,7 +33,7 @@ const ModalForm = () => {
           onClick={() => dispatch(closeFormModal())}
           variant="default"
         >
-          <SvgCross />
+          <SvgCross className="830:w-auto 830:h-auto w-[21px] h-[21px]" />
         </Button>
         <div className="flex flex-col gap-3">
           <h3 className="text-[32px] 530:leading-8 leading-7 pb-1">

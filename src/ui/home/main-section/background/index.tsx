@@ -32,13 +32,24 @@ export const Background = () => {
         <div
           className="
           absolute top-25 right-0
-          w-[350px] h-[450px]
+          w-[230px] h-[437px]
           bg-[url('/static/robot-mobile.svg')]
           pointer-events-none
           bg-no-repeat
         "
           style={{ zIndex: -1 }}
-        />
+        >
+          <div
+            className="
+      absolute bottom-0 left-2 w-[96.5%] h-1/2
+      bg-[#031C52]
+      blur-3xl
+      [mask-image:linear-gradient(to_top,white,transparent)]
+      [mask-repeat:no-repeat]
+      [mask-size:100%_100%]
+    "
+          />
+        </div>
       ) : (
         <div
           className="

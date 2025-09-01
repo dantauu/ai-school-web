@@ -63,15 +63,15 @@ export const ResultSection = () => {
       <div className="1070:flex-col flex flex-row 1070:gap-5 gap-2 overflow-x-auto">
         <CardBlur
           items={topResultData}
-          classItem="1070:w-full w-[315px]"
+          classItem="1070:w-full w-[282px]"
           className="flex shrink-0 1070:gap-5 gap-2 justify-between"
-          classText="1070:text-[28px] text-[20px]"
+          classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
         />
         <CardBlur
           items={bottomResultData}
           classItem="1070:w-full w-[315px]"
           className="flex 1070:gap-5 gap-2 shrink-0 justify-between"
-          classText="1070:text-[28px] text-[20px]"
+          classText="1070:text-[28px] text-[20px] 1070:leading-normal leading-5"
         />
       </div>
       <div className="1070:mt-[112px] mt-[60px] w-full h-[240px] flex flex-col justify-center px-7 rounded-[15px] gradient-purple">

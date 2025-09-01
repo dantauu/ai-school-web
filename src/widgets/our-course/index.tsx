@@ -27,7 +27,7 @@ export const OurCourseSection = ({
     >
       {hasTittle && <h3 className="530:text-[40px] text-[32px]">Наши курсы</h3>}
       <div className="relative z-4 flex flex-col gap-10">
-        <div className="absolute -z-2 975:-top-50 top-100 w-full h-full">
+        <div className="absolute -z-2 975:-top-50 top-100">
           <img src={purpleRight.src} />
         </div>
         {courses.map((item) => (

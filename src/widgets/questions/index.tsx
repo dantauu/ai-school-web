@@ -17,10 +17,13 @@ export const QuestionsSection = () => {
       <div className="1295:flex-row 1295:items-stretch items-center flex flex-col gap-10 justify-between">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
-            <h3 className="530:text-[47px] text-[32px] 530:leading-10 leading-8">
-              <span className="text-gradient-white 530:leading-10 leading-8">Давайте честно</span>,
+            <h3 className="530:text-[47px] text-[30px] 530:leading-10 leading-8">
+              <span className="text-gradient-white 530:leading-10 leading-8">
+                Давайте честно
+              </span>
+              ,
             </h3>
-            <h3 className="530:text-[47px] max-w-[540px] text-[32px] 530:leading-10 leading-8">
+            <h3 className="530:text-[47px] max-w-[540px] text-[30px] 530:leading-10 leading-8">
               мы понимаем что курсов много и довериться сложно
             </h3>
           </div>

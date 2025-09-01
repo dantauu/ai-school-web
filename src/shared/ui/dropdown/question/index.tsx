@@ -21,10 +21,12 @@ export const DropdownQuestion = ({
   return (
     <div
       onClick={() => onToggle(id)}
-      className="w-full cursor-pointer select-none p-5 rounded-2xl mb-3 transition-all border border-white bg-blur-bg duration-300"
+      className={`w-full flex flex-col 830:justify-normal justify-center cursor-pointer select-none 830:p-5 p-4 rounded-2xl mb-3 transition-all border border-white bg-blur-bg duration-300 ${isOpen ? "h-fit" : "min-h-[70px]"}`}
     >
       <div className="flex items-center justify-between gap-4">
-        <h3 className="530:text-lg text-[20px] font-medium">{title}</h3>
+        <h3 className="830:text-[20px] text-[18px] 830:leading-normal leading-5.5">
+          {title}
+        </h3>
         <SvgPlus
           className={`min-w-5 min-h-5 duration-200 ${isOpen && "rotate-45"}`}
         />
@@ -32,7 +34,7 @@ export const DropdownQuestion = ({
       {isOpen && (
         <p
           className={cn(
-            `1295:w-[530px] w-full mt-3 530:text-lg text-[20px] text-gray-200 leading-relaxed`,
+            `1295:w-[530px] w-full mt-3 830:text-[20px] text-[16px] 830: 830:leading-normal leading-5 text-gray-200`,
             classDescription
           )}
         >

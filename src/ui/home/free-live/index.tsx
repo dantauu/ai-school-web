@@ -17,25 +17,23 @@ export const FreeLiveSection = () => {
   const dispatch = useAppDispatch()
   return (
     <>
-      <div className="less-desctop:flex-row flex flex-col w-full justify-between items-stretch gap-4 p-7 rounded-[15px] gradient-dark-blue-vertical">
+      <div className="less-desctop:flex-row flex flex-col w-full justify-between items-stretch gap-4 530:p-7 p-5 rounded-[15px] gradient-dark-blue-vertical">
         <div className="flex flex-1 gap-3 flex-col justify-between">
           <div className="flex flex-col gap-2">
-            <h3 className="max-w-[640px] leading-11 530:text-[47px] text-[32px]">
+            <h3 className="max-w-[640px] 530:text-[47px] text-[32px] 530:leading-11 leading-8">
               Присоединяйся к{" "}
-              <span className="text-gradient-white">беслатному</span> вводному
+              <span className="text-gradient-white">бесплатному</span> вводному
               эфиру
             </h3>
-            <div className="flex flex-col gap-3">
-              <p className="text-[22px] leading-7">
-                Чтобы понять, куда ты идёшь и с кем будешь учиться.
-              </p>
-              <p className="leading-4 text-[22px]">На эфире ты:</p>
-            </div>
+            <p className="530:text-[22px] text-[18px] 530:leading-normal leading-5 pt-2">
+              Чтобы понять, куда ты идёшь и с кем будешь учиться.
+              <br /> На эфире ты:
+            </p>
             <ul className="flex flex-col gap-3 pl-4 pt-3">
               {liveListData.map((item) => (
                 <li
                   key={item.id}
-                  className="530:text-[17.8px] text-[19px] list-disc"
+                  className="530:text-[17.8px] text-[16px] 530:leading-normal leading-5 list-disc"
                 >
                   {item.text}
                 </li>
@@ -51,11 +49,13 @@ export const FreeLiveSection = () => {
         </div>
         <div className="flex flex-col">
           <img className="w-full h-full" src={freeLiveImage.src} />
-          <div className="bg-[#308dde] p-5 rounded-[14px]">
-            <p className="font-bold">
+          <div className="flex flex-col gap-2 bg-[#308dde] p-5 rounded-[14px]">
+            <p className="font-medium leading-5">
               Эфир — это не продажа, а честный взгляд на обучение.
             </p>
-            <p>Без обёрток. С примерами, кейсами и живым общением.</p>
+            <p className="leading-5">
+              Без обёрток. С примерами, кейсами и живым общением.
+            </p>
           </div>
         </div>
       </div>
