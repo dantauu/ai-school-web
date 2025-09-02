@@ -8,7 +8,7 @@ type couchProps = {
 export const Couch = ({ img, direction, message, name }: couchProps) => {
   return (
     <div
-      className={`1155:w-[430px] 1155:h-[707px] w-[320px] flex flex-col choose:shrink shrink-0 ${message ? "h-[555px]" : "h-[445px]"}`}
+      className={`1155:w-[430px] w-[320px] flex flex-col choose:shrink shrink-0 ${message ? "1155:h-[707px] h-[555px]" : "1155:h-[707px"}`}
     >
       <img
         className="w-full 1155:h-[450px] h-[324px] object-cover rounded-[12px]"

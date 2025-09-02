@@ -1557,6 +1557,7 @@ __metadata:
     react-redux: ^9.2.0
     rimraf: ^6.0.1
     svgo: ^4.0.0
+    swiper: ^11.2.10
     tailwind-merge: ^3.3.1
     tailwindcss: ^4
     typescript: ^5
@@ -5077,6 +5078,13 @@ __metadata:
   bin:
     svgo: ./bin/svgo.js
   checksum: bddf57bda7b4e8252e5f8c5aa8555ec9810f963369bad17476cf21881e0b5fd3dfffcffddebd7b8b4c80b7e64b508589fad5be055d143d70b28ef0dee2583fcc
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.2.10":
+  version: 11.2.10
+  resolution: "swiper@npm:11.2.10"
+  checksum: a40ee5e252670d5b674f46517a2b6cb9477dff15cfccaa2dfdaf797a2de373e1c488302d1daeebe1b237c4bccc20238c3aed2c4a15f06db02be63e7936e94be5
   languageName: node
   linkType: hard
 
