@@ -10,7 +10,7 @@ export const SpecialTop = () => {
             главном.
           </p>
         </div>
-        <h3 className="830:leading-13 leading-8 830:text-[52px] text-[32px] pb-2">
+        <h3 className="830:leading-13 leading-8 830:text-[52px] text-[27px] pb-2">
           Курс «AI для специалистов
           <br /> и предпринимателей»
         </h3>

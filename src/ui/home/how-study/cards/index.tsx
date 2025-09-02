@@ -36,7 +36,9 @@ export const CardsHowStudy = () => {
   const isMedia = useMediaQuery("(max-width: 1400px)")
   return (
     <>
-      {isMedia ? <CardsHowStudyMobile /> : (
+      {isMedia ? (
+        <CardsHowStudyMobile />
+      ) : (
         <div className="less-desctop:gap-3 flex flex-col gap-3">
           <CardBlur
             className="flex justify-between gap-3 shrink-0 overflow-x-auto"
@@ -52,7 +54,7 @@ export const CardsHowStudy = () => {
           />
         </div>
       )}
-      </>
+    </>
   )
 }
 
@@ -64,11 +66,12 @@ const CardsHowStudyMobile = () => {
         pauseOnHover={false}
         pauseOnClick={true}
         speed={115}
-        direction={'right'}>
-        <div className="flex flex-row gap-0">
+        direction={"right"}
+      >
+        <div className="flex flex-col gap-2">
           <CardBlur
             items={dataCardsOne}
-            classItem="ml-2 h-[145px] w-[255px]"
+            classItem="ml-2 h-[145px] w-[270px]"
             className="flex justify-between"
             classText="text-[20px] leading-5"
           />

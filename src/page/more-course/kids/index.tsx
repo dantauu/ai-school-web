@@ -18,7 +18,7 @@ export const KidsPage = () => {
         className="py-[30px] px-[40px]"
         location={"Курс «AI для подростков и детей»"}
       />
-      <div className="flex flex-col gap-20 container">
+      <div className="flex flex-col 530:gap-20 gap-15 container">
         <RoadAiSection />
         <WhyHereSection />
         <KidsSection />

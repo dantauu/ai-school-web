@@ -42,7 +42,7 @@ export const OurCourseLayout = ({
       <div className="w-full h-full flex justify-center flex-col bg-blur-bg p-5 border border-white rounded-[20px]">
         <div className="flex flex-col pb-4">
           <p>Курс №{countCourse}</p>
-          <p className="530:text-[50px] 530:leading-normal leading-10 text-[32px] pb-3 ">
+          <p className="530:text-[50px] 530:leading-normal leading-7.5 text-[27px] pb-3 ">
             {title}
           </p>
           <p>{description}</p>
@@ -55,7 +55,7 @@ export const OurCourseLayout = ({
         <div className="1510:flex-row flex flex-col items-center gap-10 p-5 rounded-[20px] bg-[#ffffff1c]">
           <div className="flex flex-col gap-2 w-full">
             <p className="text-[20px] leading-3">Полный курс*</p>
-            <p className="530:text-[40px] text-[32px]">От {price} Р</p>
+            <p className="530:text-[40px] text-[27px]">От {price} Р</p>
             <div className="530:flex-row flex flex-col gap-4">
               <ButtonGradientBlue
                 onClick={() => router.push(path)}

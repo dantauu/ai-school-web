@@ -17,7 +17,7 @@ export const CareerStartPage = () => {
         className="py-[30px] px-[40px]"
         location={"Карьерный старт в AI"}
       />
-      <div className="flex flex-col gap-25 container">
+      <div className="flex flex-col 530:gap-25 gap-15 container">
         <StartSection />
         <Skills
           likeText={

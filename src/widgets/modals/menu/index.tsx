@@ -2,6 +2,8 @@ import SvgCourse from "@/assets/icons/Course"
 import Button from "@/shared/ui/buttons"
 import SvgTelegram from "@/assets/icons/Telegram"
 import { useRouter } from "next/navigation"
+import { useAppDispatch, useAppSelector } from "@/redux/hooks"
+import { openFormModal } from "@/redux/slices/modal-form"
 
 const itemTopPart = [
   { id: 1, text: "Курсы", icon: <SvgCourse />, path: "/course" },
@@ -15,11 +17,13 @@ const itemBottomPart = [
   {
     id: 1,
     title: "+7 987 654-32-10",
+    link: "tel:+7987654-32-10",
     description: "Вопросы по покупке и содержанию курсов",
   },
   {
     id: 2,
     title: "help@email.com",
+    link: "mailto:help@email.com",
     description: "Вопросы по учебному процессу",
   },
 ]
@@ -33,6 +37,11 @@ export const MenuModal = ({
   const handleRoute = (path: string) => {
     route.push(path)
     setOpen(false)
+  }
+  const dispatch = useAppDispatch()
+  const handleClick = () => {
+    setOpen(false)
+    dispatch(openFormModal())
   }
   return (
     <div className="fixed z-5 flex flex-col gap-10 w-full h-full lef-0 top-0 gradient-dark-blue-vertical px-4">
@@ -58,11 +67,17 @@ export const MenuModal = ({
       <div className="flex flex-col gap-4">
         {itemBottomPart.map((item) => (
           <div key={item.id}>
-            <p className="text-[25px] text-gradient-white">{item.title}</p>
+            <a href={item.link}>
+              <p className="text-[21.5px] text-gradient-white">{item.title}</p>
+            </a>
             <p className="max-w-[168px]">{item.description}</p>
           </div>
         ))}
-        <Button className="w-full h-[50px] gradient-blue" variant="gradient">
+        <Button
+          onClick={handleClick}
+          className="w-full h-[50px] gradient-blue"
+          variant="gradient"
+        >
           Записаться
         </Button>
       </div>

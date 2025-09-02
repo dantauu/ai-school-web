@@ -63,7 +63,9 @@ export const ResultSection = () => {
       <p className="py-4 text-[20px] leading-6">
         Вот что ты получишь после прохождения курса
       </p>
-      {isMedia ? <ResultMobile/> : (
+      {isMedia ? (
+        <ResultMobile />
+      ) : (
         <div className="1070:flex-col flex flex-row 1070:gap-5 gap-2 overflow-x-auto">
           <CardBlur
             items={topResultData}
@@ -103,22 +105,23 @@ const ResultMobile = () => {
         autoFill={true}
         pauseOnHover={false}
         pauseOnClick={true}
-        speed={95}
-        direction={'right'}>
-      <div className="flex flex-row gap-0">
-        <CardBlur
-          items={topResultData}
-          classItem="w-[310px] ml-5"
-          className="flex justify-between"
-          classText="text-[20px] leading-5"
-        />
-        <CardBlur
-          items={bottomResultData}
-          classItem="w-[310px] ml-5"
-          className="flex flex-row"
-          classText="text-[20px] leading-5"
-        />
-      </div>
+        speed={110}
+        direction={"right"}
+      >
+        <div className="flex flex-row gap-0">
+          <CardBlur
+            items={topResultData}
+            classItem="w-[310px] ml-5"
+            className="flex justify-between"
+            classText="text-[20px] leading-5"
+          />
+          <CardBlur
+            items={bottomResultData}
+            classItem="w-[310px] ml-5"
+            className="flex flex-row"
+            classText="text-[20px] leading-5"
+          />
+        </div>
       </Marquee>
     </div>
   )

@@ -7,11 +7,13 @@ const itemRightPart = [
   {
     id: 1,
     title: "+7 987 654-32-10",
+    link: "tel:+7987654-32-10",
     description: "Вопросы по покупке и содержанию курсов",
   },
   {
     id: 2,
     title: "help@email.com",
+    link: "mailto:help@email.com",
     description: "Вопросы по учебному процессу",
   },
 ]
@@ -22,9 +24,11 @@ export const RightPartFooter = () => {
       <div className="830:flex-row flex flex-col gap-8">
         {itemRightPart.map((item) => (
           <div key={item.id}>
-            <p className="830:text-[25px] text-[20px] text-gradient-white">
-              {item.title}
-            </p>
+            <a href={item.link}>
+              <p className="830:text-[25px] text-[20px] text-gradient-white">
+                {item.title}
+              </p>
+            </a>
             <p className="max-w-[168px]">{item.description}</p>
           </div>
         ))}
@@ -37,9 +41,7 @@ export const RightPartFooter = () => {
           <SvgTelegram />
         </Button>
         <Link className="flex-1" href={"/course"}>
-          <ButtonGradientWhite
-            className="830:w-[191px] w-full h-[50px] gradient-white text-black"
-          >
+          <ButtonGradientWhite className="830:w-[191px] w-full h-[50px] gradient-white text-black">
             Выбрать курс
           </ButtonGradientWhite>
         </Link>

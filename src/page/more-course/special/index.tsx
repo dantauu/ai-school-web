@@ -21,7 +21,7 @@ export const SpecialPage = () => {
         className="py-[30px] px-[40px]"
         location={"Курс «AI для специалистов и предпринимателей»"}
       />
-      <div className="flex flex-col gap-25 container">
+      <div className="flex flex-col 530:gap-25 gap-15 container">
         <SpecialSection />
         <Skills
           likeText={

@@ -24,7 +24,7 @@ export const Cookies = () => {
   }
   if (!show) return
   return (
-    <div className="max-w-[565px] fixed bottom-15 530:flex-row flex flex-col items-center justify-center gap-4 -translate-x-1/2 left-1/2 rounded-[20px] border border-[#ffffff70] p-3.5 bg-[#031C52]">
+    <div className="max-w-[565px] fixed z-10 bottom-15 530:flex-row flex flex-col items-center justify-center gap-4 -translate-x-1/2 left-1/2 rounded-[20px] border border-[#ffffff70] p-3.5 bg-[#031C52]">
       <p className="max-w-[290px] min-w-[290px]">
         Мы используем только необходимые куки, чтобы сайт работал хорошо
       </p>

@@ -11,7 +11,7 @@ export const KidsTop = () => {
           </p>
         </div>
         <div className="flex flex-col gap-5">
-          <h3 className="1155:text-[52px] 1155:leading-normal leading-7 text-[32px]">
+          <h3 className="1155:text-[52px] 1155:leading-normal leading-7 text-[27px]">
             Курс «AI для подростков и детей»
           </h3>
           <p className="max-w-[935px] text-[18px] pb-4">

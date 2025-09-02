@@ -10,7 +10,7 @@ export const StartTop = () => {
             главном.
           </p>
         </div>
-        <h3 className="830:text-[52px] text-[32px] 830:leading-normal leading-9">
+        <h3 className="830:text-[52px] text-[27px] 830:leading-normal leading-9">
           Карьерный старт в AI
         </h3>
         <p className="max-w-[935px]">
