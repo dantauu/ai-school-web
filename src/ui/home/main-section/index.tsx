@@ -6,7 +6,7 @@ export const MainSection = () => {
   return (
     <div>
       <div className="container relative 830:h-[980px] h-[1100px]">
-        <div className="less-desctop:pt-[120px] flex flex-col less-desctop:items-center less-desctop:flex-row less-desctop:justify-between h-[780px] gap-7">
+        <div className="less-desctop:pt-[120px] flex flex-col less-desctop:items-center less-desctop:flex-row less-desctop:justify-between h-[757px] gap-7">
           <LeftPartMain />
           <RightPartMain />
         </div>

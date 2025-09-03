@@ -16,7 +16,7 @@ export type OurCourseProps = {
   countCourse: number
   title: string
   list: ListItem[]
-  price: string
+  price?: string
   titleAbout: string
   descriptionAbout: string
   img: string
@@ -55,7 +55,7 @@ export const OurCourseLayout = ({
         <div className="1510:flex-row flex flex-col items-center gap-10 p-5 rounded-[20px] bg-[#ffffff1c]">
           <div className="flex flex-col gap-2 w-full">
             <p className="text-[20px] leading-3">Полный курс*</p>
-            <p className="530:text-[40px] text-[27px]">От {price} Р</p>
+            <p className="530:text-[40px] text-[27px]">{price ? `От ${price} Р` : "Вскоре на сайте*"}</p>
             <div className="530:flex-row flex flex-col gap-4">
               <ButtonGradientBlue
                 onClick={() => router.push(path)}
