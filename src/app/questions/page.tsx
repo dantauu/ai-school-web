@@ -1,4 +1,4 @@
-import { QuestionsPage } from "@/page/questions"
+import { QuestionsPage } from "@/screens/questions"
 
 const Questions = () => {
   return <QuestionsPage />

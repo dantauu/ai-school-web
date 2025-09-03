@@ -1,4 +1,4 @@
-import { CoursePage } from "@/page/course"
+import { CoursePage } from "@/screens/course"
 import { Suspense } from "react"
 
 const Course = () => {

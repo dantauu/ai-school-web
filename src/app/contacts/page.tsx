@@ -1,4 +1,4 @@
-import ContactsPage from "@/page/contacts"
+import ContactsPage from "@/screens/contacts"
 
 const Contacts = () => {
   return <ContactsPage />

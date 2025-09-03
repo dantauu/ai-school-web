@@ -1,4 +1,4 @@
-import { KidsPage } from "@/page/more-course/kids"
+import { KidsPage } from "@/screens/more-course/kids"
 
 const Kids = () => {
   return <KidsPage />

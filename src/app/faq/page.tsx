@@ -1,4 +1,4 @@
-import { FaqPage } from "@/page/faq"
+import { FaqPage } from "@/screens/faq"
 
 const Faq = () => {
   return <FaqPage />

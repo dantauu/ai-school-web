@@ -1,4 +1,4 @@
-import { CareerStartPage } from "@/page/more-course/career-start"
+import { CareerStartPage } from "@/screens/more-course/career-start"
 
 const Course = () => {
   return <CareerStartPage />

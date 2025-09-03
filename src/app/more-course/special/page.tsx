@@ -1,4 +1,4 @@
-import { SpecialPage } from "@/page/more-course/special"
+import { SpecialPage } from "@/screens/more-course/special"
 
 const Special = () => {
   return <SpecialPage />
