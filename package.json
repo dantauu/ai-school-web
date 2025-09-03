@@ -13,6 +13,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "clsx": "^2.1.1",
+    "critters": "^0.0.25",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
     "prettier": "^3.6.2",
