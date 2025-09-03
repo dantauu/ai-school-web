@@ -60,35 +60,35 @@ export const CardsHowStudy = () => {
 
 const CardsHowStudyMobile = () => {
   return (
-        <div className="flex flex-col gap-2">
-          <Marquee
-            autoFill={true}
-            pauseOnHover={false}
-            pauseOnClick={true}
-            speed={100}
-            direction={"right"}
-          >
-            <CardBlur
-              items={dataCardsOne}
-              classItem="ml-2 h-[145px] w-[270px]"
-              className="flex justify-between"
-              classText="text-[20px] leading-5"
-            />
-          </Marquee>
-          <Marquee
-            autoFill={true}
-            pauseOnHover={false}
-            pauseOnClick={true}
-            speed={100}
-            direction={"left"}
-          >
-          <CardBlur
-            items={dataCardsTwo}
-            classItem="ml-2 h-[145px] w-[270px]"
-            className="flex flex-row"
-            classText="text-[20px] leading-5"
-          />
-          </Marquee>
-        </div>
+    <div className="flex flex-col gap-2">
+      <Marquee
+        autoFill={true}
+        pauseOnHover={false}
+        pauseOnClick={true}
+        speed={100}
+        direction={"right"}
+      >
+        <CardBlur
+          items={dataCardsOne}
+          classItem="ml-2 h-[145px] w-[270px]"
+          className="flex justify-between"
+          classText="text-[20px] leading-5"
+        />
+      </Marquee>
+      <Marquee
+        autoFill={true}
+        pauseOnHover={false}
+        pauseOnClick={true}
+        speed={100}
+        direction={"left"}
+      >
+        <CardBlur
+          items={dataCardsTwo}
+          classItem="ml-2 h-[145px] w-[270px]"
+          className="flex flex-row"
+          classText="text-[20px] leading-5"
+        />
+      </Marquee>
+    </div>
   )
 }

@@ -29,7 +29,11 @@ const passesItemsTwo = [
     icon: <SvgHeadphones />,
     text: "Практические ноутбуки с автопроверкой",
   },
-  { id: 3, icon: <SvgDiamond />, text: "Тесты, челленджи, квизы" },
+  {
+    id: 3,
+    icon: <SvgDiamond />,
+    text: "Финальные презентации с обратной связью от экспертов",
+  },
 ]
 
 export const PassesStudySection = () => {
@@ -61,7 +65,11 @@ export const PassesStudySection = () => {
   )
 }
 const itemsOneMobile = [
-  { id: 1, icon: <SvgMaster className="w-[25px] h-[25x]" />, text: "Видеоуроки" },
+  {
+    id: 1,
+    icon: <SvgMaster className="w-[25px] h-[25x]" />,
+    text: "Видеоуроки",
+  },
   {
     id: 2,
     icon: <SvgPractice className="w-[25px] h-[25x]" />,
@@ -75,7 +83,11 @@ const itemsTwoMobile = [
     icon: <SvgPeoples className="w-[25px] h-[25x]" />,
     text: "Мини-командные и индивидуальные проекты",
   },
-  { id: 3, icon: <SvgDiamond className="w-[25px] h-[25x]" />, text: "Тесты, челленджи, квизы" },
+  {
+    id: 3,
+    icon: <SvgBook className="w-[25px] h-[25x]" />,
+    text: "Тесты, челленджи, квизы",
+  },
 ]
 
 const itemsThreeMobile = [
@@ -84,7 +96,11 @@ const itemsThreeMobile = [
     icon: <SvgHeadphones className="w-[25px] h-[25x]" />,
     text: "Практические ноутбуки с автопроверкой",
   },
-  { id: 3, icon: <SvgDiamond className="w-[25px] h-[25x]" />, text: "Тесты, челленджи, квизы" },
+  {
+    id: 3,
+    icon: <SvgDiamond className="w-[25px] h-[25x]" />,
+    text: "Финальные презентации с обратной связью от экспертов",
+  },
 ]
 
 const PassesStudyMobileSection = () => {
