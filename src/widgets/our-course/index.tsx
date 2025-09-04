@@ -1,12 +1,12 @@
 "use client"
-import { courses } from "@/lib/data/course"
-import { OurCourseLayout } from "@/shared/ui/cards/our-course"
+import { OurCourseLayout, OurCourseProps } from "@/shared/ui/cards/our-course"
 import { cn } from "@/lib/utils/cn"
 import { ButtonGradientWhite } from "@/shared/ui/buttons/gradient-white"
 import { useRouter } from "next/navigation"
 import purpleRight from "@/assets/backgrounds/purple-right.svg"
+import { useEffect, useState } from "react"
 
-type OurCourseProps = {
+type CourseProps = {
   className?: string
   hasTittle?: boolean
   hasButton?: boolean
@@ -16,8 +16,23 @@ export const OurCourseSection = ({
   hasTittle = true,
   hasButton = true,
   className,
-}: OurCourseProps) => {
+}: CourseProps) => {
   const router = useRouter()
+  const [courses, setCourses] = useState<OurCourseProps[]>([])
+
+  useEffect(() => {
+    async function fetchCourses() {
+      try {
+        const res = await fetch("/mocks/courses.json")
+        const data = await res.json()
+        setCourses(data)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    fetchCourses()
+  }, [])
   return (
     <div
       className={cn(
