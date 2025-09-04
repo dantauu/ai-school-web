@@ -11,8 +11,8 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const [hydrated, setHydrated] = useState(false);
-  useEffect(() => setHydrated(true), []);
+  const [hydrated, setHydrated] = useState(false)
+  useEffect(() => setHydrated(true), [])
 
   return (
     <html lang="ru">
@@ -21,7 +21,7 @@ export default function Layout({
           {hydrated ? (
             <>
               <Header />
-                {children}
+              {children}
               <Footer className="830:mt-[110px] mt-[50px]" />
             </>
           ) : null}

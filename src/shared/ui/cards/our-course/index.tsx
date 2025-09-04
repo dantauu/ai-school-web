@@ -52,11 +52,13 @@ export const OurCourseLayout = ({
             <li key={item.id}>{item.text}</li>
           ))}
         </ul>
-        <div className="1510:flex-row flex flex-col items-center gap-10 p-5 rounded-[20px] bg-[#ffffff1c]">
+        <div className="1510:flex-row flex flex-col items-center 530:gap-10 gap-3 p-5 rounded-[20px] bg-[#ffffff1c]">
           <div className="flex flex-col gap-2 w-full">
             <p className="text-[20px] leading-3">Полный курс*</p>
-            <p className="530:text-[40px] text-[27px]">{price ? `От ${price} Р` : "Вскоре на сайте*"}</p>
-            <div className="530:flex-row flex flex-col gap-4">
+            <p className="530:text-[40px] text-[27px]">
+              {price ? `От ${price} Р` : "Вскоре на сайте*"}
+            </p>
+            <div className="530:flex-row flex flex-col 530:gap-4 gap-2">
               <ButtonGradientBlue
                 onClick={() => router.push(path)}
                 className="530:w-[160px] w-full h-[50px]"
