@@ -2,7 +2,7 @@ import SvgCourse from "@/assets/icons/Course"
 import Button from "@/shared/ui/buttons"
 import SvgTelegram from "@/assets/icons/Telegram"
 import { useRouter } from "next/navigation"
-import { useAppDispatch, useAppSelector } from "@/redux/hooks"
+import { useAppDispatch } from "@/redux/hooks"
 import { openFormModal } from "@/redux/slices/modal-form"
 
 const itemTopPart = [
