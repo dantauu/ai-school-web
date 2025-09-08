@@ -1,7 +1,7 @@
 import Breadcrumbs from "@/shared/ui/breadcrumbs"
-import { faqDataGeneral, faqDataMain } from "@/lib/data/faq"
+import { privacyPolicyDataGeneral, faqDataMain } from "@/lib/data/faq"
 
-export const FaqPage = () => {
+export const PrivacyPolicy = () => {
   return (
     <div className="pt-[20px] container">
       <Breadcrumbs className="pb-3" location={"Политика конфиденциальности"} />
@@ -11,7 +11,7 @@ export const FaqPage = () => {
       <div className="flex flex-col gap-5">
         <div>
           <p className="975:text-[32px] text-[20px] pb-2">Общие положения</p>
-          {faqDataGeneral.map((item) => (
+          {privacyPolicyDataGeneral.map((item) => (
             <p key={item.id} className="max-w-[885px]">
               {item.number} {item.text}
             </p>

@@ -1,4 +1,4 @@
-import React, { SVGProps, useState } from "react"
+import React, { useState } from "react"
 import SvgArrow from "@/assets/icons/Arrow"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -12,7 +12,7 @@ export const FilterItem = ({ text, children, icon }: FilterItemProps) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="relative w-full select-none">
+    <div className="relative w-full select-none cursor-pointer z-10">
       <div
         className="flex items-center w-full h-[60px] justify-between bg-blur-bg rounded-[10px] px-3 cursor-pointer"
         onClick={() => setOpen((prev) => !prev)}

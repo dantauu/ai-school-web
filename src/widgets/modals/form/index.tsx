@@ -26,7 +26,7 @@ const ModalForm = () => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative 530:w-[425px] 530:h-[620px] w-full h-full flex flex-col py-7 gap-5 px-5 gradient-dark-blue-vertical rounded-xl border border-[#888888]"
+        className="relative 530:w-[425px] 530:h-fit w-full h-full flex flex-col py-7 gap-5 px-5 gradient-dark-blue-vertical rounded-xl border border-[#888888]"
       >
         <Button
           className="absolute top-5 right-5"

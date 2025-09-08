@@ -2,8 +2,10 @@
 
 import { IMaskInput } from "react-imask"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
+import { usePathname } from "next/navigation"
 
 export const ModalFormRequest = () => {
+  const pathname = usePathname()
   return (
     <form className="w-full max-w-[540px] h-full flex flex-col">
       <div className="w-full max-w-[540px] h-full flex flex-col gap-5">
@@ -31,6 +33,13 @@ export const ModalFormRequest = () => {
             placeholder={"E-mail"}
             required
           />
+          {pathname.startsWith("/questions") && (
+            <input
+              className="w-full 830:h-[64px] h-[48px] pl-5 pr-4 rounded-[10px] text-black placeholder:text-[#031C52] bg-white"
+              placeholder={"Задайте свой вопрос"}
+              required
+            />
+          )}
         </div>
         <div className="mt-auto flex flex-col gap-3">
           <ButtonGradientBlue className="w-full h-[50px]">
