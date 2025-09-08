@@ -8,7 +8,9 @@ import avatar3 from "@/assets/images/avatar-3.png"
 import avatar4 from "@/assets/images/avatar-4.png"
 import avatar5 from "@/assets/images/avatar-5.png"
 import { ButtonGradientBlue } from "@/shared/ui/buttons/gradient-blue"
-import { useState } from "react"
+import { useRef, useState } from "react"
+import { Play } from "@/shared/ui/buttons/play"
+import frameMain from "@/assets/images/frame-main.svg"
 
 const data = [
   {
@@ -40,7 +42,16 @@ const avatars = [
 ]
 
 export const RightPartMain = () => {
+  const videoRef = useRef<HTMLVideoElement | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play()
+      setIsPlaying(true)
+    }
+  }
+
   return (
     <div className="flex flex-col less-desctop:gap-15">
       <div className="flex flex-col 830:flex-row less-desctop:flex-col 830:items-stretch items-center justify-between h-auto gap-5 pb-10 830:pl-0 less-desctop:pb-0">
@@ -67,14 +78,32 @@ export const RightPartMain = () => {
           </div>
           <p>10 000+ учеников</p>
         </div>
-        <div className="flex flex-col gap-3 w-full less-desctop:w-[415px] less-desctop:h-[250px] bg-blur-bg rounded-[19px] p-2">
-          <iframe
-            className="w-full h-full rounded-[12px]"
-            src={`https://dzen.ru/embed/vmUT235lTAFc?from_block=partner&from=zen&mute=0&autoplay=0&tv=0`}
-            allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"
-            allowFullScreen
-          ></iframe>
-          <ButtonGradientBlue className="w-full min-h-[48px]">
+        <div className="relative flex flex-col gap-5 w-full less-desctop:w-[415px] less-desctop:h-fit bg-blur-bg rounded-[19px] p-2">
+          <div className="relative w-full">
+            <video
+              ref={videoRef}
+              className="w-full h-[230px] rounded-[12px]"
+              src="/video/example.mp4"
+              controls={isPlaying}
+            />
+            {!isPlaying && (
+              <>
+                <img
+                  src={frameMain.src}
+                  className="absolute inset-0 w-full h-full object-cover rounded-[12px]"
+                  alt="Frame"
+                />
+                <Play
+                  onClick={handlePlay}
+                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                />
+              </>
+            )}
+          </div>
+          <ButtonGradientBlue
+            className="w-full min-h-[48px]"
+            onClick={handlePlay}
+          >
             Посмотреть как это работает
           </ButtonGradientBlue>
         </div>

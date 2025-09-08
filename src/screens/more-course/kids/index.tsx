@@ -10,6 +10,10 @@ import { PriceSection } from "@/shared/ui/more-course/price"
 import { FirstStepSection } from "@/ui/more-course/first-step"
 import { QuestionsKids } from "@/widgets/questions/questions-kids"
 import { reviewsKids, reviewsParents } from "@/lib/data/reviews"
+import reviewKidOne from "@/assets/images/kid-1.png"
+import reviewKidTwo from "@/assets/images/kid-2.png"
+import parentOne from "@/assets/images/parent-1.png"
+import parentTwo from "@/assets/images/parent-2.png"
 
 export const KidsPage = () => {
   return (
@@ -41,6 +45,7 @@ export const KidsPage = () => {
             </>
           }
           reviews={reviewsKids}
+          reviewImages={[{ src: reviewKidOne.src }, { src: reviewKidTwo.src }]}
         />
         <ReviewsSection
           title={
@@ -50,6 +55,7 @@ export const KidsPage = () => {
             </>
           }
           reviews={reviewsParents}
+          reviewImages={[{ src: parentOne.src }, { src: parentTwo.src }]}
         />
         <PriceSection price={"100 000"} />
         <FirstStepSection />
