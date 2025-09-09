@@ -1,7 +1,7 @@
 import { LeftPartFooter } from "@/widgets/layout/footer/left-part"
 import { RightPartFooter } from "@/widgets/layout/footer/right-part"
 import { cn } from "@/lib/utils/cn"
-import { Faq } from "@/widgets/layout/footer/faq"
+import { Faq } from "@/widgets/layout/footer/privacy-police"
 
 export const Footer = ({ className }: { className: string }) => {
   return (

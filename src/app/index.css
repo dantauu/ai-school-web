@@ -75,9 +75,9 @@
 }
 
 @layer utilities {
-  @media (max-width: 2100px) {
+  @media (max-width: 3000px) {
     .container {
-      max-width: 2050px;
+      max-width: 3000px;
       padding-inline: 40px;
     }
   }
