@@ -16,12 +16,12 @@ import { reviewsHome } from "@/lib/data/reviews"
 
 export const SpecialPage = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Breadcrumbs
-        className="py-[30px] px-[40px]"
+        className="py-[30px]"
         location={"Курс «AI для специалистов и предпринимателей»"}
       />
-      <div className="flex flex-col 530:gap-25 gap-15 container">
+      <div className="flex flex-col 530:gap-25 gap-15">
         <SpecialSection />
         <Skills
           likeText={

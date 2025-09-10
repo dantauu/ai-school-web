@@ -39,7 +39,7 @@ export const CoursePage = () => {
   }, [open])
   return (
     <div>
-      <div className="container flex flex-col gap-4">
+      <div className="container flex flex-col gap-4 mx-auto">
         <Breadcrumbs className="pt-5" location={"Курсы"} />
         <h3 className="975:text-[60px] text-[40px]">Наши курсы</h3>
         {isMedia ? (

@@ -36,7 +36,7 @@ const Header = () => {
   }, [open])
   return (
     <header className="flex items-center justify-between">
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between mx-auto">
         <Link className="select-none" href={"/"}>
           <h1 className="relative z-7 530:text-[30px] text-[16.5px]">
             AI-School by Grafov

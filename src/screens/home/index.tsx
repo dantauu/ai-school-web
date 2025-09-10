@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div>
       <MainSection />
-      <div className="container flex flex-col 830:gap-25 gap-15">
+      <div className="container flex flex-col 830:gap-25 gap-15 mx-auto">
         <OurCourseSection className="pt-14" />
         <AboutSection />
         <ReviewsSection title={"Отзывы"} reviews={reviewsHome} />
@@ -31,7 +31,7 @@ export default function HomePage() {
         <TheyChooseSection />
       </div>
       <FormRequestSection />
-      <div className="container flex flex-col 830:gap-25 gap-10">
+      <div className="container flex flex-col 830:gap-25 gap-10 mx-auto">
         <HowStudySection />
         <HowShowSection />
         <QuestionsSection />

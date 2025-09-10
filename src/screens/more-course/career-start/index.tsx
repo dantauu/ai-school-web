@@ -12,12 +12,12 @@ import { reviewsHome } from "@/lib/data/reviews"
 
 export const CareerStartPage = () => {
   return (
-    <>
+    <div className="mx-auto container">
       <Breadcrumbs
-        className="py-[30px] px-[40px]"
+        className="py-[30px]"
         location={"Карьерный старт в AI"}
       />
-      <div className="flex flex-col 530:gap-25 gap-15 container">
+      <div className="flex flex-col 530:gap-25 gap-15">
         <StartSection />
         <Skills
           likeText={
@@ -46,6 +46,6 @@ export const CareerStartPage = () => {
         <PriceSection price={"60 000"} />
         <ImportantSection />
       </div>
-    </>
+    </div>
   )
 }

@@ -17,12 +17,12 @@ import parentTwo from "@/assets/images/parent-2.png"
 
 export const KidsPage = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       <Breadcrumbs
-        className="py-[30px] px-[40px]"
+        className="py-[30px]"
         location={"Курс «AI для подростков и детей»"}
       />
-      <div className="flex flex-col 530:gap-20 gap-15 container">
+      <div className="flex flex-col 530:gap-20 gap-15">
         <RoadAiSection />
         <WhyHereSection />
         <KidsSection />

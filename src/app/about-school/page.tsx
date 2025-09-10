@@ -9,9 +9,9 @@ import Breadcrumbs from "@/shared/ui/breadcrumbs"
 const AboutSchool = () => {
   return (
     <div className="flex flex-col gap-15 975:pt-[70px] pt-[30px]">
-      <Breadcrumbs className="container" location={"О школе"} />
+      <Breadcrumbs className="container mx-auto" location={"О школе"} />
       <DignitySection />
-      <div className="flex flex-col gap-15 container">
+      <div className="flex flex-col gap-15 container mx-auto">
         <BirthSchoolSection />
         <StudySection />
         <IdeasSection />

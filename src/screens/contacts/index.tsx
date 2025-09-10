@@ -11,7 +11,7 @@ const ContactsPage = () => {
           <img src={blue.src} />
         </div>
       </div>
-      <div className="container">
+      <div className="container mx-auto">
         <Breadcrumbs className="pt-[20px]" location={"Контакты"} />
         <h3 className="975:text-[60px] text-[40px] pb-4">Контакты</h3>
         <ContactCards />

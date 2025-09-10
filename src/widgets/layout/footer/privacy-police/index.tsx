@@ -9,7 +9,7 @@ export const Faq = () => {
       >
         Политика конфиденциальности
       </Link>
-      <Link href="/" className="text-[15px] 530:text-[16.5px] text-[#a7a7a7]">
+      <Link href="/user-agreement" className="text-[15px] 530:text-[16.5px] text-[#a7a7a7]">
         Пользовательское соглашение
       </Link>
       <Link href="/" className="text-[15px] 530:text-[16.5px] text-[#a7a7a7]">

@@ -10,7 +10,7 @@ export const QuestionsPage = () => {
           <img src={blue.src} />
         </div>
       </div>
-      <div className="flex flex-col gap-10 pt-[20px] container">
+      <div className="flex flex-col gap-10 pt-[20px] container mx-auto">
         <Breadcrumbs location={"Вопрос-ответ"} />
         <QuestionsSection />
       </div>
