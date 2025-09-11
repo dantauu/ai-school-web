@@ -36,12 +36,12 @@ export const OurCourseSection = ({
   return (
     <div
       className={cn(
-        "flex flex-col 975:gap-7 less-desctop:mt-0 mt-7",
+        "flex flex-col 975:gap-7 less-desctop:mt-0 mt-17",
         className
       )}
     >
       {hasTittle && (
-        <h3 className="530:text-[40px] text-[32px] 975:pb-0 pb-5.5">
+        <h3 className="530:text-[40px] text-[32px] 975:pb-0 pb-3.5">
           Наши курсы
         </h3>
       )}
