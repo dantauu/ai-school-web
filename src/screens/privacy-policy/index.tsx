@@ -1,7 +1,34 @@
+"use client"
 import Breadcrumbs from "@/shared/ui/breadcrumbs"
-import { privacyPolicyDataGeneral, faqDataMain } from "@/lib/data/faq"
+import { useEffect, useState } from "react"
+
+type PrivacyPolicy = {
+  id: number
+  number: string
+  text: string
+}
 
 export const PrivacyPolicy = () => {
+  const [mainPolicy, setMainPolicy] = useState<PrivacyPolicy[]>([])
+  const [position, setPosition] = useState<PrivacyPolicy[]>([])
+
+  useEffect(() => {
+    async function fetchPolicy() {
+      try {
+        const res = await fetch("/mocks/privacy-policy.json")
+        const data = await res.json()
+        setMainPolicy(data)
+
+        const resP = await fetch("/mocks/privacy-position.json")
+        const dataP = await resP.json()
+        setPosition(dataP)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+
+    fetchPolicy()
+  }, [])
   return (
     <div className="pt-[20px] container mx-auto">
       <Breadcrumbs className="pb-3" location={"Политика конфиденциальности"} />
@@ -11,7 +38,7 @@ export const PrivacyPolicy = () => {
       <div className="flex flex-col gap-5">
         <div>
           <p className="975:text-[32px] text-[20px] pb-2">Общие положения</p>
-          {privacyPolicyDataGeneral.map((item) => (
+          {position.map((item) => (
             <p key={item.id} className="max-w-[885px]">
               {item.number} {item.text}
             </p>
@@ -21,7 +48,7 @@ export const PrivacyPolicy = () => {
           <p className="975:text-[32px] text-[20px] pb-2">
             Основные понятия, используемые в Политике
           </p>
-          {faqDataMain.map((item) => (
+          {mainPolicy.map((item) => (
             <p key={item.id} className="max-w-[885px]">
               {item.number} {item.text}
             </p>

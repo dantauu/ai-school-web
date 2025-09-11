@@ -13,10 +13,7 @@ import { reviewsHome } from "@/lib/data/reviews"
 export const CareerStartPage = () => {
   return (
     <div className="mx-auto container">
-      <Breadcrumbs
-        className="py-[30px]"
-        location={"Карьерный старт в AI"}
-      />
+      <Breadcrumbs className="py-[30px]" location={"Карьерный старт в AI"} />
       <div className="flex flex-col 530:gap-25 gap-15">
         <StartSection />
         <Skills
