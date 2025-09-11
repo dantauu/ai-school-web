@@ -32,7 +32,9 @@ export const DignitySection = () => {
             className={`max-w-[582px] w-full h-fit rounded-[15px] p-5 border border-[#ffffff3d] ${item.id === 4 ? "bg-[#0bd3fb91]" : "bg-blur-bg"}`}
             key={item.id}
           >
-            <p className="max-w-[350px] 530:text-[19px] text-[17px]">{item.text}</p>
+            <p className="max-w-[350px] 530:text-[19px] text-[17px]">
+              {item.text}
+            </p>
           </div>
         ))}
       </div>

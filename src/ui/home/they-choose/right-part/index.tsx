@@ -51,7 +51,7 @@ export const TheyChooseRight = () => {
         </div>
       </div>
 
-      <div className="w-full h-full flex flex-col gap-3 text-black px-4 pt-4 gradient-white rounded-[15px]">
+      <div className="w-full h-full flex flex-col gap-3 text-black 1295:pb-0 pb-4 px-4 pt-4 gradient-white rounded-[15px]">
         <p className="530:text-[19px] leading-[16px]">
           Сертификаты и карьерный рост
         </p>

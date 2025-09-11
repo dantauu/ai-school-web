@@ -32,7 +32,9 @@ export const IdeasSection = () => {
         <img className="w-[110px] h-[110px]" src={createImage.src} />
         <div>
           <p className="530:text-[25px] text-[21px]">Родион Графов</p>
-          <p className="530:text-[19px] text-[17px]">основатель, визионер и движок школы</p>
+          <p className="530:text-[19px] text-[17px]">
+            основатель, визионер и движок школы
+          </p>
         </div>
       </div>
     </div>

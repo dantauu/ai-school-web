@@ -55,7 +55,9 @@ export const ContactCards = () => {
               ))}
             </div>
           ) : (
-            <p className="max-w-[470px] 530:text-[18px] text-[17px]">{item.description}</p>
+            <p className="max-w-[470px] 530:text-[18px] text-[17px]">
+              {item.description}
+            </p>
           )}
         </div>
       ))}
