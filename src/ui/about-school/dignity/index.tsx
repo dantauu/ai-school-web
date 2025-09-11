@@ -21,7 +21,7 @@ export const DignitySection = () => {
         <h1 className="530:leading-normal 530:text-[57px] leading-10 text-[40px]">
           AI-school by Grafov
         </h1>
-        <p className="max-w-[490px] text-[19px]">
+        <p className="max-w-[530px] 530:text-[21px] text-[19px]">
           Современная онлайн-школа, где ты быстро и понятно освоишь нейросети,
           ботов, AI-инструменты и начнёшь больше зарабатывать
         </p>
@@ -32,7 +32,7 @@ export const DignitySection = () => {
             className={`max-w-[582px] w-full h-fit rounded-[15px] p-5 border border-[#ffffff3d] ${item.id === 4 ? "bg-[#0bd3fb91]" : "bg-blur-bg"}`}
             key={item.id}
           >
-            <p className="max-w-[350px]">{item.text}</p>
+            <p className="max-w-[350px] 530:text-[19px] text-[17px]">{item.text}</p>
           </div>
         ))}
       </div>

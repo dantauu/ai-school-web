@@ -45,11 +45,11 @@ export const OurCourseLayout = ({
           <p className="530:text-[50px] 530:leading-normal leading-7.5 text-[27px] pb-3 ">
             {title}
           </p>
-          <p>{description}</p>
+          <p className="530:text-[18px] text-[16px]">{description}</p>
         </div>
         <ul className="list-disc pb-5 pl-3">
           {list.map((item) => (
-            <li key={item.id}>{item.text}</li>
+            <li className="530:text-[18px] text-[16px]" key={item.id}>{item.text}</li>
           ))}
         </ul>
         <div className="1510:flex-row flex flex-col items-center 530:gap-10 gap-3 p-5 rounded-[20px] bg-[#ffffff1c]">

@@ -39,7 +39,7 @@ export const ContactCards = () => {
         >
           <a href={item.link}>
             <p
-              className={`text-[19px] leading-5 ${item.id !== 1 && "text-gradient-white leading-6 text-[24px]"}`}
+              className={`530:text-[21px] text-[19px] leading-6 ${item.id !== 1 && "text-gradient-white leading-6 530:text-[25.5px] text-[24px]"}`}
             >
               {item.title}
             </p>
@@ -49,13 +49,13 @@ export const ContactCards = () => {
             <div className="flex flex-col gap-1">
               {itemsSociety.map((soc) => (
                 <div key={soc.id} className="flex gap-2">
-                  <p>{soc.name}</p>
-                  <p>{soc.text}</p>
+                  <p className="530:text-[17.5px] text-[16px]">{soc.name}</p>
+                  <p className="530:text-[17.5px] text-[16px]">{soc.text}</p>
                 </div>
               ))}
             </div>
           ) : (
-            <p className="max-w-[470px] text-[17px]">{item.description}</p>
+            <p className="max-w-[470px] 530:text-[18px] text-[17px]">{item.description}</p>
           )}
         </div>
       ))}

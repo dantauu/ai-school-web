@@ -4,7 +4,7 @@ import avatarTwo from "@/assets/images/women-choose.svg"
 export const TheyChooseRight = () => {
   return (
     <div className="flex flex-col gap-5">
-      <div className="choose:w-[580px] w-full h-fit flex flex-col items-stretch gap-3 text-white choose:p-7 p-5.5 gradient-purple rounded-[15px]">
+      <div className="choose:w-[580px] w-full h-fit flex flex-col items-stretch gap-3 text-white choose:p-7 p-4 gradient-purple rounded-[15px]">
         <div className="flex items-center choose:gap-9 gap-15">
           <div className="flex -space-x-5">
             <img
@@ -31,7 +31,7 @@ export const TheyChooseRight = () => {
         </p>
       </div>
 
-      <div className="w-full h-fit flex flex-col gap-3 text-white 830:p-7 p-5 bg-[#0062FF] rounded-[15px]">
+      <div className="w-full h-fit flex flex-col gap-3 text-white p-5 bg-[#0062FF] rounded-[15px]">
         <p className="530:text-[19px] text-[16px]">
           Проектная и командная работа
         </p>
@@ -51,7 +51,7 @@ export const TheyChooseRight = () => {
         </div>
       </div>
 
-      <div className="w-full h-full flex flex-col gap-3 text-black 830:p-6 p-5 gradient-white rounded-[15px]">
+      <div className="w-full h-full flex flex-col gap-3 text-black px-4 pt-4 gradient-white rounded-[15px]">
         <p className="530:text-[19px] leading-[16px]">
           Сертификаты и карьерный рост
         </p>

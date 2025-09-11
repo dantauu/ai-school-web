@@ -14,7 +14,7 @@ export const StudySection = () => {
           <p className="text-[#fff6] 975:text-[21px] text-[18px]">
             Мы - за другое
           </p>
-          <h3 className="975:text-[57px] 975:leading-14 leading-9 text-[32px]">
+          <h3 className="975:text-[48px] 975:leading-14 leading-9 text-[32px]">
             <span className="text-gradient-white">
               За обучение, которое реально помогает войти в AI
             </span>{" "}
